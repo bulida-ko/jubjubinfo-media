@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="ko" xml:lang="ko">
+<head>
+<meta charset="UTF-8"/>
+<title>Day 25. 매집형 돌파와 분산형 돌파</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body epub:type="bodymatter">
+<section epub:type="chapter" id="day25">
+
+<p class="day">Day 25</p>
+<h1>매집형 돌파와 분산형 돌파</h1>
+<p class="oneline">같은 돌파라도 앞에 어떤 횡보가 있었느냐에 따라 다릅니다.</p>
+
+<h2>이런 적 있나요?</h2>
+<p>거래량까지 실린 돌파를 보고 샀는데, 며칠 만에 박스 아래까지 떨어진 적 있으시죠? 돌파 자체는 멀쩡해 보였습니다. 문제는 돌파 앞에 있던 박스가 어떤 박스였는지 보지 않았다는 데 있었습니다.</p>
+
+<h2>쉽게 이해하기</h2>
+<p>Day 8과 9에서 박스에는 매집(나눠 사는 구간)과 분산(나눠 파는 구간)이 있다고 했습니다. 돌파도 어떤 박스에서 나왔느냐에 따라 뜻이 달라집니다.</p>
+<p>매집형 박스는 큰 하락 뒤에 나오고, 저점이 조금씩 높아지며, 오르는 날 거래량이 큽니다. 이런 박스를 위로 돌파했다면, 박스 안에서 이미 사는 힘이 확인된 뒤에 돌파가 나온 셈입니다. 그래서 돌파가 이어질 가능성이 상대적으로 높습니다.</p>
+<p>분산형 박스는 큰 상승 뒤에 나오고, 저점이 조금씩 낮아지며, 내리는 날 거래량이 큽니다. 이런 박스에서 위로 돌파가 나오면 조심해야 합니다. 남은 물량을 비싸게 넘기려고 가격이 잠깐 끌어올려진 것일 수도 있기 때문입니다. 돌파를 보고 따라 산 사람들에게 물량이 넘어가고 나면 가격은 힘없이 무너집니다.</p>
+<p>이사 가는 집을 떠올려 보세요. 짐을 차곡차곡 싸던 집이 갑자기 불을 환하게 켰다고 해서 이사를 취소한 건 아닙니다. 그동안 무엇을 하고 있었는지가 더 많은 것을 알려줍니다.</p>
+
+<h2>차트로 보기</h2>
+<figure id="fig25-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 352" role="img" aria-label="매집형 돌파와 분산형 돌파">
+<rect x="0" y="0" width="760" height="352" fill="#FFFFFF"/>
+<text x="24" y="30" font-family="sans-serif" font-size="17" font-weight="bold" fill="#1C2126">같은 돌파라도 앞의 박스가 어떤 박스였느냐에 따라 결과가 달라집니다</text>
+<text x="24" y="54" font-family="sans-serif" font-size="13" fill="#626A72">회색 상자 = 박스, 동그라미 = 돌파한 날</text>
+<line x1="380" y1="76" x2="380" y2="346" stroke="#D6DADD" stroke-width="1"/>
+<rect x="134" y="220" width="170" height="44.4" fill="#EEF0EE"/>
+<line x1="134" y1="220" x2="368" y2="220" stroke="#8A9199" stroke-width="1.5" stroke-dasharray="5 4"/>
+<polyline points="54,122.2 76,166.7 98,211.1 120,246.7 142,264.4 164,242.2 186,255.6 208,233.3 230,246.7 252,224.4 274,237.8 296,220 318,197.8 340,180 362,162.2" fill="none" stroke="#1C2126" stroke-width="2" stroke-linejoin="round"/>
+<g fill="#1C2126"><circle cx="54" cy="122.2" r="3"/><circle cx="76" cy="166.7" r="3"/><circle cx="98" cy="211.1" r="3"/><circle cx="120" cy="246.7" r="3"/><circle cx="142" cy="264.4" r="3"/><circle cx="164" cy="242.2" r="3"/><circle cx="186" cy="255.6" r="3"/><circle cx="208" cy="233.3" r="3"/><circle cx="230" cy="246.7" r="3"/><circle cx="252" cy="224.4" r="3"/><circle cx="274" cy="237.8" r="3"/><circle cx="296" cy="220" r="3"/><circle cx="318" cy="197.8" r="3"/><circle cx="340" cy="180" r="3"/><circle cx="362" cy="162.2" r="3"/></g>
+<circle cx="318" cy="197.8" r="8" fill="none" stroke="#C8322F" stroke-width="2"/>
+<text x="210" y="86" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#1C2126">매집형 박스의 돌파</text>
+<text x="210" y="336" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#626A72">하락 뒤 · 저점이 높아지던 박스 → 돌파가 이어짐</text>
+<rect x="504" y="128" width="148" height="32" fill="#EEF0EE"/>
+<line x1="504" y1="128" x2="738" y2="128" stroke="#8A9199" stroke-width="1.5" stroke-dasharray="5 4"/>
+<polyline points="424,280 446,240 468,200 490,160 512,128 534,152 556,136 578,156 600,140 622,160 644,144 666,116 688,140 710,164 732,184" fill="none" stroke="#1C2126" stroke-width="2" stroke-linejoin="round"/>
+<g fill="#1C2126"><circle cx="424" cy="280" r="3"/><circle cx="446" cy="240" r="3"/><circle cx="468" cy="200" r="3"/><circle cx="490" cy="160" r="3"/><circle cx="512" cy="128" r="3"/><circle cx="534" cy="152" r="3"/><circle cx="556" cy="136" r="3"/><circle cx="578" cy="156" r="3"/><circle cx="600" cy="140" r="3"/><circle cx="622" cy="160" r="3"/><circle cx="644" cy="144" r="3"/><circle cx="666" cy="116" r="3"/><circle cx="688" cy="140" r="3"/><circle cx="710" cy="164" r="3"/><circle cx="732" cy="184" r="3"/></g>
+<circle cx="666" cy="116.0" r="8" fill="none" stroke="#C8322F" stroke-width="2"/>
+<text x="580" y="86" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#1C2126">분산형 박스의 돌파</text>
+<text x="580" y="336" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#626A72">상승 뒤 · 저점이 낮아지던 박스 → 돌파가 곧 무너짐</text>
+</svg>
+<figcaption>그림 25-1. 매집형 박스의 돌파와 분산형 박스의 돌파</figcaption>
+</figure>
+<p>그림 25-1의 왼쪽은 큰 하락 뒤의 박스입니다. 박스 안에서 저점이 98원, 100원, 102원, 104원으로 높아졌습니다. 이 박스를 위로 돌파한 뒤 가격은 계속 올랐습니다.</p>
+<p>오른쪽은 큰 상승 뒤의 박스입니다. 박스 안에서 저점이 102원, 101원, 100원으로 낮아지고 있었습니다. 동그라미에서 박스 위로 올라섰지만, 바로 다음 날부터 밀려 박스 아래까지 무너졌습니다. 돌파한 날만 보면 두 차트는 비슷했습니다.</p>
+
+<h2>이럴 땐 조심</h2>
+<p>매집과 분산은 끝까지 추정입니다. 분산형으로 보였던 박스라도, 거래량이 크게 실린 돌파가 나오고 며칠 동안 박스 위에서 버틴다면 판단을 바꿔야 합니다. 추정보다 실제 가격의 움직임이 우선입니다. 반대로 매집형 박스의 돌파라도 Day 18의 확인 기준은 똑같이 적용합니다. 종가가 다시 박스 안으로 돌아오면 실패로 봅니다.</p>
+
+<h2>오늘의 체크</h2>
+<ol class="check">
+  <li id="d25q1">큰 하락 뒤, 저점이 높아지고 오르는 날 거래량이 큰 박스가 위로 돌파했습니다. 이 돌파는 이어질 가능성이 상대적으로 높을까요, 낮을까요? <a class="to-answer" href="#d25a1">정답 보기</a></li>
+  <li id="d25q2">큰 상승 뒤, 저점이 낮아지던 박스에서 위로 돌파가 나왔습니다. 왜 조심해야 할까요? <a class="to-answer" href="#d25a2">정답 보기</a></li>
+  <li id="d25q3">분산형으로 보였던 박스가 거래량이 크게 실린 돌파를 한 뒤, 사흘 동안 박스 위에서 버텼습니다. 어떻게 해야 할까요? <a class="to-answer" href="#d25a3">정답 보기</a></li>
+</ol>
+
+<h2>한 줄 정리 + 내일 예고</h2>
+<p>돌파를 볼 때는 돌파 앞의 박스가 매집형인지 분산형인지 먼저 봅니다. 그런데 매집형이든 분산형이든, 돌파가 가짜일 때 공통으로 나타나는 신호들이 있습니다. 내일은 가짜 돌파를 구별하는 세 가지 경고 신호를 정리합니다.</p>
+
+<section class="answers" id="day25-answers">
+<h2>Day 25 정답과 해설</h2>
+<div class="answer" id="d25a1">
+  <p class="verdict">1번. 정답: 높다</p>
+  <p>박스 안에서 이미 저점이 높아지고, 오르는 날 거래량이 컸습니다. 사는 힘이 확인된 뒤에 나온 돌파라 이어질 가능성이 상대적으로 높습니다. 그래도 다음 며칠 박스 위에서 버티는지는 확인합니다.</p>
+  <p><a class="back" href="#d25q1">문제로 돌아가기</a></p>
+</div>
+<div class="answer" id="d25a2">
+  <p class="verdict">2번. 정답: 남은 물량을 넘기려는 속임수일 수 있어서</p>
+  <p>큰 상승 뒤 저점이 낮아지던 박스는 누군가 나눠 팔고 있었을 가능성이 있습니다. 이때 나온 위쪽 돌파는 따라 사는 사람에게 물량을 넘기는 과정일 수 있어, 곧 무너지기 쉽습니다.</p>
+  <p><a class="back" href="#d25q2">문제로 돌아가기</a></p>
+</div>
+<div class="answer" id="d25a3">
+  <p class="verdict">3번. 정답: 판단을 바꾼다. 가격이 추정보다 우선이다</p>
+  <p>매집과 분산은 추정일 뿐입니다. 거래량이 실린 돌파가 며칠 버텼다면 사는 힘이 이기고 있다는 뜻입니다. 다만 들어간다면 종가가 박스 안으로 돌아오는 순간을 손절 기준으로 정해 둡니다.</p>
+  <p><a class="back" href="#d25q3">문제로 돌아가기</a></p>
+</div>
+</section>
+
+</section>
+</body>
+</html>
