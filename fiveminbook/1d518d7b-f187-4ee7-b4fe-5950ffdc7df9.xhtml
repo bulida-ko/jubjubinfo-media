@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="ko" xml:lang="ko">
+<head>
+<meta charset="UTF-8"/>
+<title>Day 9. 매집과 분산을 구분하는 세 가지 기준</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body epub:type="bodymatter">
+<section epub:type="chapter" id="day09">
+
+<p class="day">Day 9</p>
+<h1>매집과 분산을 구분하는 세 가지 기준</h1>
+<p class="oneline">위치, 아래의 반응, 거래량이 한쪽을 가리킬 때만 믿습니다.</p>
+
+<h2>이런 적 있나요?</h2>
+<p>"큰 하락 뒤 횡보니까 매집이겠지" 하고 샀는데, 박스 아래가 깨지며 더 떨어진 적 있으시죠? 위치 하나만 맞았고, 나머지 단서는 반대쪽을 가리키고 있었을 수 있습니다.</p>
+
+<h2>쉽게 이해하기</h2>
+<p>어제는 첫 번째 단서, 위치를 봤습니다. 오늘은 두 가지를 더해 세 가지 기준으로 봅니다.</p>
+<table>
+<thead><tr><th>기준</th><th>매집으로 추정되는 구간</th><th>분산으로 추정되는 구간</th></tr></thead>
+<tbody>
+<tr><td>위치</td><td>큰 하락 뒤</td><td>큰 상승 뒤</td></tr>
+<tr><td>아래의 반응</td><td>아래를 건드리면 빠르게 회복</td><td>아래를 건드릴 때마다 회복이 약해짐</td></tr>
+<tr><td>거래량</td><td>오르는 날 많고 내리는 날 적음</td><td>내리는 날 많음</td></tr>
+</tbody>
+</table>
+<p>아래의 반응은 "받쳐 주는 힘"을 봅니다. 사 모으는 쪽이 있다면 가격이 내려올 때마다 그 자리에서 사들이니 금방 회복합니다. 반대로 팔아 넘기는 쪽이 있다면 받쳐 주는 힘이 점점 줄어, 아래를 건드릴 때마다 회복이 약해지고 저점이 조금씩 낮아집니다.</p>
+<p>거래량은 "누가 더 적극적인가"를 봅니다. 오르는 날 거래가 많고 내리는 날 거래가 적다면, 사는 쪽이 적극적이고 파는 쪽은 소극적이라는 뜻입니다. 반대라면 파는 쪽이 적극적입니다.</p>
+<p>중요한 규칙이 하나 있습니다. 세 가지가 모두 한쪽을 가리킬 때만 판단에 무게를 둡니다. 두 개는 매집, 하나는 분산처럼 보이면, 그건 "아직 모른다"는 뜻입니다.</p>
+
+<h2>차트로 보기</h2>
+<figure id="fig9-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 362" role="img" aria-label="매집형 박스와 분산형 박스">
+<rect x="0" y="0" width="760" height="362" fill="#FFFFFF"/>
+<text x="24" y="30" font-family="sans-serif" font-size="17" font-weight="bold" fill="#1C2126">세 기준을 대 보면 두 박스의 성격이 갈립니다</text>
+<text x="24" y="54" font-family="sans-serif" font-size="13" fill="#626A72">위 = 종가, 아래 = 거래량 (빨강 = 오른 날, 파랑 = 내린 날)</text>
+<line x1="380" x2="380" y1="76" y2="336" stroke="#D6DADD"/>
+<text x="24" y="232" font-family="sans-serif" font-size="11" fill="#626A72">거래량</text>
+<text x="203" y="86" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1C2126">매집 쪽으로 기우는 박스</text>
+<polyline points="60,113.8 86,135.8 112,157.8 138,179.8 164,196.2 190,185.2 216,193.5 242,182.5 268,190.8 294,179.8 320,188 346,177" fill="none" stroke="#1C2126" stroke-width="2" stroke-linejoin="round"/>
+<g fill="#1C2126"><circle cx="60" cy="113.8" r="2.5"/><circle cx="86" cy="135.8" r="2.5"/><circle cx="112" cy="157.8" r="2.5"/><circle cx="138" cy="179.8" r="2.5"/><circle cx="164" cy="196.2" r="2.5"/><circle cx="190" cy="185.2" r="2.5"/><circle cx="216" cy="193.5" r="2.5"/><circle cx="242" cy="182.5" r="2.5"/><circle cx="268" cy="190.8" r="2.5"/><circle cx="294" cy="179.8" r="2.5"/><circle cx="320" cy="188" r="2.5"/><circle cx="346" cy="177" r="2.5"/></g>
+<line x1="48" x2="358" y1="320" y2="320" stroke="#D6DADD"/>
+<rect x="52" y="266" width="16" height="54" fill="#2F5FD0"/>
+<rect x="78" y="266" width="16" height="54" fill="#2F5FD0"/>
+<rect x="104" y="266" width="16" height="54" fill="#2F5FD0"/>
+<rect x="130" y="266" width="16" height="54" fill="#2F5FD0"/>
+<rect x="156" y="275" width="16" height="45" fill="#2F5FD0"/>
+<rect x="182" y="248" width="16" height="72" fill="#C8322F"/>
+<rect x="208" y="293" width="16" height="27" fill="#2F5FD0"/>
+<rect x="234" y="248" width="16" height="72" fill="#C8322F"/>
+<rect x="260" y="293" width="16" height="27" fill="#2F5FD0"/>
+<rect x="286" y="243.5" width="16" height="76.5" fill="#C8322F"/>
+<rect x="312" y="293" width="16" height="27" fill="#2F5FD0"/>
+<rect x="338" y="239" width="16" height="81" fill="#C8322F"/>
+<text x="203" y="348" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#626A72">하락 뒤 · 아래에서 빠른 회복 · 오르는 날 거래량이 큼</text>
+<text x="573" y="86" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1C2126">분산 쪽으로 기우는 박스</text>
+<polyline points="430,197.8 456,173.3 482,148.9 508,124.4 534,114.7 560,124.4 586,117.1 612,126.9 638,119.6 664,129.3 690,122 716,131.8" fill="none" stroke="#1C2126" stroke-width="2" stroke-linejoin="round"/>
+<g fill="#1C2126"><circle cx="430" cy="197.8" r="2.5"/><circle cx="456" cy="173.3" r="2.5"/><circle cx="482" cy="148.9" r="2.5"/><circle cx="508" cy="124.4" r="2.5"/><circle cx="534" cy="114.7" r="2.5"/><circle cx="560" cy="124.4" r="2.5"/><circle cx="586" cy="117.1" r="2.5"/><circle cx="612" cy="126.9" r="2.5"/><circle cx="638" cy="119.6" r="2.5"/><circle cx="664" cy="129.3" r="2.5"/><circle cx="690" cy="122" r="2.5"/><circle cx="716" cy="131.8" r="2.5"/></g>
+<line x1="418" x2="728" y1="320" y2="320" stroke="#D6DADD"/>
+<rect x="422" y="266" width="16" height="54" fill="#2F5FD0"/>
+<rect x="448" y="266" width="16" height="54" fill="#C8322F"/>
+<rect x="474" y="266" width="16" height="54" fill="#C8322F"/>
+<rect x="500" y="266" width="16" height="54" fill="#C8322F"/>
+<rect x="526" y="275" width="16" height="45" fill="#C8322F"/>
+<rect x="552" y="243.5" width="16" height="76.5" fill="#2F5FD0"/>
+<rect x="578" y="284" width="16" height="36" fill="#C8322F"/>
+<rect x="604" y="243.5" width="16" height="76.5" fill="#2F5FD0"/>
+<rect x="630" y="284" width="16" height="36" fill="#C8322F"/>
+<rect x="656" y="239" width="16" height="81" fill="#2F5FD0"/>
+<rect x="682" y="284" width="16" height="36" fill="#C8322F"/>
+<rect x="708" y="234.5" width="16" height="85.5" fill="#2F5FD0"/>
+<text x="573" y="348" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#626A72">상승 뒤 · 아래 회복이 점점 약함 · 내리는 날 거래량이 큼</text>
+</svg>
+<figcaption>그림 9-1. 세 기준으로 본 두 박스</figcaption>
+</figure>
+<p>그림 9-1의 왼쪽부터 보세요. 큰 하락 뒤에 나온 박스입니다. 아래를 건드릴 때마다 다음 날 바로 올라섰고, 저점도 조금씩 높아졌습니다. 아래 거래량을 보면 빨간 막대, 즉 오른 날의 거래량이 파란 막대보다 확연히 큽니다. 세 기준이 모두 매집 쪽을 가리킵니다.</p>
+<p>이번엔 오른쪽을 보세요. 큰 상승 뒤에 나온 박스이고, 저점이 조금씩 낮아지고 있습니다. 거래량은 내린 날의 파란 막대가 더 큽니다. 세 기준이 모두 분산 쪽을 가리킵니다.</p>
+
+<h2>이럴 땐 조심</h2>
+<p>세 기준이 모두 맞아도 틀릴 수 있습니다. 매집으로 보였던 박스가 시장 전체의 급락에 휩쓸려 무너지기도 합니다. 기준은 확률을 높여줄 뿐, 결과를 약속하지 않습니다. 그래서 매집으로 판단하고 들어간다면, 박스 아래가 종가로 깨지는 순간을 "내 추정이 틀렸다"는 신호로 정해 둡니다.</p>
+
+<h2>오늘의 체크</h2>
+<ol class="check">
+  <li id="d9q1">그림 9-1의 오른쪽 박스가 분산 쪽으로 보이는 근거 세 가지는 무엇인가요? <a class="to-answer" href="#d9a1">정답 보기</a></li>
+  <li id="d9q2">큰 하락 뒤의 횡보인데, 내리는 날의 거래량이 계속 더 큽니다. 어떻게 판단해야 할까요? <a class="to-answer" href="#d9a2">정답 보기</a></li>
+  <li id="d9q3">매집으로 보이는 박스에서 샀다면, 판단이 틀렸다고 인정할 기준은 어디에 두면 좋을까요? <a class="to-answer" href="#d9a3">정답 보기</a></li>
+</ol>
+
+<h2>한 줄 정리 + 내일 예고</h2>
+<p>위치, 아래의 반응, 거래량이 모두 한쪽을 가리킬 때만 판단에 무게를 둡니다. 그런데 "큰 하락", "큰 상승"을 말하려면 어디가 진짜 고점이고 저점인지부터 알아야 합니다. 내일은 의미 있는 고점과 잡음을 구분하는 법을 알아봅니다.</p>
+
+<section class="answers" id="day09-answers">
+<h2>Day 9 정답과 해설</h2>
+<div class="answer" id="d9a1">
+  <p class="verdict">1번. 정답: 큰 상승 뒤, 저점이 점점 낮아짐, 내리는 날 거래량이 큼</p>
+  <p>위치는 큰 상승 뒤입니다. 아래를 건드릴 때마다 회복이 약해져 저점이 조금씩 낮아졌습니다. 거래량은 내린 날이 더 커서 파는 쪽이 더 적극적이었다고 추정할 수 있습니다.</p>
+  <p><a class="back" href="#d9q1">문제로 돌아가기</a></p>
+</div>
+<div class="answer" id="d9a2">
+  <p class="verdict">2번. 정답: 아직 모른다고 보고 기다린다</p>
+  <p>위치는 매집 쪽이지만 거래량은 분산 쪽입니다. 기준이 엇갈리면 판단을 미룹니다. 아래의 반응까지 확인하고, 세 가지가 한쪽으로 모일 때까지 기다리는 편이 낫습니다.</p>
+  <p><a class="back" href="#d9q2">문제로 돌아가기</a></p>
+</div>
+<div class="answer" id="d9a3">
+  <p class="verdict">3번. 정답: 박스 아래를 종가로 깨는 가격</p>
+  <p>매집이라는 추정의 핵심은 "아래에서 받쳐 준다"는 것입니다. 박스 아래가 종가로 깨졌다면 받쳐 주는 힘이 없다는 뜻이니 추정이 틀렸다고 봅니다. 장중에 잠깐 깨졌다가 회복하는 경우도 있어, 보통 종가를 기준으로 삼습니다.</p>
+  <p><a class="back" href="#d9q3">문제로 돌아가기</a></p>
+</div>
+</section>
+
+</section>
+</body>
+</html>
