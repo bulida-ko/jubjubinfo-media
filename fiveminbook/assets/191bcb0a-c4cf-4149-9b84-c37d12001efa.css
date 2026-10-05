@@ -1,0 +1,23 @@
+/* 하루 5분 기술적 분석 - EPUB 공통 스타일 */
+
+body { font-family: 'RidiBatang', sans-serif; line-height: 1.8; margin: 0 5%; word-break: keep-all; }
+.series { font-family: 'RidiBatang', sans-serif; font-size: 0.8em; color: #626A72; margin: 0 0 1.5em; }
+.day { font-family: 'RidiBatang', sans-serif; font-weight: bold; font-size: 0.9em; color: #C8322F; margin: 2em 0 0; }
+h1 { font-family: 'RidiBatang', sans-serif; font-size: 1.6em; line-height: 1.35; margin: 0.2em 0 1em; }
+h2 { font-family: 'RidiBatang', sans-serif; font-size: 1.15em; margin: 2em 0 0.6em; page-break-after: avoid; break-after: avoid; }
+p { margin: 0 0 1em; text-indent: 0; }
+.oneline { border-left: 3px solid #C8322F; padding: 0.2em 0 0.2em 0.9em; margin: 0 0 2em; font-size: 1.1em; }
+figure { margin: 1.8em 0; page-break-inside: avoid; break-inside: avoid; }
+figure svg { width: 100%; height: auto; }
+figcaption { font-family: 'RidiBatang', sans-serif; font-size: 0.8em; color: #626A72; margin-top: 0.4em; }
+ol.check li { margin-bottom: 0.7em; }
+a.to-answer, a.back { font-family: 'RidiBatang', sans-serif; font-size: 0.85em; }
+section.answers { page-break-before: always; break-before: page; }
+.answer { margin-bottom: 1.8em; }
+.verdict { font-family: 'RidiBatang', sans-serif; font-weight: bold; margin-bottom: 0.4em; }
+.notice { font-family: 'RidiBatang', sans-serif; font-size: 0.75em; color: #626A72; margin-top: 3em; }
+.formula { font-family: 'RidiBatang', sans-serif; font-weight: bold; text-align: center; background: #F1F3F1; padding: 0.8em; margin: 1.2em 0; }
+.quiz { margin: 0 0 1.8em; }
+table { border-collapse: collapse; width: 100%; font-family: 'RidiBatang', sans-serif; font-size: 0.85em; margin: 1em 0 1.4em; }
+th, td { border: 1px solid #D6DADD; padding: 0.4em 0.5em; text-align: left; vertical-align: top; }
+th { background: #F1F3F1; }
