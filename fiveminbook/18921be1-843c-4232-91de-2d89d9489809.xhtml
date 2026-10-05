@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="ko" xml:lang="ko">
+<head>
+<meta charset="UTF-8"/>
+<title>Day 4. 지표를 많이 쓸수록 헷갈리는 이유</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body epub:type="bodymatter">
+<section epub:type="chapter" id="day04">
+
+<p class="day">Day 4</p>
+<h1>지표를 많이 쓸수록 헷갈리는 이유</h1>
+<p class="oneline">지표 대부분은 같은 가격에서 나온 같은 이야기입니다.</p>
+
+<h2>이런 적 있나요?</h2>
+<p>차트에 이평선, RSI, MACD, 스토캐스틱을 모두 켜 놓고 "신호가 세 개나 겹쳤다"며 안심하고 산 적 있으시죠? 반대로 지표끼리 말이 달라서 어느 쪽을 믿어야 할지 몰라 한참 고민한 적도 있을 겁니다.</p>
+
+<h2>쉽게 이해하기</h2>
+<p>같은 뉴스를 세 신문사가 옮겨 실었다고 해 보겠습니다. 세 신문을 다 읽으면 뭔가 더 확실해진 느낌이 듭니다. 하지만 정보는 여전히 하나입니다. 출처가 같기 때문입니다.</p>
+<p>차트 지표도 비슷합니다. 흔히 쓰는 이동평균선, RSI, MACD, 스토캐스틱은 모두 같은 재료, 바로 종가로 만듭니다. 이동평균선은 종가의 평균이고, RSI는 오른 날과 내린 날의 크기를 비교한 값입니다. MACD는 두 이동평균선의 차이이고, 스토캐스틱은 최근 가격 범위 안에서 오늘 종가가 어디쯤인지를 나타냅니다.</p>
+<p>계산 방법만 다를 뿐, 모두 "최근 가격이 얼마나 올랐고 내렸나"를 다시 표현한 것입니다. 그래서 가격이 크게 떨어지면 여러 지표가 동시에 "과매도(너무 많이 팔렸다)"를 가리키고, 크게 오르면 동시에 "과매수(너무 많이 샀다)"를 가리킵니다. 신호가 여러 개 겹쳐 보여도, 실제로는 같은 정보를 여러 번 본 것입니다.</p>
+<p>지표가 많아지면 생기는 문제가 하나 더 있습니다. 지표끼리 말이 엇갈리면, 우리는 보통 내가 원하는 답을 주는 지표를 믿습니다. 사고 싶을 땐 매수 신호를 보낸 지표가, 팔기 싫을 땐 버티라는 지표가 눈에 들어옵니다. 지표를 많이 켤수록 판단이 객관적이 되는 게 아니라, 마음대로 고를 선택지가 늘어날 뿐입니다.</p>
+
+<h2>차트로 보기</h2>
+<figure id="fig4-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" role="img" aria-label="많이 쓰는 지표들은 모두 같은 종가에서 계산됩니다">
+<rect x="0" y="0" width="760" height="360" fill="#FFFFFF"/>
+<text x="24" y="30" font-family="sans-serif" font-size="17" font-weight="bold" fill="#1C2126">많이 쓰는 지표들은 모두 같은 종가에서 계산됩니다</text>
+<text x="24" y="54" font-family="sans-serif" font-size="13" fill="#626A72">지표는 가격을 다른 방식으로 다시 표현한 것</text>
+<rect x="60" y="178" width="170" height="52" rx="6" fill="#1C2126"/>
+<text x="145" y="210" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">가격 (종가)</text>
+<line x1="230" y1="204" x2="452" y2="118" stroke="#626A72" stroke-width="1.5"/>
+<polygon points="460,118 450,113 450,123" fill="#626A72"/>
+<rect x="460" y="96" width="270" height="44" rx="6" fill="#EEF0EE" stroke="#D6DADD"/>
+<text x="474" y="115" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1C2126">이동평균선</text>
+<text x="474" y="132" font-family="sans-serif" font-size="12" fill="#626A72">종가의 평균</text>
+<line x1="230" y1="204" x2="452" y2="186" stroke="#626A72" stroke-width="1.5"/>
+<polygon points="460,186 450,181 450,191" fill="#626A72"/>
+<rect x="460" y="164" width="270" height="44" rx="6" fill="#EEF0EE" stroke="#D6DADD"/>
+<text x="474" y="183" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1C2126">RSI</text>
+<text x="474" y="200" font-family="sans-serif" font-size="12" fill="#626A72">오른 날과 내린 날의 크기 비교</text>
+<line x1="230" y1="204" x2="452" y2="254" stroke="#626A72" stroke-width="1.5"/>
+<polygon points="460,254 450,249 450,259" fill="#626A72"/>
+<rect x="460" y="232" width="270" height="44" rx="6" fill="#EEF0EE" stroke="#D6DADD"/>
+<text x="474" y="251" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1C2126">MACD</text>
+<text x="474" y="268" font-family="sans-serif" font-size="12" fill="#626A72">두 이동평균선의 차이</text>
+<line x1="230" y1="204" x2="452" y2="322" stroke="#626A72" stroke-width="1.5"/>
+<polygon points="460,322 450,317 450,327" fill="#626A72"/>
+<rect x="460" y="300" width="270" height="44" rx="6" fill="#EEF0EE" stroke="#D6DADD"/>
+<text x="474" y="319" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1C2126">스토캐스틱</text>
+<text x="474" y="336" font-family="sans-serif" font-size="12" fill="#626A72">최근 범위 속 오늘 종가의 위치</text>
+</svg>
+<figcaption>그림 4-1. 네 지표의 공통 재료</figcaption>
+</figure>
+<p>그림 4-1처럼 네 지표는 모두 한 곳에서 출발합니다. 화살표를 거꾸로 따라가면 결국 종가 하나로 모입니다.</p>
+<figure id="fig4-2">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 350" role="img" aria-label="가격이 바닥을 찍은 날 두 지표도 함께 바닥을 찍었습니다">
+<rect x="0" y="0" width="760" height="350" fill="#FFFFFF"/>
+<text x="24" y="30" font-family="sans-serif" font-size="17" font-weight="bold" fill="#1C2126">가격이 바닥을 찍은 날, 두 지표도 함께 바닥을 찍었습니다</text>
+<text x="24" y="54" font-family="sans-serif" font-size="13" fill="#626A72">위 = 주가, 아래 = 같은 기간의 RSI와 스토캐스틱</text>
+<rect x="346" y="92" width="28" height="242" fill="#EEF0EE"/>
+<text x="360" y="84" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1C2126">세 선 모두 같은 날 바닥</text>
+<text x="24" y="100" font-family="sans-serif" font-size="12" fill="#626A72">주가</text>
+<text x="24" y="234" font-family="sans-serif" font-size="12" fill="#626A72">지표 (0~100)</text>
+<line x1="72" x2="600" y1="330" y2="330" stroke="#D6DADD"/>
+<polyline points="72,100.0 120,113.5 168,131.5 216,145.0 264,163.0 312,176.5 360,185.5 408,172.0 456,154.0 504,136.0 552,122.5 600,113.5" fill="none" stroke="#1C2126" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="72,275 120,285 168,294 216,300 264,306 312,310 360,312 408,298 456,282 504,270 552,264 600,260" fill="none" stroke="#2F5FD0" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="72,270 120,288 168,302 216,310 264,318 312,322 360,325 408,300 456,275 504,255 552,245 600,240" fill="none" stroke="#C8322F" stroke-width="2" stroke-linejoin="round"/>
+<text x="612" y="117.5" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1C2126">주가</text>
+<text x="612" y="274" font-family="sans-serif" font-size="12" font-weight="bold" fill="#2F5FD0">RSI</text>
+<text x="612" y="244" font-family="sans-serif" font-size="12" font-weight="bold" fill="#C8322F">스토캐스틱</text>
+</svg>
+<figcaption>그림 4-2. 함께 움직이는 가격과 지표</figcaption>
+</figure>
+<p>그림 4-2는 가격과 두 지표를 위아래로 놓은 것입니다. 먼저 위쪽 주가를 보세요. 한동안 내리다가 가운데에서 바닥을 찍고 반등합니다. 다음으로 아래쪽 RSI와 스토캐스틱을 보세요. 두 지표도 정확히 같은 날 바닥을 찍습니다. "주가, RSI, 스토캐스틱이 모두 바닥을 확인했다"는 말은 사실 "주가가 바닥을 찍었다"는 한 문장과 같습니다.</p>
+
+<h2>이럴 땐 조심</h2>
+<p>지표가 쓸모없다는 뜻은 아닙니다. 지표는 가격의 움직임을 한눈에 보기 쉽게 정리해 주는 도구입니다. 문제는 여러 지표를 겹쳐 놓고 확신이 커졌다고 착각하는 것입니다. 지표는 하나를 깊이 이해하는 편이 낫고, 어떤 지표를 고를지는 Day 45에서 다룹니다.</p>
+<p>또 과거 차트에 딱 맞을 때까지 지표 설정값을 바꾸는 것도 피하세요. 지나간 차트에 맞춘 설정은 앞으로의 차트에는 잘 맞지 않습니다. 반대로 종가가 아닌 다른 재료로 만든 정보도 있습니다. 그게 무엇일지 오늘의 체크 3번에서 생각해 보세요.</p>
+
+<h2>오늘의 체크</h2>
+<ol class="check">
+  <li id="d4q1">RSI, 스토캐스틱, MACD가 같은 날 동시에 매수 신호를 보냈습니다. 새로 확인된 정보는 몇 개일까요? <a class="to-answer" href="#d4a1">정답 보기</a></li>
+  <li id="d4q2">지표 두 개는 매수, 한 개는 매도를 가리킵니다. 이때 가장 흔한 실수는 무엇이고, 어떻게 하는 게 좋을까요? <a class="to-answer" href="#d4a2">정답 보기</a></li>
+  <li id="d4q3">다음 중 종가와 다른 정보를 주는 것은 무엇일까요? ① 이동평균선 ② RSI ③ 거래량 ④ MACD <a class="to-answer" href="#d4a3">정답 보기</a></li>
+</ol>
+
+<h2>한 줄 정리 + 내일 예고</h2>
+<p>지표가 여러 개 겹쳐도 정보가 늘어나는 건 아닙니다. 가격이라는 원본을 먼저 보고, 지표는 거들 뿐입니다. 내일은 Part 0을 돌아보는 복습 Day입니다. 지금까지 배운 네 가지를 차트 퀴즈로 확인해 봅니다.</p>
+
+<section class="answers" id="day04-answers">
+<h2>Day 4 정답과 해설</h2>
+<div class="answer" id="d4a1">
+  <p class="verdict">1번. 정답: 사실상 하나</p>
+  <p>세 지표 모두 같은 종가로 계산하므로, "최근 가격이 많이 떨어졌다가 반등하기 시작했다"는 같은 정보를 세 번 본 셈입니다. 신호가 세 개라고 확률이 세 배가 되지는 않습니다.</p>
+  <p><a class="back" href="#d4q1">문제로 돌아가기</a></p>
+</div>
+<div class="answer" id="d4a2">
+  <p class="verdict">2번. 정답: 원하는 답을 준 지표만 믿는 것</p>
+  <p>지표끼리 엇갈린다는 건 가격 흐름이 아직 애매하다는 뜻일 수 있습니다. 이럴 땐 지표를 더 켜기보다, Day 3의 세 질문(위로 남은 공간, 손절 위치, 지금의 위치)으로 돌아가거나 기다리는 편이 낫습니다.</p>
+  <p><a class="back" href="#d4q2">문제로 돌아가기</a></p>
+</div>
+<div class="answer" id="d4a3">
+  <p class="verdict">3번. 정답: ③ 거래량</p>
+  <p>거래량은 얼마나 많은 주식이 사고팔렸는지를 센 것이라, 종가로 계산하지 않습니다. 가격과 다른 정보를 주기 때문에 가격 지표와 함께 볼 가치가 있습니다. 거래량은 Part 5에서 자세히 다룹니다.</p>
+  <p><a class="back" href="#d4q3">문제로 돌아가기</a></p>
+</div>
+</section>
+
+</section>
+</body>
+</html>
