@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="ko" xml:lang="ko">
+<head>
+<meta charset="UTF-8"/>
+<title>Day 34. 가격과 거래량이 엇갈릴 때</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body epub:type="bodymatter">
+<section epub:type="chapter" id="day34">
+
+<p class="day">Day 34</p>
+<h1>가격과 거래량이 엇갈릴 때</h1>
+<p class="oneline">가격은 오르는데 거래량이 줄면, 사는 힘이 약해지고 있을 수 있습니다.</p>
+
+<h2>이런 적 있나요?</h2>
+<p>가격이 매일 조금씩 새 고점을 쓰길래 "추세가 살아 있다"며 버티고 있었는데, 어느 날 갑자기 힘없이 무너진 적 있으시죠? 가격만 보고 있었다면 이상하게 느껴졌을 겁니다. 거래량을 함께 봤다면 미리 알아챌 수 있었을지도 모릅니다.</p>
+
+<h2>쉽게 이해하기</h2>
+<p>Day 4에서 거래량은 가격과 다른 정보를 준다고 했습니다. 가격이 "어디까지 갔는지"를 알려준다면, 거래량은 "얼마나 많은 사람이 참여했는지"를 알려줍니다.</p>
+<p>자전거로 언덕을 오르는 장면을 떠올려 보세요. 페달을 힘차게 밟으며 오르면 계속 올라갈 수 있습니다. 그런데 페달 밟는 힘은 점점 약해지는데 관성으로만 조금씩 올라가고 있다면, 곧 멈추고 뒤로 밀리기 쉽습니다.</p>
+<p>가격과 거래량의 관계도 같습니다.</p>
+<table>
+<thead><tr><th>가격</th><th>거래량</th><th>읽는 법</th></tr></thead>
+<tbody>
+<tr><td>오름</td><td>늘어남</td><td>사는 힘이 함께하는 건강한 상승</td></tr>
+<tr><td>오름</td><td>줄어듦</td><td>사는 힘이 약해지는 중. 경고</td></tr>
+<tr><td>내림</td><td>늘어남</td><td>파는 힘이 강하다</td></tr>
+<tr><td>내림</td><td>줄어듦</td><td>파는 힘이 약해지는 중. 하락이 느려질 수 있다</td></tr>
+</tbody>
+</table>
+<p>특히 두 번째 경우, 가격은 새 고점을 쓰는데 오르는 날의 거래량이 계속 줄어든다면 "엇갈림"이라고 부릅니다. 높은 가격에 사려는 사람이 점점 줄어든다는 뜻입니다.</p>
+
+<h2>차트로 보기</h2>
+<figure id="fig34-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 340" role="img" aria-label="가격과 거래량의 엇갈림">
+<rect x="0" y="0" width="760" height="340" fill="#FFFFFF"/>
+<text x="24" y="30" font-family="sans-serif" font-size="17" font-weight="bold" fill="#1C2126">가격은 새 고점을 쓰는데 거래량은 줄었고, 결국 가격이 꺾였습니다</text>
+<text x="24" y="54" font-family="sans-serif" font-size="13" fill="#626A72">위 = 종가, 아래 = 거래량 (빨강 = 오른 날, 파랑 = 내린 날)</text>
+<polyline points="72,208.3 104,185 136,190.8 168,161.7 200,173.3 232,144.2 264,150 296,126.7 328,138.3 360,115 392,120.8 424,103.3 456,109.2 488,97.5 520,115 552,138.3 584,161.7 616,185" fill="none" stroke="#1C2126" stroke-width="2" stroke-linejoin="round"/>
+<g fill="#1C2126"><circle cx="72" cy="208.3" r="3"/><circle cx="104" cy="185" r="3"/><circle cx="136" cy="190.8" r="3"/><circle cx="168" cy="161.7" r="3"/><circle cx="200" cy="173.3" r="3"/><circle cx="232" cy="144.2" r="3"/><circle cx="264" cy="150" r="3"/><circle cx="296" cy="126.7" r="3"/><circle cx="328" cy="138.3" r="3"/><circle cx="360" cy="115" r="3"/><circle cx="392" cy="120.8" r="3"/><circle cx="424" cy="103.3" r="3"/><circle cx="456" cy="109.2" r="3"/><circle cx="488" cy="97.5" r="3"/><circle cx="520" cy="115" r="3"/><circle cx="552" cy="138.3" r="3"/><circle cx="584" cy="161.7" r="3"/><circle cx="616" cy="185" r="3"/></g>
+<polyline points="104,175 168,151.7 232,134.2 296,116.7 360,105 424,93.3 488,87.5" fill="none" stroke="#C8322F" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="5 4"/>
+<text x="496" y="85.5" font-family="sans-serif" font-size="12" font-weight="bold" fill="#C8322F">고점은 계속 높아짐</text>
+<line x1="56" y1="320" x2="636" y2="320" stroke="#D6DADD" stroke-width="1"/>
+<text x="24" y="262" font-family="sans-serif" font-size="11" fill="#626A72">거래량</text>
+<rect x="64" y="266" width="16" height="54" fill="#2F5FD0"/>
+<rect x="96" y="257" width="16" height="63" fill="#C8322F"/>
+<rect x="128" y="275" width="16" height="45" fill="#2F5FD0"/>
+<rect x="160" y="258.8" width="16" height="61.2" fill="#C8322F"/>
+<rect x="192" y="279.5" width="16" height="40.5" fill="#2F5FD0"/>
+<rect x="224" y="264.2" width="16" height="55.8" fill="#C8322F"/>
+<rect x="256" y="282.2" width="16" height="37.8" fill="#2F5FD0"/>
+<rect x="288" y="270.5" width="16" height="49.5" fill="#C8322F"/>
+<rect x="320" y="284" width="16" height="36" fill="#2F5FD0"/>
+<rect x="352" y="276.8" width="16" height="43.2" fill="#C8322F"/>
+<rect x="384" y="287.6" width="16" height="32.4" fill="#2F5FD0"/>
+<rect x="416" y="282.2" width="16" height="37.8" fill="#C8322F"/>
+<rect x="448" y="290.3" width="16" height="29.7" fill="#2F5FD0"/>
+<rect x="480" y="287.6" width="16" height="32.4" fill="#C8322F"/>
+<rect x="512" y="275" width="16" height="45" fill="#2F5FD0"/>
+<rect x="544" y="266" width="16" height="54" fill="#2F5FD0"/>
+<rect x="576" y="261.5" width="16" height="58.5" fill="#2F5FD0"/>
+<rect x="608" y="257" width="16" height="63" fill="#2F5FD0"/>
+<polyline points="104,251 168,252.8 232,258.2 296,264.5 360,270.8 424,276.2 488,281.6" fill="none" stroke="#2F5FD0" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="5 4"/>
+<text x="104" y="243" font-family="sans-serif" font-size="12" font-weight="bold" fill="#2F5FD0">오르는 날 거래량은 계속 줄어듦</text>
+</svg>
+<figcaption>그림 34-1. 가격은 오르고 거래량은 줄어드는 엇갈림</figcaption>
+</figure>
+<p>그림 34-1의 위쪽을 보세요. 가격은 오르내리면서도 고점을 계속 높여 갔습니다. 빨간 점선이 고점들을 이은 선입니다. 가격만 보면 상승 추세가 잘 이어지는 것처럼 보입니다.</p>
+<p>이제 아래 거래량을 보세요. 오른 날의 빨간 막대가 갈수록 짧아졌습니다. 파란 점선이 그 흐름입니다. 새 고점을 쓸 때마다 참여하는 사람이 줄어든 것입니다. 결국 마지막 고점 뒤 가격은 꺾였고, 내리는 날 거래량은 오히려 커졌습니다.</p>
+
+<h2>이럴 땐 조심</h2>
+<p>엇갈림은 경고이지 매도 신호가 아닙니다. 거래량이 줄어든 채로 한참 더 오르는 경우도 있습니다. 엇갈림을 봤다면 새로 사는 것을 멈추고, 이미 가지고 있다면 손절 기준(직전 저점)을 다시 확인하는 정도가 알맞습니다. 실제 판단은 Day 12의 순서, 즉 고점 갱신 실패와 직전 저점 이탈로 합니다. 또 연휴 전후처럼 시장 전체의 거래가 줄어드는 시기에는 거래량 감소가 특별한 뜻이 없을 수 있습니다.</p>
+
+<h2>오늘의 체크</h2>
+<ol class="check">
+  <li id="d34q1">가격은 새 고점을 썼는데, 오르는 날의 거래량은 지난번 고점 때보다 줄었습니다. 어떻게 읽어야 할까요? <a class="to-answer" href="#d34a1">정답 보기</a></li>
+  <li id="d34q2">하락 추세 중인데 내리는 날의 거래량이 점점 줄어들고 있습니다. 무엇을 뜻할 수 있을까요? <a class="to-answer" href="#d34a2">정답 보기</a></li>
+  <li id="d34q3">가격도 오르고 오르는 날의 거래량도 늘어나고 있습니다. 어떤 상승일까요? <a class="to-answer" href="#d34a3">정답 보기</a></li>
+</ol>
+
+<h2>한 줄 정리 + 내일 예고</h2>
+<p>가격은 오르는데 거래량이 줄면 사는 힘이 약해지고 있을 수 있습니다. 그렇다면 반대로 거래량이 폭발한 날은 무조건 좋은 신호일까요? 내일은 고점에서 터지는 거래량을 알아봅니다.</p>
+
+<section class="answers" id="day34-answers">
+<h2>Day 34 정답과 해설</h2>
+<div class="answer" id="d34a1">
+  <p class="verdict">1번. 정답: 사는 힘이 약해지고 있다는 경고</p>
+  <p>높은 가격에 사려는 사람이 점점 줄어든다는 뜻입니다. 곧바로 팔 신호는 아니지만, 새로 사는 것은 멈추고 손절 기준을 다시 확인합니다. 고점 갱신 실패나 직전 저점 이탈이 나오는지 지켜봅니다.</p>
+  <p><a class="back" href="#d34q1">문제로 돌아가기</a></p>
+</div>
+<div class="answer" id="d34a2">
+  <p class="verdict">2번. 정답: 파는 힘이 약해지고 있어, 하락이 느려질 수 있다</p>
+  <p>내리는 날 참여하는 사람이 줄어든다는 건 팔 사람이 많이 남지 않았다는 뜻일 수 있습니다. 다만 하락이 끝났다고 단정하면 안 되고, Day 12의 순서(저점 갱신 실패, 직전 고점 돌파)로 확인해야 합니다.</p>
+  <p><a class="back" href="#d34q2">문제로 돌아가기</a></p>
+</div>
+<div class="answer" id="d34a3">
+  <p class="verdict">3번. 정답: 사는 힘이 함께하는 건강한 상승</p>
+  <p>가격이 오를 때 참여하는 사람도 늘어난다면, 높은 가격에도 사려는 사람이 계속 들어오고 있다는 뜻입니다. 추세가 이어질 가능성이 상대적으로 높습니다.</p>
+  <p><a class="back" href="#d34q3">문제로 돌아가기</a></p>
+</div>
+</section>
+
+</section>
+</body>
+</html>
