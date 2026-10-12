@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="ko" xml:lang="ko">
+<head>
+<meta charset="UTF-8"/>
+<title>Day 20. 선물 가격을 만드는 네 가지 재료</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body epub:type="bodymatter">
+<section epub:type="chapter" id="day20">
+
+<p class="day">Day 20</p>
+<h1>선물 가격을 만드는 네 가지 재료</h1>
+<p class="oneline">이론 선물가격은 금리, 보관비용, 중간소득, 보유편익으로 정해져요.</p>
+
+<h2>이런 적 있나요?</h2>
+<p>여름에 과일 가게 아저씨가 수박을 석 달 뒤에 팔기로 미리 약속한다고 생각해 봐요. 수박을 지금 사서 석 달 동안 갖고 있으려면 돈이 묶이고(이자), 냉장 창고 값도 내야 해요. 그러니 석 달 뒤 약속 가격은 지금보다 비싸야겠지요. 그런데 폭염으로 수박이 모자라는 해라면 어떨까요? 지금 수박을 손에 쥐고 있는 것만으로도 든든해서, 오히려 지금 수박이 더 비싸질 수도 있어요.</p>
+
+<h2>쉽게 이해하기</h2>
+<p>현물 가격과 선물 가격이 다른 까닭은 네 가지 재료로 정리할 수 있어요.</p>
+<ul>
+  <li>① 금리(돈을 빌리는 비용): 현물은 지금 돈을 내고 사야 해서 그 돈의 이자가 들어요. 선물은 지금 돈을 다 내지 않아요. 그래서 선물 가격은 이자만큼 비싸져요.</li>
+  <li>② 보관비용: 현물을 가지고 있으면 창고비, 보험료 같은 비용이 들지만 선물은 들지 않아요. 그래서 선물 가격은 보관비용만큼 비싸져요.</li>
+  <li>③ 중간소득: 현물을 가지고 있으면 주식은 배당을, 채권은 이자를 받아요. 선물로는 받지 못하니, 선물 가격은 그만큼 싸져요.</li>
+  <li>④ 보유편익: 물건을 실제로 쓰는 사람에게는, 물건을 직접 가지고 있으면 갑자기 모자랄 때 걱정이 없다는 이득이 있어요. 선물로는 이 이득이 없으니, 선물 가격은 그만큼 싸져요.</li>
+</ul>
+<p>네 가지를 하나의 식으로 쓰면 이렇게 돼요.</p>
+<p class="formula">이론 선물가격 = 현물 가격 + 금리 + 보관비용 − 중간소득 − 보유편익</p>
+<p>Day 15의 주가지수 선물 식(현물 + 이자 − 배당)은 이 식에서 보관비용과 보유편익이 없는 경우예요. 주식은 창고가 필요 없고, 모자라서 쓰지 못할 일도 없으니까요. 반대로 금, 원유, 곡물 같은 상품은 네 가지 재료가 모두 중요해요.</p>
+
+<h2>그림으로 보기</h2>
+<figure id="fig20-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 336" role="img" aria-label="이론 선물가격의 재료">
+<rect x="0" y="0" width="760" height="336" fill="#FFFFFF"/>
+<text x="24" y="30" font-family="sans-serif" font-size="17" font-weight="bold" fill="#1C2126">더하는 재료 두 가지, 빼는 재료 두 가지로 선물 가격이 정해져요</text>
+<text x="24" y="54" font-family="sans-serif" font-size="13" fill="#626A72">가상의 상품으로 본 예시 (단위: 원)</text>
+<line x1="40" y1="290" x2="730" y2="290" stroke="#D6DADD" stroke-width="1"/>
+<rect x="40" y="190.0" width="90" height="100.0" fill="#AEB5BB" fill-opacity="0.9"/>
+<text x="85" y="182" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#AEB5BB">100</text>
+<text x="85" y="308" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1C2126">현물 가격</text>
+<rect x="155" y="140.0" width="90" height="50.0" fill="#C8322F" fill-opacity="0.8"/>
+<text x="200" y="132" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#C8322F">+3</text>
+<text x="200" y="308" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1C2126">① 금리</text>
+<text x="200" y="322" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#626A72">선물 가격을 높여요</text>
+<line x1="130" y1="140" x2="155" y2="140" stroke="#626A72" stroke-width="1" stroke-dasharray="2 2"/>
+<rect x="270" y="106.7" width="90" height="33.3" fill="#C8322F" fill-opacity="0.8"/>
+<text x="315" y="98.6667" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#C8322F">+2</text>
+<text x="315" y="308" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1C2126">② 보관비용</text>
+<text x="315" y="322" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#626A72">선물 가격을 높여요</text>
+<line x1="245" y1="106.667" x2="270" y2="106.667" stroke="#626A72" stroke-width="1" stroke-dasharray="2 2"/>
+<rect x="385" y="106.7" width="90" height="16.7" fill="#2F5FD0" fill-opacity="0.8"/>
+<text x="430" y="141.333" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#2F5FD0">−1</text>
+<text x="430" y="308" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1C2126">③ 중간소득</text>
+<text x="430" y="322" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#626A72">선물 가격을 낮춰요</text>
+<line x1="360" y1="106.667" x2="385" y2="106.667" stroke="#626A72" stroke-width="1" stroke-dasharray="2 2"/>
+<rect x="500" y="123.3" width="90" height="16.7" fill="#2F5FD0" fill-opacity="0.8"/>
+<text x="545" y="158" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#2F5FD0">−1</text>
+<text x="545" y="308" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1C2126">④ 보유편익</text>
+<text x="545" y="322" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#626A72">선물 가격을 낮춰요</text>
+<line x1="475" y1="123.333" x2="500" y2="123.333" stroke="#626A72" stroke-width="1" stroke-dasharray="2 2"/>
+<rect x="615" y="140.0" width="90" height="150.0" fill="#1C2126" fill-opacity="0.9"/>
+<text x="660" y="132" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1C2126">103</text>
+<text x="660" y="308" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1C2126">이론 선물가격</text>
+</svg>
+<figcaption>그림 20-1. 네 가지 재료로 만든 이론 선물가격</figcaption>
+</figure>
+<p>그림 20-1은 지금 100원인 가상의 상품이에요. 금리 3원과 보관비용 2원을 더하고, 중간소득 1원과 보유편익 1원을 빼면 이론 선물가격은 103원이에요. 빨간 막대는 선물 가격을 높이는 재료, 파란 막대는 낮추는 재료예요.</p>
+<p>보관비용이 얼마나 큰 힘을 가질 수 있는지 보여 준 실제 사건이 있어요. 2020년 4월, 코로나19로 원유를 쓰는 곳이 갑자기 줄면서 원유를 보관할 창고가 꽉 찼어요. 그러자 만기가 코앞인 미국 원유 선물의 가격이 사상 처음으로 마이너스(1배럴에 약 −37달러)까지 떨어졌어요. 원유를 받아 봤자 둘 곳이 없으니, 돈을 얹어 주고서라도 넘기려는 사람들이 몰린 거예요.</p>
+
+<h2>이럴 땐 조심</h2>
+<p>실제 선물가격이 이론 선물가격보다 크게 비싸면 선물을 팔고 현물을 사고, 크게 싸면 선물을 사고 현물을 팔아요. 그리고 값의 차이가 사라질 때 반대로 정리해 이익을 얻어요. 이것이 Day 5와 Day 15에서 본 차익거래예요.</p>
+<p>주가지수 선물의 차익거래는 200개 종목을 한꺼번에 사고팔아야 해서 컴퓨터 프로그램이 자동으로 주문해요. 그래서 "프로그램 매매"라고도 불러요. 요즘은 차익거래가 아닌 목적으로 여러 종목을 한꺼번에 사고파는 것까지 함께 프로그램 매매라고 부르고, 한국거래소는 날마다 프로그램 매매가 얼마나 있었는지 발표해요. 뉴스에서 "프로그램 매도가 쏟아져 지수가 내렸다"는 말을 들으면, 이렇게 큰 금융회사들의 컴퓨터가 한꺼번에 주식을 판 것이라고 이해하면 돼요.</p>
+
+<h2>오늘의 체크</h2>
+<ol class="check">
+  <li id="d20q1">선물 가격을 높이는 재료 두 가지와 낮추는 재료 두 가지는 무엇일까요? <a class="to-answer" href="#d20a1">정답 보기</a></li>
+  <li id="d20q2">현물 가격 200원, 금리 6원, 보관비용 4원, 중간소득 2원, 보유편익 3원이에요. 이론 선물가격은 얼마일까요? <a class="to-answer" href="#d20a2">정답 보기</a></li>
+  <li id="d20q3">2020년 4월 미국 원유 선물 가격이 마이너스까지 떨어진 까닭을 네 가지 재료 중 하나로 설명해 보세요. <a class="to-answer" href="#d20a3">정답 보기</a></li>
+</ol>
+
+<h2>한 줄 정리</h2>
+<p>이론 선물가격은 현물 가격에 금리와 보관비용을 더하고, 중간소득과 보유편익을 빼서 정해져요.</p>
+
+<section class="answers" id="day20-answers">
+<h2>Day 20 정답과 해설</h2>
+<div class="answer" id="d20a1">
+  <p class="verdict">1번. 정답: 높이는 재료는 금리와 보관비용, 낮추는 재료는 중간소득과 보유편익</p>
+  <p>현물을 가지고 있으면 드는 비용(금리, 보관비용)은 선물 가격을 높이고, 현물을 가지고 있어서 얻는 이득(중간소득, 보유편익)은 선물 가격을 낮춰요.</p>
+  <p><a class="back" href="#d20q1">문제로 돌아가기</a></p>
+</div>
+<div class="answer" id="d20a2">
+  <p class="verdict">2번. 정답: 205원</p>
+  <p>200 + 6 + 4 − 2 − 3 = 205원이에요.</p>
+  <p><a class="back" href="#d20q2">문제로 돌아가기</a></p>
+</div>
+<div class="answer" id="d20a3">
+  <p class="verdict">3번. 정답: 보관비용이 엄청나게 커졌기 때문</p>
+  <p>원유를 보관할 창고가 꽉 차서 원유를 받아도 둘 곳이 없어졌어요. 보관비용이 끝없이 커지자, 돈을 얹어 주고서라도 넘기려는 사람이 몰려 가격이 마이너스가 됐어요.</p>
+  <p><a class="back" href="#d20q3">문제로 돌아가기</a></p>
+</div>
+</section>
+
+</section>
+</body>
+</html>
