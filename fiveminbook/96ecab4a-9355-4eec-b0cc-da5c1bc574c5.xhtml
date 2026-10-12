@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="ko" xml:lang="ko">
+<head>
+<meta charset="UTF-8"/>
+<title>Day 35. 고점에서 터지는 거래량</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body epub:type="bodymatter">
+<section epub:type="chapter" id="day35">
+
+<p class="day">Day 35</p>
+<h1>고점에서 터지는 거래량</h1>
+<p class="oneline">거래량은 싸움이 컸다는 뜻이지, 매수가 이겼다는 뜻이 아닙니다.</p>
+
+<h2>이런 적 있나요?</h2>
+<p>크게 오르던 종목에서 어느 날 거래량이 평소의 몇 배로 터지는 걸 보고 "이제 진짜 시작"이라며 샀는데, 그날이 고점이었던 적 있으시죠? 거래량이 크다는 사실만 보고 그 속을 들여다보지 않았기 때문입니다.</p>
+
+<h2>쉽게 이해하기</h2>
+<p>거래량은 사고판 주식의 수입니다. 거래 한 건에는 언제나 산 사람과 판 사람이 있으니, 거래량이 폭발했다는 건 사는 사람도 많았지만 파는 사람도 그만큼 많았다는 뜻입니다. Day 4 정답에서 본 것처럼 거래량은 "싸움이 컸다"는 신호일 뿐, 누가 이겼는지는 알려주지 않습니다.</p>
+<p>누가 이겼는지는 두 가지로 봅니다. 하나는 위치입니다. 오랜 박스를 막 벗어나는 자리에서 터진 거래량(Day 24)과, 이미 크게 오른 끝에서 터진 거래량은 뜻이 다릅니다. 큰 상승 끝에서는 싸게 산 사람들이 이익을 챙기려고 한꺼번에 팔 가능성이 큽니다.</p>
+<p>다른 하나는 캔들 모양입니다. 거래량이 폭발한 날 고가 근처에서 마감했다면 사는 쪽이 이긴 것이고, 긴 윗꼬리를 남기고 밀려 마감했다면 파는 쪽이 이긴 것입니다(Day 1).</p>
+<p>시장 입구에 사람이 엄청나게 몰렸다고 해 보겠습니다. 모두 사러 온 사람인지, 그동안 쌓아 둔 물건을 팔러 온 사람인지는 사람 수만 봐서는 알 수 없습니다. 장이 끝났을 때 가격이 어디서 멈췄는지를 봐야 압니다.</p>
+
+<h2>차트로 보기</h2>
+<figure id="fig35-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 340" role="img" aria-label="고점의 거래량 폭발">
+<rect x="0" y="0" width="760" height="340" fill="#FFFFFF"/>
+<text x="24" y="30" font-family="sans-serif" font-size="17" font-weight="bold" fill="#1C2126">큰 상승 끝에 거래량이 폭발하며 긴 윗꼬리가 달렸고, 그날이 고점이었습니다</text>
+<text x="24" y="54" font-family="sans-serif" font-size="13" fill="#626A72">위 = 종가와 폭발한 날의 캔들, 아래 = 거래량 (점선 = 평소 거래량)</text>
+<polyline points="72,210 116,200 160,192 204,182 248,170 292,156 336,140 380,122" fill="none" stroke="#1C2126" stroke-width="2" stroke-linejoin="round"/>
+<g fill="#1C2126"><circle cx="72" cy="210" r="3"/><circle cx="116" cy="200" r="3"/><circle cx="160" cy="192" r="3"/><circle cx="204" cy="182" r="3"/><circle cx="248" cy="170" r="3"/><circle cx="292" cy="156" r="3"/><circle cx="336" cy="140" r="3"/><circle cx="380" cy="122" r="3"/></g>
+<line x1="424" y1="86" x2="424" y2="114" stroke="#C8322F" stroke-width="2"/>
+<rect x="415" y="108.0" width="18" height="2.0" fill="#C8322F"/>
+<polyline points="424,108 468,118 512,130 556,138 600,148" fill="none" stroke="#1C2126" stroke-width="2" stroke-linejoin="round" stroke-dasharray="5 4"/>
+<g fill="#1C2126"><circle cx="468" cy="118" r="3"/><circle cx="512" cy="130" r="3"/><circle cx="556" cy="138" r="3"/><circle cx="600" cy="148" r="3"/></g>
+<text x="440" y="90" font-family="sans-serif" font-size="12" font-weight="bold" fill="#C8322F">고가 162원 → 종가 151원</text>
+<line x1="56" y1="320" x2="620" y2="320" stroke="#D6DADD" stroke-width="1"/>
+<line x1="56" y1="300.5" x2="620" y2="300.5" stroke="#626A72" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="24" y="262" font-family="sans-serif" font-size="11" fill="#626A72">거래량</text>
+<rect x="63" y="303.5" width="18" height="16.5" fill="#AEB5BB"/>
+<rect x="107" y="302" width="18" height="18" fill="#AEB5BB"/>
+<rect x="151" y="302.6" width="18" height="17.4" fill="#AEB5BB"/>
+<rect x="195" y="301.4" width="18" height="18.6" fill="#AEB5BB"/>
+<rect x="239" y="300.5" width="18" height="19.5" fill="#AEB5BB"/>
+<rect x="283" y="299" width="18" height="21" fill="#AEB5BB"/>
+<rect x="327" y="297.5" width="18" height="22.5" fill="#AEB5BB"/>
+<rect x="371" y="296" width="18" height="24" fill="#AEB5BB"/>
+<rect x="415" y="245" width="18" height="75" fill="#C8322F"/>
+<rect x="459" y="284" width="18" height="36" fill="#AEB5BB"/>
+<rect x="503" y="293" width="18" height="27" fill="#AEB5BB"/>
+<rect x="547" y="296" width="18" height="24" fill="#AEB5BB"/>
+<rect x="591" y="299" width="18" height="21" fill="#AEB5BB"/>
+<text x="440" y="249" font-family="sans-serif" font-size="12" font-weight="bold" fill="#C8322F">평소의 약 4배</text>
+</svg>
+<figcaption>그림 35-1. 큰 상승 끝에서 터진 거래량</figcaption>
+</figure>
+<p>그림 35-1의 가격은 100원에서 144원까지 쉬지 않고 올랐습니다. 그리고 빨간 캔들의 날, 거래량이 평소의 약 4배로 폭발했습니다.</p>
+<p>이제 그날의 캔들을 보세요. 장중에 162원까지 올랐지만 151원으로 밀려 마감해, 긴 윗꼬리가 남았습니다. 큰 상승 끝이라는 위치와 긴 윗꼬리라는 모양이 모두 파는 쪽의 승리를 가리킵니다. 실제로 이날이 고점이 되었고, 다음 날부터 가격은 흘러내렸습니다.</p>
+
+<h2>이럴 땐 조심</h2>
+<p>고점에서 터진 거래량이 곧바로 하락을 뜻하는 건 아닙니다. 폭발한 날 뒤로 며칠 동안 그날의 저가를 지키며 버틴다면, 파는 물량을 소화하고 한 단계 더 오르는 경우도 있습니다. 판단 기준은 그날의 저가입니다. 다음 며칠 안에 종가가 그 아래로 내려가면 파는 쪽이 이긴 것으로 보고, 가지고 있다면 정리를 검토합니다.</p>
+
+<h2>오늘의 체크</h2>
+<ol class="check">
+  <li id="d35q1">큰 상승 뒤 평소의 5배 거래량이 터졌고, 긴 윗꼬리가 달렸습니다. 어떻게 읽어야 할까요? <a class="to-answer" href="#d35a1">정답 보기</a></li>
+  <li id="d35q2">같은 5배 거래량이지만, 몇 달 동안의 박스를 막 벗어나는 날이었고 고가 근처에서 마감했습니다. 첫 번째 경우와 무엇이 다를까요? <a class="to-answer" href="#d35a2">정답 보기</a></li>
+  <li id="d35q3">큰 상승 끝에 거래량이 폭발한 날이 있었습니다. 그 뒤 며칠 동안 무엇을 기준으로 판단하면 좋을까요? <a class="to-answer" href="#d35a3">정답 보기</a></li>
+</ol>
+
+<h2>한 줄 정리 + 내일 예고</h2>
+<p>거래량은 싸움의 크기일 뿐, 승자는 위치와 캔들 모양으로 봅니다. 큰 상승 끝의 폭발적인 거래량은 경고입니다. 그렇다면 하락 중에 터지는 거래량은 어떻게 읽을까요? 내일은 하락 중 거래량을 알아봅니다.</p>
+
+<section class="answers" id="day35-answers">
+<h2>Day 35 정답과 해설</h2>
+<div class="answer" id="d35a1">
+  <p class="verdict">1번. 정답: 파는 쪽이 이겼을 가능성이 큰 경고</p>
+  <p>큰 상승 끝이라 이익을 챙기려는 매도가 몰리기 쉬운 위치이고, 긴 윗꼬리는 위에서 파는 쪽이 급했다는 기록입니다. 새로 사지 않고, 가지고 있다면 그날의 저가를 기준으로 삼습니다.</p>
+  <p><a class="back" href="#d35q1">문제로 돌아가기</a></p>
+</div>
+<div class="answer" id="d35a2">
+  <p class="verdict">2번. 정답: 위치와 캔들 모양이 모두 사는 쪽을 가리킨다</p>
+  <p>오랜 박스를 막 벗어나는 자리는 쌓인 매도를 소화하며 올라서는 위치이고, 고가 근처 마감은 끝까지 사는 쪽이 급했다는 뜻입니다. 같은 거래량이라도 Day 24의 "거래량이 실린 돌파"에 가깝습니다.</p>
+  <p><a class="back" href="#d35q2">문제로 돌아가기</a></p>
+</div>
+<div class="answer" id="d35a3">
+  <p class="verdict">3번. 정답: 거래량이 폭발한 날의 저가</p>
+  <p>며칠 동안 그날의 저가를 지키면 파는 물량을 소화했을 수 있습니다. 종가가 그 아래로 내려가면 그날 산 사람들이 모두 손실을 보게 되어 매도가 이어지기 쉬우니, 파는 쪽이 이긴 것으로 봅니다.</p>
+  <p><a class="back" href="#d35q3">문제로 돌아가기</a></p>
+</div>
+</section>
+
+</section>
+</body>
+</html>
