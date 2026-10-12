@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="ko" xml:lang="ko">
+<head>
+<meta charset="UTF-8"/>
+<title>Day 19. 1년 뒤 달러는 얼마가 공평할까</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body epub:type="bodymatter">
+<section epub:type="chapter" id="day19">
+
+<p class="day">Day 19</p>
+<h1>1년 뒤 달러는 얼마가 공평할까</h1>
+<p class="oneline">달러 선물 가격은 지금 환율에 두 나라의 이자 차이를 반영한 값이에요.</p>
+
+<h2>이런 적 있나요?</h2>
+<p>친구와 1년 뒤에 게임 카드를 바꾸기로 했어요. 그런데 내 카드는 1년 동안 가지고 있으면 덤으로 스티커 한 장이 생기고, 친구 카드는 스티커가 두 장 생긴대요. 그럼 1년 뒤 바꿀 때는 친구 쪽이 조금 덜 받아야 공평하겠지요? 친구는 1년 동안 스티커를 더 받았으니까요. 달러 선물의 가격도 이런 원리로 정해져요.</p>
+
+<h2>쉽게 이해하기</h2>
+<p>선물로 거래하려면 선물 가격이 어떻게 정해지는지 알아야 해요. Day 15에서 주가지수 선물은 "현물 가격 + 이자 − 배당"이라고 배웠어요. 달러 선물도 원리는 같아요. 다만 배당 대신 "달러를 가지고 있으면 받는 달러 이자"가 들어가요.</p>
+<p>1년 뒤에 1달러가 필요하다고 해 볼게요. 방법은 두 가지예요.</p>
+<ul>
+  <li>방법 A: 지금 원화로 달러를 사서 1년 동안 달러로 예금해 둬요. 그러면 달러 이자를 받아요.</li>
+  <li>방법 B: 원화는 그대로 1년 동안 원화로 예금하고, 달러는 1년 뒤에 사기로 지금 선물로 약속해요. 선물은 지금 돈을 다 내지 않으니(Day 2의 증거금만 내요), 그 돈은 원화 이자를 받아요.</li>
+</ul>
+<p>어느 쪽을 골라도 1년 뒤 결과가 같아야 공평해요. 한쪽이 더 유리하면 모두 그쪽으로 몰려서 값이 바뀌기 때문이에요(Day 15의 일물일가). 그래서 선물 가격은 두 나라 이자의 차이로 정해져요.</p>
+<p class="formula">1년 뒤 선물 가격 ≈ 현물 환율 × (1 + 원화 금리 − 달러 금리)</p>
+
+<h2>그림으로 보기</h2>
+<figure id="fig19-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 330" role="img" aria-label="달러 선물의 공평한 가격">
+<rect x="0" y="0" width="760" height="330" fill="#FFFFFF"/>
+<text x="24" y="30" font-family="sans-serif" font-size="17" font-weight="bold" fill="#1C2126">지금 달러로 바꾸든, 원화로 두고 선물로 사든, 1년 뒤 결과가 같아야 공평해요</text>
+<text x="24" y="54" font-family="sans-serif" font-size="13" fill="#626A72">현물 1,350원 · 원화 금리 연 2.5% · 달러 금리 연 3.5%로 가정</text>
+<text x="110" y="84" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#626A72">지금</text>
+<text x="640" y="84" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#626A72">1년 뒤</text>
+<rect x="30" y="150" width="160" height="56" rx="8" fill="#F1F3F1" stroke="#D6DADD"/><text x="110" y="183.5" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1C2126">원화 1,350원</text>
+<text x="290" y="162" font-family="sans-serif" font-size="12" font-weight="bold" fill="#2F5FD0">방법 A: 지금 달러로 바꿔 예금</text>
+<rect x="280" y="92" width="170" height="50" rx="8" fill="#E9EEF9" stroke="#D6DADD"/><text x="365" y="113" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#2F5FD0">1달러</text><text x="365" y="132" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#626A72">달러 이자 3.5%</text>
+<rect x="540" y="92" width="200" height="50" rx="8" fill="#E9EEF9" stroke="#D6DADD"/><text x="640" y="122.5" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2F5FD0">1.035달러</text>
+<line x1="192" y1="165" x2="278" y2="122" stroke="#2F5FD0" stroke-width="2"/><polygon points="278,122 271.5,129.6 268.0,122.6" fill="#2F5FD0"/>
+<line x1="452" y1="117" x2="538" y2="117" stroke="#2F5FD0" stroke-width="2"/><polygon points="538,117 528.8,120.9 528.8,113.1" fill="#2F5FD0"/>
+<text x="290" y="202" font-family="sans-serif" font-size="12" font-weight="bold" fill="#C8322F">방법 B: 원화로 예금 + 1년 뒤 달러를 선물로 사기</text>
+<rect x="280" y="214" width="170" height="50" rx="8" fill="#FBE9E9" stroke="#D6DADD"/><text x="365" y="235" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#C8322F">1,383.75원</text><text x="365" y="254" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#626A72">원화 이자 2.5%</text>
+<rect x="540" y="214" width="200" height="50" rx="8" fill="#FBE9E9" stroke="#D6DADD"/><text x="640" y="244.5" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#C8322F">선물로 1.035달러 사기</text>
+<line x1="192" y1="192" x2="278" y2="236" stroke="#C8322F" stroke-width="2"/><polygon points="278,236 268.0,235.3 271.6,228.3" fill="#C8322F"/>
+<line x1="452" y1="239" x2="538" y2="239" stroke="#C8322F" stroke-width="2"/><polygon points="538,239 528.8,242.9 528.8,235.1" fill="#C8322F"/>
+<rect x="200" y="282" width="360" height="34" rx="8" fill="#EEF0EE"/>
+<text x="380" y="304" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1C2126">두 방법이 같으려면: 선물 1달러 ≈ 1,337원 (현물보다 싸요)</text>
+</svg>
+<figcaption>그림 19-1. 1년 뒤 달러를 얻는 두 가지 방법</figcaption>
+</figure>
+<p>그림 19-1은 지금 환율이 1,350원이고, 원화 이자가 1년에 2.5%, 달러 이자가 3.5%라고 할 때예요. 방법 A로 지금 1달러를 사서 예금하면 1년 뒤 1.035달러가 돼요. 방법 B로 1,350원을 원화로 예금하면 1년 뒤 1,383.75원이 돼요. 이 돈으로 1.035달러를 사야 두 방법이 같아지니, 1달러의 선물 가격은 약 1,337원(1,383.75 ÷ 1.035)이어야 해요. 간단한 식으로 계산해도 1,350 × (1 + 2.5% − 3.5%) = 약 1,336.5원으로 거의 같아요.</p>
+<p>재미있는 점은 선물 가격이 지금 환율보다 싸다는 거예요. 달러 이자가 원화 이자보다 높아서, 달러를 미리 가진 쪽(방법 A)이 이자를 더 받기 때문이에요. 카드 이야기에서 스티커를 더 받는 친구가 나중에 조금 덜 받아야 공평했던 것과 같아요. 반대로 원화 이자가 달러 이자보다 높을 때는 선물 가격이 지금 환율보다 비싸요.</p>
+
+<h2>이럴 땐 조심</h2>
+<p>선물 가격이 지금 환율보다 싸다고 "1년 뒤 환율이 내릴 거라는 뜻"이라고 생각하면 안 돼요. 선물 가격은 앞날의 예상이 아니라 두 나라의 이자 차이를 반영한 공평한 값이에요. 1년 뒤 실제 환율은 그때의 경제 상황에 따라 얼마든지 달라질 수 있어요.</p>
+<p>또 금리는 늘 바뀌어요. 이 그림의 금리는 2026년 기준(한국 기준금리 2.5%, 미국 3.5% 안팎)에 맞춘 예시라서, 금리가 바뀌면 선물과 현물의 차이도 함께 바뀌어요. 실제 선물 가격이 이 공평한 값에서 벗어나면, 그 차이를 노리는 차익거래자들이 거래해서 다시 제자리로 돌려놓아요.</p>
+
+<h2>오늘의 체크</h2>
+<ol class="check">
+  <li id="d19q1">1년 뒤에 1달러가 필요할 때, 두 가지 방법은 무엇이고 왜 결과가 같아야 할까요? <a class="to-answer" href="#d19a1">정답 보기</a></li>
+  <li id="d19q2">지금 달러 선물 가격이 현물 환율보다 싸게 거래되는 까닭은 무엇일까요? <a class="to-answer" href="#d19a2">정답 보기</a></li>
+  <li id="d19q3">만약 원화 금리가 연 4%, 달러 금리가 연 2%라면, 현물 환율 1,350원일 때 1년 뒤 선물 가격은 대략 얼마일까요? <a class="to-answer" href="#d19a3">정답 보기</a></li>
+</ol>
+
+<h2>한 줄 정리</h2>
+<p>달러 선물 가격은 지금 환율에 두 나라의 이자 차이를 반영한 공평한 값이에요. 앞날의 환율을 맞히는 예상이 아니에요.</p>
+
+<section class="answers" id="day19-answers">
+<h2>Day 19 정답과 해설</h2>
+<div class="answer" id="d19a1">
+  <p class="verdict">1번. 정답: 지금 달러로 바꿔 예금하는 방법과, 원화로 예금하고 1년 뒤 달러를 선물로 사는 방법. 한쪽이 유리하면 모두 그쪽으로 몰려 값이 바뀌기 때문</p>
+  <p>두 방법 모두 1년 뒤 달러를 갖게 되니, 결과가 다르면 공짜 돈벌이가 생겨요. 사람들이 몰리면서 선물 가격이 두 방법을 같게 만드는 값으로 맞춰져요.</p>
+  <p><a class="back" href="#d19q1">문제로 돌아가기</a></p>
+</div>
+<div class="answer" id="d19a2">
+  <p class="verdict">2번. 정답: 달러 이자가 원화 이자보다 높아서, 달러를 미리 가진 쪽이 이자를 더 받기 때문</p>
+  <p>미리 달러를 가진 사람이 이자를 더 받으니, 1년 뒤 달러를 사기로 약속하는 값은 그만큼 싸야 공평해요. 환율이 내릴 거라는 예상과는 상관없어요.</p>
+  <p><a class="back" href="#d19q2">문제로 돌아가기</a></p>
+</div>
+<div class="answer" id="d19a3">
+  <p class="verdict">3번. 정답: 약 1,377원</p>
+  <p>1,350 × (1 + 4% − 2%) = 1,350 × 1.02 = 1,377원이에요. 원화 이자가 더 높으니 이번에는 선물 가격이 현물보다 비싸요.</p>
+  <p><a class="back" href="#d19q3">문제로 돌아가기</a></p>
+</div>
+</section>
+
+</section>
+</body>
+</html>
