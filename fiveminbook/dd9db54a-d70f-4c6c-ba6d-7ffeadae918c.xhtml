@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="ko" xml:lang="ko">
+<head>
+<meta charset="UTF-8"/>
+<title>Day 39. 개인이 불리한 구간</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body epub:type="bodymatter">
+<section epub:type="chapter" id="day39">
+
+<p class="day">Day 39</p>
+<h1>개인이 불리한 구간</h1>
+<p class="oneline">뉴스가 뜨고 모두가 사는 날은 보통 사기 가장 어려운 날입니다.</p>
+
+<h2>이런 적 있나요?</h2>
+<p>아침에 좋은 뉴스가 떴고, 종목 게시판이 들썩이고, 가격이 크게 뛰어 시작한 날 "지금이라도 타야 한다"며 산 적 있으시죠? 그리고 며칠 뒤, 그날이 가장 비싼 날이었다는 걸 알게 됩니다.</p>
+
+<h2>쉽게 이해하기</h2>
+<p>뉴스가 뜨고 모두가 사는 날은 개인 투자자에게 가장 불리한 날인 경우가 많습니다. 이유는 세 가지입니다.</p>
+<ul>
+  <li>정보가 가장 늦게 도착합니다. 뉴스가 모두에게 알려졌을 때는, 먼저 알았거나 먼저 움직인 사람들이 이미 사 둔 뒤입니다.</li>
+  <li>가격이 가장 비쌉니다. 갭 상승(전날보다 크게 뛰어 시작)으로 이미 기대가 가격에 반영돼 있어, 손절 기준이 될 만한 자리가 한참 아래에 있습니다(Day 3).</li>
+  <li>감정이 가장 흔들립니다. "나만 놓칠 것 같다"는 조급함이 판단을 대신합니다.</li>
+</ul>
+<p>줄 선 맛집을 떠올려 보세요. 방송에 나온 다음 날 가면 줄은 가장 길고, 가격은 올라 있고, 맛은 그대로입니다. 그 가게를 가장 잘 누린 사람은 방송 전에 조용히 다니던 단골입니다.</p>
+<p>큰 거래량이 터진 그날, 산 사람만큼 판 사람도 있었다는 걸 기억하세요(Day 35). 조용할 때 미리 사 둔 사람들에게는 모두가 몰려드는 그날이 가장 좋은 파는 날입니다.</p>
+
+<h2>차트로 보기</h2>
+<figure id="fig39-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 340" role="img" aria-label="뉴스가 뜬 날의 함정">
+<rect x="0" y="0" width="760" height="340" fill="#FFFFFF"/>
+<text x="24" y="30" font-family="sans-serif" font-size="17" font-weight="bold" fill="#1C2126">가장 많은 사람이 산 날이 가장 비싸게 산 날이었습니다</text>
+<text x="24" y="54" font-family="sans-serif" font-size="13" fill="#626A72">위 = 종가와 뉴스 당일 캔들, 아래 = 거래량</text>
+<polyline points="72,201.6 108,197.9 144,201.6 180,194.2 216,197.9 252,190.5 288,194.2 324,186.8 360,190.5 396,183.2" fill="none" stroke="#1C2126" stroke-width="2" stroke-linejoin="round"/>
+<g fill="#1C2126"><circle cx="72" cy="201.6" r="3"/><circle cx="108" cy="197.9" r="3"/><circle cx="144" cy="201.6" r="3"/><circle cx="180" cy="194.2" r="3"/><circle cx="216" cy="197.9" r="3"/><circle cx="252" cy="190.5" r="3"/><circle cx="288" cy="194.2" r="3"/><circle cx="324" cy="186.8" r="3"/><circle cx="360" cy="190.5" r="3"/><circle cx="396" cy="183.2" r="3"/></g>
+<line x1="432" y1="98.4211" x2="432" y2="138.947" stroke="#C8322F" stroke-width="2"/><rect x="424" y="124.211" width="16" height="3.68421" fill="#C8322F"/>
+<polyline points="432,124.2 468,135.3 504,150 540,164.7 576,175.8 612,183.2" fill="none" stroke="#1C2126" stroke-width="2" stroke-linejoin="round" stroke-dasharray="5 4"/>
+<g fill="#1C2126"><circle cx="468" cy="135.3" r="3"/><circle cx="504" cy="150" r="3"/><circle cx="540" cy="164.7" r="3"/><circle cx="576" cy="175.8" r="3"/><circle cx="612" cy="183.2" r="3"/></g>
+<line x1="56" y1="320" x2="632" y2="320" stroke="#D6DADD" stroke-width="1"/>
+<text x="24" y="262" font-family="sans-serif" font-size="11" fill="#626A72">거래량</text>
+<rect x="64" y="313.4" width="16" height="6.6" fill="#8FA9E8"/>
+<rect x="100" y="312.3" width="16" height="7.7" fill="#8FA9E8"/>
+<rect x="136" y="312.96" width="16" height="7.04" fill="#8FA9E8"/>
+<rect x="172" y="311.2" width="16" height="8.8" fill="#8FA9E8"/>
+<rect x="208" y="312.3" width="16" height="7.7" fill="#8FA9E8"/>
+<rect x="244" y="310.1" width="16" height="9.9" fill="#8FA9E8"/>
+<rect x="280" y="311.64" width="16" height="8.36" fill="#8FA9E8"/>
+<rect x="316" y="309.44" width="16" height="10.56" fill="#8FA9E8"/>
+<rect x="352" y="310.76" width="16" height="9.24" fill="#8FA9E8"/>
+<rect x="388" y="309" width="16" height="11" fill="#8FA9E8"/>
+<rect x="424" y="254" width="16" height="66" fill="#C8322F"/>
+<rect x="460" y="287" width="16" height="33" fill="#AEB5BB"/>
+<rect x="496" y="295.8" width="16" height="24.2" fill="#AEB5BB"/>
+<rect x="532" y="300.2" width="16" height="19.8" fill="#AEB5BB"/>
+<rect x="568" y="304.6" width="16" height="15.4" fill="#AEB5BB"/>
+<rect x="604" y="306.8" width="16" height="13.2" fill="#AEB5BB"/>
+<circle cx="234" cy="168.421" r="11" fill="#2F5FD0"/><text x="234" y="173.421" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF">①</text>
+<text x="234" y="152.421" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1C2126">① 조용할 때 누군가 샀다</text>
+<circle cx="408" cy="98.4211" r="11" fill="#C8322F"/><text x="408" y="103.421" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF">②</text>
+<text x="392" y="102.421" text-anchor="end" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1C2126">② 뉴스 뜬 날 모두가 샀다</text>
+<circle cx="576" cy="151.789" r="11" fill="#1C2126"/><text x="576" y="156.789" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF">③</text>
+<text x="576" y="133.789" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1C2126">③ 그 뒤</text>
+</svg>
+<figcaption>그림 39-1. 뉴스 전과 후의 가격과 거래량</figcaption>
+</figure>
+<p>그림 39-1에서 먼저 ①을 보세요. 뉴스가 뜨기 전, 가격은 조용히 조금씩 올랐고 거래량도 서서히 늘었습니다. 누군가는 이때 사고 있었습니다.</p>
+<p>다음으로 ②를 보세요. 뉴스가 뜬 날 가격은 크게 뛰어 시작했고, 거래량은 평소의 여섯 배가 넘게 터졌습니다. 하지만 긴 윗꼬리를 남겼습니다. 마지막으로 ③을 보세요. 그 뒤 가격은 뉴스 당일의 시가 아래로 흘러내렸습니다. 가장 많은 사람이 산 날이 가장 비싸게 산 날이었습니다.</p>
+
+<h2>이럴 땐 조심</h2>
+<p>모든 뉴스 급등이 고점이 되는 건 아닙니다. 회사의 가치를 크게 바꾸는 뉴스라면 한동안 더 오르기도 합니다. 다만 그런 경우에도 뉴스 당일 추격 매수는 손익의 균형이 나쁩니다. 사고 싶다면 며칠 기다려, 뉴스 당일의 저가를 지키며 쉬는 자리(Day 29의 눌림목)를 찾는 편이 낫습니다. 좋은 뉴스에도 가격이 빠지는 경우는 Day 70에서 다룹니다.</p>
+
+<h2>오늘의 체크</h2>
+<ol class="check">
+  <li id="d39q1">좋은 뉴스로 갭 상승하고 거래량이 폭발한 날, 사고 싶어졌습니다. 사기 전에 무엇을 확인해야 할까요? <a class="to-answer" href="#d39a1">정답 보기</a></li>
+  <li id="d39q2">뉴스가 뜨고 모두가 사는 날이 개인에게 불리한 세 가지 이유는 무엇인가요? <a class="to-answer" href="#d39a2">정답 보기</a></li>
+  <li id="d39q3">그림 39-1에서 뉴스 전 ① 구간의 거래량은 어떻게 움직였나요? 그것은 무엇을 뜻할 수 있을까요? <a class="to-answer" href="#d39a3">정답 보기</a></li>
+</ol>
+
+<h2>한 줄 정리 + 내일 예고</h2>
+<p>모두가 사는 날은 가장 비싸고 가장 늦은 날일 때가 많습니다. 조급함 대신 손익의 균형을 봅니다. 내일은 Part 5를 돌아보는 복습 Day입니다. 거래량의 엇갈림, 고점과 하락 중 거래량, 받쳐 주는 캔들, 눌림목의 거래량을 차트 퀴즈로 확인합니다.</p>
+
+<section class="answers" id="day39-answers">
+<h2>Day 39 정답과 해설</h2>
+<div class="answer" id="d39a1">
+  <p class="verdict">1번. 정답: 손절 기준까지의 거리와 손익의 균형</p>
+  <p>갭 상승한 날은 손절 기준이 될 자리가 한참 아래에 있어, 틀렸을 때 잃는 폭이 큽니다. Day 3의 세 질문으로 균형을 따져 보고, 나쁘다면 추격하지 않고 며칠 뒤 눌림을 기다립니다.</p>
+  <p><a class="back" href="#d39q1">문제로 돌아가기</a></p>
+</div>
+<div class="answer" id="d39a2">
+  <p class="verdict">2번. 정답: 정보가 늦고, 가격이 비싸고, 감정이 흔들린다</p>
+  <p>뉴스가 모두에게 알려졌을 때는 먼저 움직인 사람들이 이미 사 둔 뒤이고, 기대가 가격에 반영돼 가장 비싸며, 놓칠까 봐 조급해져 판단이 흐려지기 쉽습니다.</p>
+  <p><a class="back" href="#d39q2">문제로 돌아가기</a></p>
+</div>
+<div class="answer" id="d39a3">
+  <p class="verdict">3번. 정답: 조용히 조금씩 늘어났다. 누군가 미리 사고 있었을 수 있다</p>
+  <p>가격이 크게 움직이지 않는데 거래량이 서서히 늘었다는 건, 뉴스 전부터 누군가 조금씩 사 모으고 있었을 가능성을 보여줍니다. 다만 추정일 뿐이고, 그런 흔적은 대개 지나고 나서야 분명해집니다.</p>
+  <p><a class="back" href="#d39q3">문제로 돌아가기</a></p>
+</div>
+</section>
+
+</section>
+</body>
+</html>
