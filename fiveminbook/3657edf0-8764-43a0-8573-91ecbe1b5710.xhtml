@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="ko" xml:lang="ko">
+<head>
+<meta charset="UTF-8"/>
+<title>Day 11. 살 수도, 안 살 수도 있는 권리, 옵션</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body epub:type="bodymatter">
+<section epub:type="chapter" id="day11">
+
+<p class="day">Day 11</p>
+<h1>살 수도, 안 살 수도 있는 권리, 옵션</h1>
+<p class="oneline">옵션은 정해진 가격에 사거나 팔 수 있는 권리예요.</p>
+
+<h2>이런 적 있나요?</h2>
+<p>갖고 싶던 한정판 운동화가 다음 달에 나온대요. 가게에서 이렇게 말해요. "예약비 3천 원을 내면, 다음 달에 이 운동화를 10만 원에 살 수 있는 예약권을 드려요. 사기 싫으면 안 사도 돼요. 단, 예약비는 돌려드리지 않아요." 인기가 많아져 운동화값이 12만 원으로 오르면 예약권을 써서 10만 원에 사면 되고, 9만 원으로 내리면 예약권을 버리고 그냥 9만 원에 사면 돼요. 이 예약권이 바로 오늘 배울 "옵션"이에요.</p>
+
+<h2>쉽게 이해하기</h2>
+<p>자동차나 아파트를 살 때 "옵션"이라는 말을 들어 봤을 거예요. 원하면 고르고, 싫으면 안 고르는 선택 사항이지요. 금융에서 옵션도 같은 뜻이에요. 정해진 물건을 정해진 가격에 사거나 팔 수 있는 "권리"인데, 쓰고 싶으면 쓰고 싫으면 안 써도 돼요.</p>
+<p>선물과 비교하면 차이가 분명해져요. 선물은 약속이라서, 값이 내게 불리해도 꼭 지켜야 해요. 이익도 손해도 생기는 양쪽 방향의 상품이에요. 옵션을 산 사람은 유리할 때만 권리를 쓰고 불리하면 버리면 되니, 손해가 커지지 않아요.</p>
+<p>그러면 옵션을 판 사람은요? 판 사람은 산 사람이 권리를 쓰겠다고 하면 반드시 응해야 하는 의무만 있어요. 그래서 산 사람은 판 사람에게 그 대가로 돈을 내요. 운동화 이야기의 예약비 3천 원이 그 돈이에요. 이것을 "옵션 가격" 또는 "프리미엄"이라고 해요.</p>
+<p>옵션에는 두 가지가 있어요.</p>
+<ul>
+  <li>콜 옵션: 정해진 가격에 살 수 있는 권리예요. 값이 오를 때 쓸모 있어요. 운동화 예약권이 콜 옵션이에요.</li>
+  <li>풋 옵션: 정해진 가격에 팔 수 있는 권리예요. 값이 내릴 때 쓸모 있어요. 가진 물건의 값이 떨어질 때를 대비하는 보험처럼 쓸 수 있어요.</li>
+</ul>
+<p>이때 미리 정해 둔 가격(운동화 이야기의 10만 원)을 "행사가격"이라고 해요.</p>
+
+<h2>그림으로 보기</h2>
+<figure id="fig11-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 330" role="img" aria-label="권리의 모양">
+<rect x="0" y="0" width="760" height="330" fill="#FFFFFF"/>
+<text x="24" y="30" font-family="sans-serif" font-size="17" font-weight="bold" fill="#1C2126">옵션을 산 사람은 손해가 예약비만큼으로 막혀 있고, 이익은 열려 있어요</text>
+<text x="24" y="54" font-family="sans-serif" font-size="13" fill="#626A72">운동화를 10만 원에 살 수 있는 예약권(예약비 3천 원)의 손익 · 회색 점선 = 같은 약속을 선물로 한 경우</text>
+<line x1="100" y1="190" x2="640" y2="190" stroke="#1C2126" stroke-width="1.5"/>
+<line x1="370" y1="80" x2="370" y2="300" stroke="#D6DADD" stroke-width="1" stroke-dasharray="3 3"/>
+<polyline points="100,285 640,95" fill="none" stroke="#AEB5BB" stroke-width="2" stroke-linejoin="round" stroke-dasharray="6 4"/>
+<polyline points="100,204.25 370,204.25 640,109.25" fill="none" stroke="#C8322F" stroke-width="3.2" stroke-linejoin="round"/>
+<text x="646" y="99" font-family="sans-serif" font-size="11" font-weight="bold" fill="#626A72">선물을 산 경우</text>
+<text x="646" y="125.25" font-family="sans-serif" font-size="12" font-weight="bold" fill="#C8322F">예약권(콜 옵션)</text>
+<text x="370" y="316" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#626A72">약속 가격 10만 원</text>
+<text x="100" y="316" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#626A72">8만 원</text>
+<text x="640" y="316" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#626A72">12만 원</text>
+<text x="90" y="194" text-anchor="end" font-family="sans-serif" font-size="11" fill="#626A72">0원</text>
+<text x="90" y="208.25" text-anchor="end" font-family="sans-serif" font-size="11" font-weight="bold" fill="#C8322F">−3천</text>
+<text x="90" y="113.25" text-anchor="end" font-family="sans-serif" font-size="11" font-weight="bold" fill="#C8322F">+1만 7천</text>
+<circle cx="235" cy="204.25" r="6" fill="#C8322F"/>
+<line x1="235" y1="210.25" x2="262" y2="272" stroke="#626A72" stroke-width="1"/>
+<text x="266" y="284" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1C2126">9만 원: 포기 → 예약비 3천 원만 손해</text>
+<circle cx="640" cy="109.25" r="6" fill="#C8322F"/>
+<text x="599.5" y="97.25" text-anchor="end" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1C2126">12만 원: 사용 → 2만 − 3천 = 1만 7천 원 이익</text>
+</svg>
+<figcaption>그림 11-1. 콜 옵션을 산 사람의 손익</figcaption>
+</figure>
+<p>그림 11-1의 빨간 선은 운동화 예약권(콜 옵션)을 산 사람의 손익이에요. 운동화값이 10만 원보다 낮으면 예약권을 버리니 손해는 예약비 3천 원에서 멈춰요. 선이 평평하게 바닥을 이루지요. 10만 원보다 오르면 오른 만큼 이익이 늘어요. 12만 원이면 2만 원 싸게 사는 셈이고, 예약비를 빼면 1만 7천 원 이익이에요.</p>
+<p>회색 점선은 같은 운동화를 선물로 "10만 원에 사기로 약속"한 경우예요. 값이 오를 때는 옵션과 비슷하게 벌지만, 내리면 내린 만큼 계속 손해를 봐요. 옵션은 그 아래쪽 손해를 예약비만큼으로 막아 주는 대신, 그 예약비를 먼저 내는 거예요.</p>
+
+<h2>이럴 땐 조심</h2>
+<p>옵션을 산 사람의 손해가 예약비로 막혀 있다고 해서 안전하기만 한 것은 아니에요. 값이 기대만큼 오르지 않으면 예약비를 고스란히 잃고, 이런 일이 되풀이되면 작은 손해가 쌓여요. 반대로 옵션을 판 사람은 처음에 예약비를 받지만, 값이 크게 움직이면 손해가 끝없이 커질 수 있어요. Day 6에서 "옵션은 더 위험하다"고 한 까닭이에요.</p>
+<p>우리나라에서는 코스피200 지수를 대상으로 하는 코스피200 옵션이 가장 많이 거래돼요. 옵션에는 이 밖에도 여러 조건이 붙은 다양한 종류가 있어서, 시장 상황과 목적에 따라 여러 가지 전략을 짤 수 있어요.</p>
+
+<h2>오늘의 체크</h2>
+<ol class="check">
+  <li id="d11q1">옵션이란 무엇이고, 선물과 가장 크게 다른 점은 무엇일까요? <a class="to-answer" href="#d11a1">정답 보기</a></li>
+  <li id="d11q2">콜 옵션과 풋 옵션은 각각 무엇을 할 수 있는 권리일까요? <a class="to-answer" href="#d11a2">정답 보기</a></li>
+  <li id="d11q3">운동화 예약권(행사가격 10만 원, 예약비 3천 원)을 샀는데, 다음 달 운동화값이 9만 원이 되었어요. 어떻게 하고, 손해는 얼마일까요? <a class="to-answer" href="#d11a3">정답 보기</a></li>
+</ol>
+
+<h2>한 줄 정리</h2>
+<p>옵션은 정해진 가격에 사거나(콜) 팔(풋) 수 있는 권리예요. 산 사람은 예약비(프리미엄)를 내고, 불리하면 권리를 버릴 수 있어요.</p>
+
+<section class="answers" id="day11-answers">
+<h2>Day 11 정답과 해설</h2>
+<div class="answer" id="d11a1">
+  <p class="verdict">1번. 정답: 정해진 물건을 정해진 가격에 사거나 팔 수 있는 권리. 선물은 꼭 지켜야 하는 약속이지만, 옵션을 산 사람은 불리하면 권리를 버릴 수 있다</p>
+  <p>그래서 옵션을 산 사람은 손해가 커지지 않아요. 대신 그 권리의 대가로 판 사람에게 옵션 가격(프리미엄)을 내요.</p>
+  <p><a class="back" href="#d11q1">문제로 돌아가기</a></p>
+</div>
+<div class="answer" id="d11a2">
+  <p class="verdict">2번. 정답: 콜 옵션은 살 수 있는 권리, 풋 옵션은 팔 수 있는 권리</p>
+  <p>콜 옵션은 값이 오를 때, 풋 옵션은 값이 내릴 때 쓸모가 있어요. 풋 옵션은 가진 물건의 값이 떨어질 때를 대비하는 보험처럼 쓸 수 있어요.</p>
+  <p><a class="back" href="#d11q2">문제로 돌아가기</a></p>
+</div>
+<div class="answer" id="d11a3">
+  <p class="verdict">3번. 정답: 예약권을 쓰지 않고 시장에서 9만 원에 산다. 손해는 예약비 3천 원</p>
+  <p>9만 원짜리를 10만 원에 살 까닭이 없으니 권리를 버려요. 이미 낸 예약비 3천 원만 잃어요.</p>
+  <p><a class="back" href="#d11q3">문제로 돌아가기</a></p>
+</div>
+</section>
+
+</section>
+</body>
+</html>
