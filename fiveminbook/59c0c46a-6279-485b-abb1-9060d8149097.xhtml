@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="ko" xml:lang="ko">
+<head>
+<meta charset="UTF-8"/>
+<title>Day 7. 오를 때도 내릴 때도, 롱과 숏</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body epub:type="bodymatter">
+<section epub:type="chapter" id="day07">
+
+<p class="day">Day 7</p>
+<h1>오를 때도 내릴 때도, 롱과 숏</h1>
+<p class="oneline">선물은 사면 오를 때, 팔면 내릴 때 이익을 보는 제로섬 게임이에요.</p>
+
+<h2>이런 적 있나요?</h2>
+<p>친구와 사탕 한 개를 걸고 "내일 비가 올까, 안 올까?" 내기를 했어요. 비가 오면 내가 친구에게 사탕을 받고, 안 오면 내가 친구에게 사탕을 줘요. 누가 이기든 두 사람이 가진 사탕을 모두 합하면 처음과 똑같아요. 한 사람이 얻은 만큼 다른 사람이 잃었으니까요. 선물거래도 이런 모습이에요.</p>
+
+<h2>쉽게 이해하기</h2>
+<p>주식을 사서 가지고 있는 사람은 값이 올라야 이익을 봐요. 싸게 사서 비싸게 파는 것이 거의 유일한 방법이에요. 그래서 같은 주식을 가진 사람들은 운명이 같아요. 값이 오르면 모두 기뻐하고, 내리면 모두 속상해하지요. 값이 오를 때만 웃을 수 있는, 한쪽 방향뿐인 투자예요.</p>
+<p>선물은 달라요. 값이 오를 때도, 내릴 때도 이익을 노릴 수 있어요.</p>
+<ul>
+  <li>선물을 산 사람은 값이 오르면 이익이에요. 주식을 가진 것과 같아요. 이것을 "롱(Long) 포지션"이라고 해요.</li>
+  <li>선물을 판 사람은 값이 내리면 이익이에요. 이것을 "숏(Short) 포지션"이라고 해요.</li>
+</ul>
+<p>판 사람이 왜 값이 내리면 이익일까요? 예를 들어 A주식을 석 달 뒤에 5만 원에 팔기로 선물 약속을 했어요. 석 달 뒤 A주식이 4만 5천 원으로 내렸다면, 시장에서 4만 5천 원에 사서 약속대로 5만 원에 넘기면 되니 한 주에 5천 원이 남아요. 실제로 우리나라 주식선물은 주식을 직접 주고받지 않고, 이 차액만 돈으로 주고받아요.</p>
+<p>그리고 만기까지 기다릴 필요도 없어요. 판 선물의 값이 충분히 내려 이익을 확정하고 싶으면, 언제든 같은 선물을 다시 사서 약속을 없앨 수 있어요. 그러면 판 가격과 다시 산 가격의 차이만큼이 이익이 돼요.</p>
+
+<h2>그림으로 보기</h2>
+<figure id="fig7-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 330" role="img" aria-label="롱과 숏">
+<rect x="0" y="0" width="760" height="330" fill="#FFFFFF"/>
+<text x="24" y="30" font-family="sans-serif" font-size="17" font-weight="bold" fill="#1C2126">한 사람이 번 만큼 다른 사람이 잃어요. 둘을 더하면 언제나 0원이에요</text>
+<text x="24" y="54" font-family="sans-serif" font-size="13" fill="#626A72">A주식 1주를 3개월 뒤 5만 원에 사고팔기로 한 선물 약속 · 만기 주가에 따른 손익</text>
+<line x1="90" y1="190" x2="650" y2="190" stroke="#1C2126" stroke-width="1.5"/>
+<line x1="370" y1="80" x2="370" y2="300" stroke="#D6DADD" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="90" y1="295" x2="650" y2="85" stroke="#C8322F" stroke-width="3"/>
+<line x1="90" y1="85" x2="650" y2="295" stroke="#2F5FD0" stroke-width="3"/>
+<text x="656" y="89" font-family="sans-serif" font-size="12" font-weight="bold" fill="#C8322F">산 사람(롱)</text>
+<text x="656" y="299" font-family="sans-serif" font-size="12" font-weight="bold" fill="#2F5FD0">판 사람(숏)</text>
+<text x="370" y="306" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#626A72">약속 가격 5만 원</text>
+<text x="90" y="316" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#626A72">4만 원</text>
+<text x="650" y="316" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#626A72">6만 원</text>
+<text x="60" y="194" text-anchor="end" font-family="sans-serif" font-size="11" fill="#626A72">0원</text>
+<text x="60" y="141.5" text-anchor="end" font-family="sans-serif" font-size="11" fill="#626A72">+5천</text>
+<text x="60" y="246.5" text-anchor="end" font-family="sans-serif" font-size="11" fill="#626A72">−5천</text>
+<circle cx="230" cy="242.5" r="6" fill="#C8322F"/>
+<circle cx="230" cy="137.5" r="6" fill="#2F5FD0"/>
+<line x1="230" y1="242.5" x2="230" y2="137.5" stroke="#626A72" stroke-width="1" stroke-dasharray="2 3"/>
+<text x="240" y="260.5" font-family="sans-serif" font-size="12" font-weight="bold" fill="#C8322F">−5천 원</text>
+<text x="240" y="129.5" font-family="sans-serif" font-size="12" font-weight="bold" fill="#2F5FD0">+5천 원</text>
+<text x="230" y="316" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1C2126">45,000원</text>
+<circle cx="510" cy="137.5" r="6" fill="#C8322F"/>
+<circle cx="510" cy="242.5" r="6" fill="#2F5FD0"/>
+<line x1="510" y1="137.5" x2="510" y2="242.5" stroke="#626A72" stroke-width="1" stroke-dasharray="2 3"/>
+<text x="520" y="129.5" font-family="sans-serif" font-size="12" font-weight="bold" fill="#C8322F">+5천 원</text>
+<text x="520" y="260.5" font-family="sans-serif" font-size="12" font-weight="bold" fill="#2F5FD0">−5천 원</text>
+<text x="510" y="316" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1C2126">55,000원</text>
+</svg>
+<figcaption>그림 7-1. 산 사람과 판 사람의 손익은 서로 거울과 같아요</figcaption>
+</figure>
+<p>그림 7-1은 A주식 1주를 석 달 뒤 5만 원에 사고팔기로 약속한 두 사람의 손익이에요. 빨간 선은 산 사람(롱), 파란 선은 판 사람(숏)이에요. 주가가 4만 5천 원이 되면 판 사람은 5천 원을 벌고, 산 사람은 5천 원을 잃어요. 주가가 5만 5천 원이 되면 거꾸로예요.</p>
+<p>두 선은 가운데 0원 선을 사이에 두고 거울처럼 마주 보고 있어요. 어디서든 두 사람의 손익을 더하면 0원이에요. 주식은 값이 오르면 모두가 웃을 수 있지만, 선물에서는 누군가 이익을 보면 반대편의 누군가는 반드시 손해를 봐요. 이런 게임을 "제로섬(zero-sum) 게임"이라고 해요. 합(sum)이 0(zero)이라는 뜻이에요.</p>
+
+<h2>이럴 땐 조심</h2>
+<p>제로섬이라는 말에는 무서운 뜻도 숨어 있어요. 내가 번 돈은 누군가가 잃은 돈이고, 내가 잃은 돈은 누군가가 가져간 돈이에요. 게다가 거래할 때마다 수수료와 세금이 나가니, 거래하는 사람들의 손익을 모두 더하면 사실 0보다 조금 적어요. 그래서 계획 없이 자주 거래하면 불리해져요. 반대편에 서는 사람들 가운데에는 경험 많은 전문가와 큰 회사도 많다는 것을 잊지 마세요.</p>
+<p>참고로 주식에도 빌려서 먼저 파는 "공매도"라는 방법이 있어서, 값이 내릴 때 이익을 볼 수 있어요. 하지만 주식을 빌려야 하고 조건이 까다로워서, 개인이 내림에 대비하기에는 선물이 더 간단한 경우가 많아요.</p>
+
+<h2>오늘의 체크</h2>
+<ol class="check">
+  <li id="d7q1">롱 포지션과 숏 포지션은 각각 무엇이고, 언제 이익을 볼까요? <a class="to-answer" href="#d7a1">정답 보기</a></li>
+  <li id="d7q2">A주식 1주를 석 달 뒤 5만 원에 파는 선물 약속을 했어요. 만기에 주가가 4만 5천 원이면, 그리고 5만 5천 원이면 손익은 각각 얼마일까요? <a class="to-answer" href="#d7a2">정답 보기</a></li>
+  <li id="d7q3">선물거래를 제로섬 게임이라고 부르는 까닭은 무엇일까요? <a class="to-answer" href="#d7a3">정답 보기</a></li>
+</ol>
+
+<h2>한 줄 정리</h2>
+<p>선물은 사면(롱) 오를 때, 팔면(숏) 내릴 때 이익을 보지만, 한쪽이 번 만큼 다른 쪽이 잃는 제로섬 게임이에요.</p>
+
+<section class="answers" id="day07-answers">
+<h2>Day 7 정답과 해설</h2>
+<div class="answer" id="d7a1">
+  <p class="verdict">1번. 정답: 롱은 선물을 산 것으로 값이 오르면 이익, 숏은 선물을 판 것으로 값이 내리면 이익</p>
+  <p>롱은 주식을 가진 것처럼 값이 오를 때 웃고, 숏은 반대로 값이 내릴 때 웃어요. 선물은 두 방향 모두에서 이익을 노릴 수 있어요.</p>
+  <p><a class="back" href="#d7q1">문제로 돌아가기</a></p>
+</div>
+<div class="answer" id="d7a2">
+  <p class="verdict">2번. 정답: 4만 5천 원이면 5천 원 이익, 5만 5천 원이면 5천 원 손해</p>
+  <p>판 사람은 4만 5천 원짜리를 5만 원에 넘기니 5천 원을 벌어요. 5만 5천 원짜리를 5만 원에 넘겨야 하면 5천 원을 잃어요. 이때 산 사람의 손익은 정반대예요.</p>
+  <p><a class="back" href="#d7q2">문제로 돌아가기</a></p>
+</div>
+<div class="answer" id="d7a3">
+  <p class="verdict">3번. 정답: 한 사람이 이익을 보면 반대편 사람이 같은 만큼 손해를 봐서, 모두의 손익을 더하면 0이 되기 때문</p>
+  <p>주식은 값이 오르면 가진 사람 모두 이익이지만, 선물은 산 사람과 판 사람이 짝을 이뤄요. 한쪽의 이익은 곧 다른 쪽의 손해예요. 수수료와 세금까지 생각하면 합계는 0보다 조금 적어요.</p>
+  <p><a class="back" href="#d7q3">문제로 돌아가기</a></p>
+</div>
+</section>
+
+</section>
+</body>
+</html>
