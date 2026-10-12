@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="ko" xml:lang="ko">
+<head>
+<meta charset="UTF-8"/>
+<title>Day 17. 우산값으로 비 소식을 알아내듯, 내재변동성</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body epub:type="bodymatter">
+<section epub:type="chapter" id="day17">
+
+<p class="day">Day 17</p>
+<h1>우산값으로 비 소식을 알아내듯, 내재변동성</h1>
+<p class="oneline">변동성은 미리 알 수 없어서 옵션 가격에서 거꾸로 구해요.</p>
+
+<h2>이런 적 있나요?</h2>
+<p>내일 비가 올지 알고 싶을 때 어떻게 하나요? 지난 몇 년 동안 이맘때 비가 얼마나 왔는지 기록을 볼 수도 있고, 일기예보를 볼 수도 있어요. 그런데 한 가지 방법이 더 있어요. 오늘 편의점에서 우산이 얼마에 팔리는지 보는 거예요. 우산값이 평소보다 훨씬 비싸다면, 사람들이 "곧 비가 많이 오겠구나" 생각하고 있다는 뜻이겠지요.</p>
+
+<h2>쉽게 이해하기</h2>
+<p>Day 16에서 옵션 가격은 다섯 가지로 정해진다고 배웠어요. 기초자산 가격, 행사가격, 만기까지 남은 시간, 금리, 변동성이에요. 이 다섯 가지를 증권회사 앱이나 누리집의 "옵션 계산기"에 넣으면 옵션의 이론가격을 바로 계산할 수 있어요.</p>
+<p>그런데 문제가 하나 있어요. 앞의 네 가지는 지금 알 수 있지만, 변동성은 "앞으로 값이 얼마나 출렁일지"라서 미리 알 수 없어요. 그래서 짐작해야 해요. 짐작하는 방법은 비 예상과 똑같이 세 가지예요.</p>
+<ul>
+  <li>역사적 변동성: 지난 일정 기간 동안 실제로 얼마나 출렁였는지 계산해요. 과거 강수 기록을 보는 것과 같아요.</li>
+  <li>예측 변동성: 여러 자료를 분석해서 앞으로의 변동성을 예측해요. 일기예보와 같아요.</li>
+  <li>내재변동성: 지금 시장에서 거래되는 옵션 가격에서 거꾸로 변동성을 계산해요. 우산값으로 비 소식을 알아내는 것과 같아요.</li>
+</ul>
+<p>예를 들어 지수가 1,100이고 만기가 24일 남은 행사가격 1,100 콜이 시장에서 30.00에 거래된다면, 블랙-숄즈 모형에 넣어 거꾸로 계산한 내재변동성은 약 25.9%예요. 내재변동성은 시장 참가자들이 앞으로의 출렁임을 어떻게 보고 있는지를 담고 있어서 가장 많이 쓰여요.</p>
+
+<h2>그림으로 보기</h2>
+<figure id="fig17-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 326" role="img" aria-label="변동성의 두 얼굴">
+<rect x="0" y="0" width="760" height="326" fill="#FFFFFF"/>
+<text x="24" y="30" font-family="sans-serif" font-size="17" font-weight="bold" fill="#1C2126">같은 지수라도 변동성 예상이 바뀌면 옵션값이 바뀌고, 행사가격마다 변동성도 달라요</text>
+<text x="24" y="54" font-family="sans-serif" font-size="13" fill="#626A72">블랙-숄즈 모형으로 계산한 예시</text>
+<text x="190" y="84" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1C2126">① 변동성만 바뀌어도 가격이 바뀌어요</text>
+<text x="190" y="102" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#626A72">지수 1,100 그대로 · 행사가격 1,100 콜 · 만기 24일</text>
+<line x1="380" y1="74" x2="380" y2="316" stroke="#D6DADD" stroke-width="1"/>
+<line x1="40" y1="290" x2="350" y2="290" stroke="#D6DADD" stroke-width="1"/>
+<rect x="60" y="192.7" width="70" height="97.3" fill="#C8322F" fill-opacity="0.45"/>
+<text x="95" y="184.71" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#C8322F">21.15</text>
+<text x="95" y="308" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1C2126">변동성 18%</text>
+<rect x="160" y="172.0" width="70" height="118.0" fill="#C8322F" fill-opacity="0.7"/>
+<text x="195" y="164.01" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#C8322F">25.65</text>
+<text x="195" y="308" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1C2126">변동성 22%</text>
+<rect x="260" y="130.7" width="70" height="159.3" fill="#C8322F" fill-opacity="0.95"/>
+<text x="295" y="122.702" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#C8322F">34.63</text>
+<text x="295" y="308" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1C2126">변동성 30%</text>
+<text x="570" y="84" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1C2126">② 행사가격마다 다른 내재변동성</text>
+<text x="570" y="102" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#626A72">코스피200 1,100일 때의 모습 (예시)</text>
+<line x1="420" y1="290" x2="710" y2="290" stroke="#D6DADD" stroke-width="1"/>
+<polyline points="420.0,140.0 456.2,160.0 492.5,180.0 528.8,202.0 565.0,220.0 601.2,232.0 637.5,238.0 673.8,236.0 710.0,230.0" fill="none" stroke="#2F5FD0" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="420.0" cy="140.0" r="4" fill="#2F5FD0"/>
+<text x="420" y="130" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#2F5FD0">30%</text>
+<text x="420" y="308" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#626A72">1,000</text>
+<circle cx="492.5" cy="180.0" r="4" fill="#2F5FD0"/>
+<text x="492.5" y="170" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#2F5FD0">26%</text>
+<text x="492.5" y="308" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#626A72">1,050</text>
+<circle cx="565.0" cy="220.0" r="4" fill="#2F5FD0"/>
+<text x="565" y="210" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#2F5FD0">22%</text>
+<text x="565" y="308" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#626A72">1,100</text>
+<circle cx="637.5" cy="238.0" r="4" fill="#2F5FD0"/>
+<text x="637.5" y="228" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#2F5FD0">20.2%</text>
+<text x="637.5" y="308" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#626A72">1,150</text>
+<circle cx="710.0" cy="230.0" r="4" fill="#2F5FD0"/>
+<text x="710" y="220" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#2F5FD0">21%</text>
+<text x="710" y="308" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#626A72">1,200</text>
+<line x1="565" y1="120" x2="565" y2="290" stroke="#626A72" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="569" y="132" font-family="sans-serif" font-size="10" fill="#626A72">지금 지수</text>
+<text x="427.25" y="246" font-family="sans-serif" font-size="11" fill="#1C2126">낮은 행사가격 쪽이 높아요:</text>
+<text x="427.25" y="262" font-family="sans-serif" font-size="11" fill="#1C2126">폭락 대비 풋을 비싸게 사기 때문</text>
+</svg>
+<figcaption>그림 17-1. 변동성에 따라 달라지는 옵션 가격과 행사가격별 내재변동성</figcaption>
+</figure>
+<p>그림 17-1의 왼쪽은 지수가 1,100 그대로일 때, 변동성 예상만 바뀌어도 행사가격 1,100 콜의 가격이 얼마나 달라지는지 보여 줘요. 변동성이 18%면 21.15, 22%면 25.65, 30%면 34.63이에요. 지수는 꼼짝도 안 했는데 옵션값은 60% 넘게 차이가 나요.</p>
+<p>오른쪽은 실제 시장에서 흔히 보이는 모습이에요. 같은 날 같은 만기인데도 행사가격마다 내재변동성이 달라요. 특히 지수보다 한참 낮은 행사가격 쪽이 높아요. 갑작스러운 폭락에 대비하려는 사람들이 풋 옵션을 비싸게 사기 때문이에요. 그래서 실전에서는 여러 내재변동성을 거래량 등에 따라 가중 평균해서 써요. Day 16에서 배운 브이코스피(VKOSPI)가 바로 코스피200 옵션들의 내재변동성을 이런 식으로 묶어 만든 지수예요.</p>
+
+<h2>이럴 땐 조심</h2>
+<p>옵션은 방향뿐 아니라 변동성도 거래할 수 있는 상품이에요. 주식이나 선물은 "오를까, 내릴까"만 맞히면 되지만, 옵션은 "얼마나 크게 출렁일까"에도 돈을 걸 수 있어요. 시장이 곧 크게 출렁일 것 같으면 옵션을 사고, 잠잠해질 것 같으면 옵션을 파는 식이에요. 이렇게 방향과 변동성 두 가지를 함께 다루는 게임이라 더 다양한 전략이 가능해요.</p>
+<p>하지만 그만큼 어려워요. 방향을 맞혀도 변동성이 줄면 손해를 볼 수 있고(Day 16), 변동성을 맞혀도 방향이 틀리면 손해를 볼 수 있어요. 처음에는 옵션을 살 때 지금 내재변동성이 평소보다 높은지 낮은지만 확인하는 습관부터 들이세요.</p>
+
+<h2>오늘의 체크</h2>
+<ol class="check">
+  <li id="d17q1">옵션 가격을 정하는 다섯 가지 중 미리 알 수 없는 것은 무엇일까요? <a class="to-answer" href="#d17a1">정답 보기</a></li>
+  <li id="d17q2">변동성을 짐작하는 세 가지 방법은 무엇이고, 그중 내재변동성은 어떻게 구할까요? <a class="to-answer" href="#d17a2">정답 보기</a></li>
+  <li id="d17q3">지수가 그대로인데 내재변동성이 22%에서 18%로 낮아졌어요. 그림 17-1의 콜 옵션을 산 사람은 이익일까요, 손해일까요? <a class="to-answer" href="#d17a3">정답 보기</a></li>
+</ol>
+
+<h2>한 줄 정리</h2>
+<p>변동성은 미리 알 수 없어서, 시장의 옵션 가격에서 거꾸로 구한 내재변동성을 가장 많이 써요. 옵션은 방향과 변동성을 함께 거래하는 상품이에요.</p>
+
+<section class="answers" id="day17-answers">
+<h2>Day 17 정답과 해설</h2>
+<div class="answer" id="d17a1">
+  <p class="verdict">1번. 정답: 기초자산 가격의 변동성</p>
+  <p>기초자산 가격, 행사가격, 남은 시간, 금리는 지금 알 수 있지만, 앞으로 값이 얼마나 출렁일지는 짐작할 수밖에 없어요.</p>
+  <p><a class="back" href="#d17q1">문제로 돌아가기</a></p>
+</div>
+<div class="answer" id="d17a2">
+  <p class="verdict">2번. 정답: 역사적 변동성, 예측 변동성, 내재변동성. 내재변동성은 지금 시장의 옵션 가격을 옵션 가격 공식에 넣어 거꾸로 계산한다</p>
+  <p>우산값을 보고 사람들이 비를 얼마나 예상하는지 알아내는 것처럼, 옵션 가격에서 시장이 예상하는 출렁임을 알아내요.</p>
+  <p><a class="back" href="#d17q2">문제로 돌아가기</a></p>
+</div>
+<div class="answer" id="d17a3">
+  <p class="verdict">3번. 정답: 손해</p>
+  <p>지수가 그대로여도 변동성이 22%에서 18%로 줄면 옵션 가격은 25.65에서 21.15로 내려가요. 4.5포인트, 1계약에 112만 5천 원을 잃어요.</p>
+  <p><a class="back" href="#d17q3">문제로 돌아가기</a></p>
+</div>
+</section>
+
+</section>
+</body>
+</html>
