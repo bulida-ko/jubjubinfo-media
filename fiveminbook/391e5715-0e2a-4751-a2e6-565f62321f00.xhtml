@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="ko" xml:lang="ko">
+<head>
+<meta charset="UTF-8"/>
+<title>Day 12. 내 예약권은 지금 얼마짜리일까</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body epub:type="bodymatter">
+<section epub:type="chapter" id="day12">
+
+<p class="day">Day 12</p>
+<h1>내 예약권은 지금 얼마짜리일까</h1>
+<p class="oneline">옵션의 값어치는 기초자산 가격과 행사가격의 차이로 정해져요.</p>
+
+<h2>이런 적 있나요?</h2>
+<p>Day 11의 운동화 예약권을 다시 떠올려 볼까요? 10만 원에 살 수 있는 예약권이었지요. 운동화값이 12만 원이 되면 이 예약권은 "2만 원을 아껴 주는 표"가 되고, 9만 원이 되면 아무 쓸모 없는 종이가 돼요. 같은 예약권이 운동화값에 따라 값어치가 달라지는 거예요. 오늘은 옵션의 값어치를 부르는 이름을 배워요.</p>
+
+<h2>쉽게 이해하기</h2>
+<p>먼저 오늘 쓸 말을 정리해요. 옵션으로 사거나 팔 수 있는 대상을 "기초자산"이라고 해요. 운동화 이야기에서는 운동화가 기초자산이에요. 값이 있는 것이라면 무엇이든 기초자산이 될 수 있어요. 주식, 주가지수, 채권, 금리, 달러, 그리고 선물까지도요.</p>
+<ul>
+  <li>주식이나 지수처럼 실제로 있는 자산을 대상으로 하면 "현물옵션"이에요.</li>
+  <li>선물을 대상으로 하면 "선물옵션"이에요.</li>
+</ul>
+<p>권리를 언제 쓸 수 있는지에 따라서도 나뉘어요.</p>
+<ul>
+  <li>유럽형 옵션: 만기일 하루에만 권리를 쓸 수 있어요. "출시일 당일에만 쓸 수 있는 예약권"이에요.</li>
+  <li>미국형 옵션: 만기일까지 아무 때나 권리를 쓸 수 있어요. "출시일까지 언제든 쓸 수 있는 예약권"이에요.</li>
+</ul>
+<p>이름에 나라 이름이 붙었지만 거래하는 장소와는 상관없어요. 우리나라의 코스피200 옵션은 유럽형이고, 미국에서 거래되는 주식옵션은 대부분 미국형이에요.</p>
+<p>이제 값어치 이야기예요. 만기일에 옵션이 가진 값어치를 "본질가치"(또는 내재가치)라고 해요.</p>
+<ul>
+  <li>콜 옵션의 본질가치 = 기초자산 가격 − 행사가격</li>
+  <li>풋 옵션의 본질가치 = 행사가격 − 기초자산 가격</li>
+</ul>
+<p>계산 결과가 0보다 작으면 본질가치는 0이에요. 불리하면 권리를 안 쓰면 되니, 값어치가 마이너스가 되지는 않아요.</p>
+
+<h2>그림으로 보기</h2>
+<figure id="fig12-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 320" role="img" aria-label="내가격, 등가격, 외가격">
+<rect x="0" y="0" width="760" height="320" fill="#FFFFFF"/>
+<text x="24" y="30" font-family="sans-serif" font-size="17" font-weight="bold" fill="#1C2126">같은 가격이라도 콜과 풋에게는 정반대예요</text>
+<text x="24" y="54" font-family="sans-serif" font-size="13" fill="#626A72">운동화 가격에 따라 행사가격 10만 원짜리 옵션이 어떻게 불리는지</text>
+<text x="24" y="104" font-family="sans-serif" font-size="14" font-weight="bold" fill="#C8322F">콜 옵션</text>
+<text x="24" y="122" font-family="sans-serif" font-size="11" fill="#626A72">(살 권리)</text>
+<rect x="80" y="88" width="285" height="44" fill="#F1F3F1"/><text x="222.5" y="115" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#626A72">외가격 (쓸모없음)</text>
+<rect x="365" y="88" width="30" height="44" fill="#FFF4D6"/><text x="380" y="115" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1C2126"></text>
+<rect x="395" y="88" width="285" height="44" fill="#FBE9E9"/><text x="537.5" y="115" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#C8322F">내가격 (쓸모있음)</text>
+<text x="24" y="204" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2F5FD0">풋 옵션</text>
+<text x="24" y="222" font-family="sans-serif" font-size="11" fill="#626A72">(팔 권리)</text>
+<rect x="80" y="188" width="285" height="44" fill="#E9EEF9"/><text x="222.5" y="215" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#2F5FD0">내가격 (쓸모있음)</text>
+<rect x="365" y="188" width="30" height="44" fill="#FFF4D6"/><text x="380" y="215" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1C2126"></text>
+<rect x="395" y="188" width="285" height="44" fill="#F1F3F1"/><text x="537.5" y="215" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#626A72">외가격 (쓸모없음)</text>
+<line x1="80" y1="262" x2="680" y2="262" stroke="#1C2126" stroke-width="1.5"/>
+<line x1="380" y1="76" x2="380" y2="270" stroke="#1C2126" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="380" y="76" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1C2126">등가격</text>
+<text x="80" y="282" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#626A72">8만 원</text>
+<text x="380" y="282" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1C2126">행사가격 10만 원</text>
+<text x="680" y="282" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#626A72">12만 원</text>
+<circle cx="680" cy="262" r="6" fill="#C8322F"/>
+<text x="620" y="304" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#C8322F">운동화 12만 원 → 콜 본질가치 2만 원</text>
+<circle cx="230" cy="262" r="6" fill="#2F5FD0"/>
+<text x="230" y="304" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#2F5FD0">운동화 9만 원 → 풋 본질가치 1만 원</text>
+</svg>
+<figcaption>그림 12-1. 행사가격을 기준으로 나뉘는 세 가지 이름</figcaption>
+</figure>
+<p>그림 12-1은 행사가격 10만 원짜리 옵션이 운동화값에 따라 어떻게 불리는지 보여 줘요. 본질가치가 0보다 크면, 즉 권리를 쓰면 이득인 상태를 "내가격"이라고 해요. 계산이 0보다 작아 쓸모가 없는 상태는 "외가격", 기초자산 가격이 행사가격과 같은 상태는 "등가격"이에요.</p>
+<p>위 줄의 콜 옵션은 운동화값이 10만 원보다 비쌀 때 내가격이에요. 12만 원이면 본질가치는 2만 원이지요. 아래 줄의 풋 옵션은 정반대예요. 10만 원에 팔 수 있는 권리는 운동화값이 10만 원보다 쌀 때 쓸모가 있어서, 9만 원이면 본질가치가 1만 원인 내가격이에요.</p>
+<p>코스피200 옵션으로 해 볼까요? 지수가 1,100일 때, 행사가격 1,080짜리 콜 옵션은 1,100 − 1,080 = 20포인트만큼 이득이니 내가격이에요. 행사가격 1,120짜리 콜 옵션은 외가격이고요.</p>
+
+<h2>이럴 땐 조심</h2>
+<p>외가격 옵션은 본질가치가 0이지만, 그렇다고 공짜는 아니에요. 만기일까지 시간이 남아 있으면 "그 사이에 값이 바뀌어 내가격이 될지도 모른다"는 기대가 있어서 값이 붙어요. 그래서 외가격 옵션은 싸 보이지만, 만기일까지 내가격이 되지 못하면 낸 돈을 모두 잃어요. 값이 싸다는 것은 그만큼 쓸모 있게 될 가능성이 낮다는 뜻이기도 해요.</p>
+
+<h2>오늘의 체크</h2>
+<ol class="check">
+  <li id="d12q1">현물옵션과 선물옵션은 무엇이 다를까요? <a class="to-answer" href="#d12a1">정답 보기</a></li>
+  <li id="d12q2">유럽형 옵션과 미국형 옵션은 무엇이 다를까요? <a class="to-answer" href="#d12a2">정답 보기</a></li>
+  <li id="d12q3">코스피200이 1,100이에요. 행사가격 1,080짜리 콜 옵션과 행사가격 1,080짜리 풋 옵션은 각각 내가격일까요, 외가격일까요? 본질가치는 얼마일까요? <a class="to-answer" href="#d12a3">정답 보기</a></li>
+</ol>
+
+<h2>한 줄 정리</h2>
+<p>옵션의 값어치는 기초자산 가격과 행사가격의 차이로 정해져요. 쓰면 이득이면 내가격, 쓸모가 없으면 외가격, 같으면 등가격이에요.</p>
+
+<section class="answers" id="day12-answers">
+<h2>Day 12 정답과 해설</h2>
+<div class="answer" id="d12a1">
+  <p class="verdict">1번. 정답: 현물옵션은 주식, 지수 같은 실제 자산을, 선물옵션은 선물을 대상으로 한다</p>
+  <p>옵션으로 사거나 팔 수 있는 대상(기초자산)이 무엇인지에 따라 나뉘어요. 코스피200 옵션은 코스피200 지수를 대상으로 하는 현물옵션이에요.</p>
+  <p><a class="back" href="#d12q1">문제로 돌아가기</a></p>
+</div>
+<div class="answer" id="d12a2">
+  <p class="verdict">2번. 정답: 유럽형은 만기일에만, 미국형은 만기일까지 아무 때나 권리를 쓸 수 있다</p>
+  <p>이름은 나라와 상관없이 권리를 쓰는 시점만 뜻해요. 코스피200 옵션은 유럽형이에요.</p>
+  <p><a class="back" href="#d12q2">문제로 돌아가기</a></p>
+</div>
+<div class="answer" id="d12a3">
+  <p class="verdict">3번. 정답: 콜 옵션은 내가격(본질가치 20포인트), 풋 옵션은 외가격(본질가치 0)</p>
+  <p>콜은 1,100 − 1,080 = 20포인트 이득이라 내가격이에요. 풋은 1,100짜리를 1,080에 팔 권리라 쓸모가 없으니 외가격이고, 본질가치는 0이에요.</p>
+  <p><a class="back" href="#d12q3">문제로 돌아가기</a></p>
+</div>
+</section>
+
+</section>
+</body>
+</html>
