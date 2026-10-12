@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="ko" xml:lang="ko">
+<head>
+<meta charset="UTF-8"/>
+<title>Day 13. 녹아 없어지는 값, 시간가치</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body epub:type="bodymatter">
+<section epub:type="chapter" id="day13">
+
+<p class="day">Day 13</p>
+<h1>녹아 없어지는 값, 시간가치</h1>
+<p class="oneline">옵션 가격은 내재가치와 시간가치로 이루어져요.</p>
+
+<h2>이런 적 있나요?</h2>
+<p>더운 여름날 얼음 한 컵을 받았어요. 처음에는 얼음이 천천히 녹는 것 같다가, 다 녹아 갈 무렵에는 눈에 띄게 빨리 사라져요. 옵션 가격 안에도 이렇게 시간이 지나면 녹아 버리는 부분이 있어요. 오늘은 옵션 가격이 무엇으로 이루어져 있는지 알아봐요.</p>
+
+<h2>쉽게 이해하기</h2>
+<p>옵션 가격(프리미엄)은 두 부분으로 이루어져 있어요.</p>
+<ul>
+  <li>내재가치: 지금 당장 권리를 쓰면 얻는 이익이에요. Day 12에서 배운 본질가치와 같은 말이에요. 콜 옵션이라면 "기초자산 가격 − 행사가격"이에요.</li>
+  <li>시간가치: 옵션 가격에서 내재가치를 뺀 나머지예요. 만기까지 남은 시간 동안 "값이 더 유리하게 바뀔지도 모른다"는 기대에 붙는 값이에요.</li>
+</ul>
+<p>Day 11의 운동화 예약권으로 생각해 볼까요? 출시일이 한 달 남은 예약권은, 그사이 운동화 인기가 치솟을지도 모르니 값어치가 있어요. 하지만 출시일이 내일이라면 그런 기대를 할 시간이 거의 없지요. 그래서 시간가치는 만기가 다가올수록 줄어들고, 만기일에는 0이 돼요. 만기일에 남는 것은 내재가치뿐이에요.</p>
+<p>코스피200 옵션으로 계산해 볼게요. 지수가 1,100이고 만기까지 24일 남았어요. 행사가격 1,080짜리 콜 옵션이 36.90에 거래된다면, 내재가치는 1,100 − 1,080 = 20이고 시간가치는 36.90 − 20 = 16.90이에요. 코스피200 옵션은 1포인트가 25만 원이라서, 이 옵션 1계약을 사려면 922만 5천 원(36.90 × 25만 원)이 들어요. 그중 내재가치가 500만 원, 시간가치가 422만 5천 원이에요.</p>
+<p>같은 날 행사가격 1,140짜리 콜 옵션은 10.60에 거래돼요. 지금 1,100인 것을 1,140에 살 권리는 당장은 쓸모가 없으니 내재가치는 0이에요. 그래도 값이 붙는 까닭은, 만기일까지 지수가 1,140보다 오를 가능성이 있기 때문이에요. 이 옵션의 가격 10.60은 모두 시간가치예요.</p>
+
+<h2>그림으로 보기</h2>
+<figure id="fig13-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 326" role="img" aria-label="옵션 가격의 두 부분">
+<rect x="0" y="0" width="760" height="326" fill="#FFFFFF"/>
+<text x="24" y="30" font-family="sans-serif" font-size="17" font-weight="bold" fill="#1C2126">시간가치는 만기가 다가올수록 녹아 없어지고, 마지막에 가장 빨리 녹아요</text>
+<text x="24" y="54" font-family="sans-serif" font-size="13" fill="#626A72">블랙-숄즈 모형으로 계산한 예시 (변동성 22% 가정) · 단위: 포인트, 1포인트 = 25만 원</text>
+<text x="170" y="82" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1C2126">① 옵션 가격 = 내재가치 + 시간가치</text>
+<line x1="380" y1="74" x2="380" y2="316" stroke="#D6DADD" stroke-width="1"/>
+<rect x="70" y="206" width="80" height="84" fill="#C8322F"/>
+<rect x="70" y="135.02" width="80" height="70.98" fill="#C8322F" fill-opacity="0.3" stroke="#C8322F" stroke-dasharray="4 3"/>
+<text x="110" y="127.02" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1C2126">36.90</text>
+<text x="110" y="308" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#626A72">행사가격 1,080 콜</text>
+<text x="110" y="253" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF">내재 20</text>
+<text x="110" y="175.51" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#C8322F">시간 16.9</text>
+
+<rect x="200" y="245.48" width="80" height="44.52" fill="#C8322F" fill-opacity="0.3" stroke="#C8322F" stroke-dasharray="4 3"/>
+<text x="240" y="237.48" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1C2126">10.60</text>
+<text x="240" y="308" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#626A72">행사가격 1,140 콜</text>
+<text x="240" y="272.74" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#C8322F">시간 10.6</text>
+<text x="170" y="100" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#626A72">코스피200 1,100 · 만기까지 24일</text>
+<text x="570" y="82" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1C2126">② 시간가치가 녹는 모습 (등가격 1,100 콜)</text>
+<line x1="420" y1="290" x2="720" y2="290" stroke="#1C2126" stroke-width="1.2"/>
+<polyline points="420.0,115.4 425.0,117.0 430.0,118.5 435.0,120.1 440.0,121.6 445.0,123.2 450.0,124.8 455.0,126.4 460.0,128.1 465.0,129.7 470.0,131.4 475.0,133.0 480.0,134.7 485.0,136.4 490.0,138.1 495.0,139.9 500.0,141.6 505.0,143.4 510.0,145.2 515.0,147.0 520.0,148.8 525.0,150.7 530.0,152.5 535.0,154.4 540.0,156.4 545.0,158.3 550.0,160.3 555.0,162.3 560.0,164.3 565.0,166.4 570.0,168.4 575.0,170.6 580.0,172.7 585.0,174.9 590.0,177.1 595.0,179.4 600.0,181.7 605.0,184.1 610.0,186.5 615.0,188.9 620.0,191.4 625.0,194.0 630.0,196.7 635.0,199.4 640.0,202.1 645.0,205.0 650.0,208.0 655.0,211.0 660.0,214.2 665.0,217.5 670.0,221.0 675.0,224.6 680.0,228.4 685.0,232.4 690.0,236.8 695.0,241.5 700.0,246.7 705.0,252.6 710.0,259.5 715.0,268.5 720.0,290.0" fill="none" stroke="#C8322F" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="420.0" cy="115.4" r="5" fill="#C8322F"/>
+<text x="426" y="105.424" text-anchor="start" font-family="sans-serif" font-size="11" font-weight="bold" fill="#C8322F">41.3</text>
+<text x="420" y="308" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#626A72">60일 전</text>
+<circle cx="570.0" cy="168.4" r="5" fill="#C8322F"/>
+<text x="576" y="158.447" text-anchor="start" font-family="sans-serif" font-size="11" font-weight="bold" fill="#C8322F">28.8</text>
+<text x="570" y="308" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#626A72">30일 전</text>
+<circle cx="670.0" cy="221.0" r="5" fill="#C8322F"/>
+<text x="676" y="210.953" text-anchor="start" font-family="sans-serif" font-size="11" font-weight="bold" fill="#C8322F">16.4</text>
+<text x="670" y="308" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#626A72">10일 전</text>
+<circle cx="720.0" cy="290.0" r="5" fill="#C8322F"/>
+<text x="716" y="280" text-anchor="end" font-family="sans-serif" font-size="11" font-weight="bold" fill="#C8322F">0.0</text>
+<text x="720" y="308" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#626A72">만기</text>
+</svg>
+<figcaption>그림 13-1. 옵션 가격의 두 부분과 녹는 시간가치</figcaption>
+</figure>
+<p>그림 13-1의 왼쪽은 두 콜 옵션의 가격을 나눠 본 거예요. 1,080 콜은 진한 부분(내재가치 20)과 옅은 부분(시간가치 16.90)으로, 1,140 콜은 옅은 부분(시간가치 10.60)으로만 이루어져 있어요.</p>
+<p>오른쪽은 지수가 1,100에서 그대로라고 할 때, 행사가격 1,100짜리 콜 옵션의 가격이 만기까지 어떻게 줄어드는지 보여 줘요. 이 옵션은 내재가치가 0이라 가격이 모두 시간가치예요. 60일 전에 41.3이던 값이 30일 전 28.8, 10일 전 16.4로 줄고, 만기에는 0이 돼요. 얼음처럼 처음에는 천천히, 끝으로 갈수록 빠르게 녹지요.</p>
+
+<h2>이럴 땐 조심</h2>
+<p>옵션을 산 사람은 방향을 맞히고도 손해를 볼 수 있어요. 예를 들어 만기 24일 전에 1,140 콜을 10.60에 샀어요. 2주 뒤 지수가 생각대로 1,120까지 올랐지만, 남은 날이 10일로 줄어 시간가치가 녹는 바람에 옵션 가격은 8.56으로 내려가 있어요. 방향은 맞혔는데 2.04포인트, 51만 원을 잃은 거예요. 내재가치가 늘어나는 속도보다 시간가치가 녹는 속도가 빨랐기 때문이에요.</p>
+<p>그래서 옵션을 사는 사람에게 시간은 가장 큰 적이에요. 방향만이 아니라 "얼마나 빨리, 얼마나 크게" 움직일지까지 맞혀야 해요. 요즘은 만기가 일주일 단위로 돌아오는 위클리 옵션도 있는데, 남은 시간이 짧은 만큼 시간가치도 훨씬 빨리 녹아요.</p>
+
+<h2>오늘의 체크</h2>
+<ol class="check">
+  <li id="d13q1">옵션 가격을 이루는 두 부분은 무엇일까요? <a class="to-answer" href="#d13a1">정답 보기</a></li>
+  <li id="d13q2">코스피200이 1,100일 때 행사가격 1,090짜리 콜 옵션이 25.00에 거래되고 있어요. 내재가치와 시간가치는 각각 얼마일까요? <a class="to-answer" href="#d13a2">정답 보기</a></li>
+  <li id="d13q3">옵션을 산 사람이 값의 방향을 맞히고도 손해를 볼 수 있는 까닭은 무엇일까요? <a class="to-answer" href="#d13a3">정답 보기</a></li>
+</ol>
+
+<h2>한 줄 정리</h2>
+<p>옵션 가격은 내재가치와 시간가치로 이루어져요. 시간가치는 만기가 다가올수록 녹아 없어져서, 옵션을 산 사람에게 시간은 적이에요.</p>
+
+<section class="answers" id="day13-answers">
+<h2>Day 13 정답과 해설</h2>
+<div class="answer" id="d13a1">
+  <p class="verdict">1번. 정답: 내재가치와 시간가치</p>
+  <p>내재가치는 지금 당장 권리를 쓰면 얻는 이익이고, 시간가치는 옵션 가격에서 내재가치를 뺀 나머지로 만기까지 남은 시간에 대한 기대값이에요.</p>
+  <p><a class="back" href="#d13q1">문제로 돌아가기</a></p>
+</div>
+<div class="answer" id="d13a2">
+  <p class="verdict">2번. 정답: 내재가치 10, 시간가치 15</p>
+  <p>내재가치는 1,100 − 1,090 = 10이고, 시간가치는 25.00 − 10 = 15예요. 돈으로 바꾸면 내재가치 250만 원, 시간가치 375만 원이에요.</p>
+  <p><a class="back" href="#d13q2">문제로 돌아가기</a></p>
+</div>
+<div class="answer" id="d13a3">
+  <p class="verdict">3번. 정답: 값이 생각대로 움직여도, 그사이 시간가치가 녹는 양이 더 크면 옵션 가격이 내려가기 때문</p>
+  <p>내재가치가 늘어나는 것보다 시간가치가 줄어드는 것이 크면 손해예요. 옵션을 산 사람은 방향뿐 아니라 속도와 크기까지 맞혀야 해요.</p>
+  <p><a class="back" href="#d13q3">문제로 돌아가기</a></p>
+</div>
+</section>
+
+</section>
+</body>
+</html>
