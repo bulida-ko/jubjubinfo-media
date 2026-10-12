@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="ko" xml:lang="ko">
+<head>
+<meta charset="UTF-8"/>
+<title>Day 16. 흔들릴수록 비싸지는 옵션, 변동성</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body epub:type="bodymatter">
+<section epub:type="chapter" id="day16">
+
+<p class="day">Day 16</p>
+<h1>흔들릴수록 비싸지는 옵션, 변동성</h1>
+<p class="oneline">옵션 가격에 가장 큰 영향을 주는 것은 변동성이에요.</p>
+
+<h2>이런 적 있나요?</h2>
+<p>Day 11의 운동화 예약권을 다시 꺼내 볼게요. 이번에는 운동화가 두 켤레예요. 하나는 값이 거의 변하지 않는 얌전한 운동화이고, 다른 하나는 유행에 따라 값이 크게 오르내리는 출렁이는 운동화예요. 둘 다 지금은 10만 원이에요. 두 운동화의 "10만 원에 살 수 있는 예약권" 중 어느 쪽이 더 비싸야 할까요?</p>
+
+<h2>쉽게 이해하기</h2>
+<p>선물과 옵션을 거래하다 보면 "이론가격"이라는 말을 자주 들어요. 지금 기초자산 가격과 여러 조건을 놓고, 선물이나 옵션이 얼마여야 맞는지 계산한 값이에요. 이론가격은 "공짜 돈벌이(위험 없는 차익거래)가 없다"는 가정으로 계산해서, 실제 가격이 이론가격과 크게 다르면 차익거래 기회가 생겨요.</p>
+<p>선물의 이론가격은 Day 15에서 배웠어요. 기초자산을 만기까지 들고 있는 데 드는 비용(이자 등, "보유비용")을 현물 가격에 더하는 거예요. 상품마다 보유비용을 계산하는 방법만 다를 뿐, 원리는 모두 같아요.</p>
+<p>옵션의 이론가격은 조금 더 복잡해요. 다섯 가지가 영향을 줘요.</p>
+<table>
+<thead><tr><th>이것이 커지면</th><th>콜 옵션</th><th>풋 옵션</th></tr></thead>
+<tbody>
+<tr><td>기초자산 가격</td><td>비싸져요</td><td>싸져요</td></tr>
+<tr><td>행사가격</td><td>싸져요</td><td>비싸져요</td></tr>
+<tr><td>변동성</td><td>비싸져요</td><td>비싸져요</td></tr>
+<tr><td>만기까지 남은 시간</td><td>비싸져요</td><td>비싸져요</td></tr>
+<tr><td>금리</td><td>조금 비싸져요</td><td>조금 싸져요</td></tr>
+</tbody>
+</table>
+<p>기초자산 가격과 행사가격은 내재가치를 정하고(Day 12), 나머지가 시간가치를 정해요(Day 13). 그중 가장 중요한 것이 "변동성", 즉 값이 얼마나 크게 오르내리는가예요. 이 다섯 가지로 옵션 가격을 계산하는 공식이 1973년에 나온 "블랙-숄즈 모형"이고, 이 책의 옵션 숫자들도 이 공식으로 계산했어요.</p>
+
+<h2>그림으로 보기</h2>
+<figure id="fig16-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 320" role="img" aria-label="변동성과 옵션 가격">
+<rect x="0" y="0" width="760" height="320" fill="#FFFFFF"/>
+<text x="24" y="30" font-family="sans-serif" font-size="17" font-weight="bold" fill="#1C2126">평균 가격이 같아도, 더 크게 출렁이는 쪽의 예약권이 훨씬 값어치 있어요</text>
+<text x="24" y="54" font-family="sans-serif" font-size="13" fill="#626A72">운동화를 10만 원에 살 수 있는 예약권(콜 옵션)의 값어치 비교</text>
+<line x1="380" y1="74" x2="380" y2="316" stroke="#D6DADD" stroke-width="1"/>
+<text x="200" y="86" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#1C2126">얌전한 운동화</text>
+<text x="200" y="104" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#626A72">지금 10만 원 · 다음 달엔 둘 중 하나 (반반)</text>
+<rect x="30" y="158" width="100" height="44" rx="8" fill="#F1F3F1" stroke="#D6DADD"/>
+<text x="80" y="185" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1C2126">10만 원</text>
+<line x1="132" y1="172" x2="188" y2="148" stroke="#C8322F" stroke-width="1.8"/><polygon points="188,148 181.8,154.5 179.0,148.0" fill="#C8322F"/>
+<line x1="132" y1="188" x2="188" y2="222" stroke="#2F5FD0" stroke-width="1.8"/><polygon points="188,222 179.1,220.7 182.7,214.7" fill="#2F5FD0"/>
+<rect x="190" y="124" width="150" height="50" rx="8" fill="#FBE9E9" stroke="#D6DADD"/><text x="265" y="146" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#C8322F">10만 5천 원</text><text x="265" y="164" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#626A72">예약권 이득 5천 원</text>
+<rect x="190" y="202" width="150" height="50" rx="8" fill="#E9EEF9" stroke="#D6DADD"/><text x="265" y="224" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#2F5FD0">9만 5천 원</text><text x="265" y="242" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#626A72">포기, 이득 0원</text>
+<rect x="60" y="270" width="300" height="34" rx="8" fill="#EEF0EE"/>
+<text x="210" y="292" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1C2126">예약권(행사가격 10만 원)의 평균 값어치: 2,500원</text>
+<text x="580" y="86" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#1C2126">출렁이는 운동화</text>
+<text x="580" y="104" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#626A72">지금 10만 원 · 다음 달엔 둘 중 하나 (반반)</text>
+<rect x="410" y="158" width="100" height="44" rx="8" fill="#F1F3F1" stroke="#D6DADD"/>
+<text x="460" y="185" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1C2126">10만 원</text>
+<line x1="512" y1="172" x2="568" y2="148" stroke="#C8322F" stroke-width="1.8"/><polygon points="568,148 561.8,154.5 559.0,148.0" fill="#C8322F"/>
+<line x1="512" y1="188" x2="568" y2="222" stroke="#2F5FD0" stroke-width="1.8"/><polygon points="568,222 559.1,220.7 562.7,214.7" fill="#2F5FD0"/>
+<rect x="570" y="124" width="150" height="50" rx="8" fill="#FBE9E9" stroke="#D6DADD"/><text x="645" y="146" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#C8322F">13만 원</text><text x="645" y="164" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#626A72">예약권 이득 3만 원</text>
+<rect x="570" y="202" width="150" height="50" rx="8" fill="#E9EEF9" stroke="#D6DADD"/><text x="645" y="224" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#2F5FD0">7만 원</text><text x="645" y="242" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#626A72">포기, 이득 0원</text>
+<rect x="440" y="270" width="300" height="34" rx="8" fill="#EEF0EE"/>
+<text x="590" y="292" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1C2126">예약권(행사가격 10만 원)의 평균 값어치: 1만 5천 원</text>
+</svg>
+<figcaption>그림 16-1. 출렁일수록 예약권이 값어치 있는 까닭</figcaption>
+</figure>
+<p>그림 16-1의 왼쪽은 얌전한 운동화예요. 다음 달 값이 10만 5천 원 아니면 9만 5천 원이에요. 오르면 예약권으로 5천 원 이득, 내리면 예약권을 버려서 0원이에요. 반반이니 평균 값어치는 2,500원이에요.</p>
+<p>오른쪽은 출렁이는 운동화예요. 다음 달 값이 13만 원 아니면 7만 원이에요. 오르면 3만 원 이득, 내리면 버려서 0원이에요. 평균 값어치는 1만 5천 원으로, 왼쪽의 여섯 배예요. 두 운동화 모두 평균 가격은 10만 원으로 같은데 말이에요.</p>
+<p>비밀은 옵션을 산 사람의 손해가 막혀 있다는 데 있어요. 값이 크게 내려도 예약권을 버리면 그만이라 손해는 늘지 않고, 값이 크게 오르면 이득은 그만큼 커져요. 그래서 크게 출렁일수록 산 사람에게 유리하고, 옵션 가격은 콜이든 풋이든 비싸져요.</p>
+
+<h2>이럴 땐 조심</h2>
+<p>변동성이 높아 옵션이 비쌀 때 옵션을 사면, 나중에 시장이 잠잠해지기만 해도 옵션 가격이 내려가요. 방향을 맞혔는데도 손해를 볼 수 있는 또 하나의 까닭이에요. 시장이 크게 흔들려 모두가 불안할 때 옵션은 가장 비싸요.</p>
+<p>지금 시장의 변동성이 어느 정도인지는 "브이코스피(VKOSPI)"라는 숫자로 확인할 수 있어요. 코스피200 옵션 가격에서 거꾸로 계산한 변동성 지수로, 시장이 불안할수록 높아져서 "공포지수"라고도 불러요. 옵션을 사기 전에 이 숫자가 평소보다 높은지 낮은지 살펴보세요.</p>
+
+<h2>오늘의 체크</h2>
+<ol class="check">
+  <li id="d16q1">실제 옵션 가격이 이론가격과 크게 다르면 무엇을 뜻할까요? <a class="to-answer" href="#d16a1">정답 보기</a></li>
+  <li id="d16q2">변동성이 커지면 콜 옵션과 풋 옵션의 가격은 각각 어떻게 될까요? 그 까닭은 무엇일까요? <a class="to-answer" href="#d16a2">정답 보기</a></li>
+  <li id="d16q3">그림 16-1에서 운동화를 10만 원에 팔 수 있는 예약권(풋 옵션)이라면, 얌전한 운동화와 출렁이는 운동화의 평균 값어치는 각각 얼마일까요? <a class="to-answer" href="#d16a3">정답 보기</a></li>
+</ol>
+
+<h2>한 줄 정리</h2>
+<p>옵션의 이론가격은 다섯 가지로 정해지고, 그중 가장 중요한 것은 변동성이에요. 크게 출렁일수록 콜이든 풋이든 옵션은 비싸져요.</p>
+
+<section class="answers" id="day16-answers">
+<h2>Day 16 정답과 해설</h2>
+<div class="answer" id="d16a1">
+  <p class="verdict">1번. 정답: 차익거래 기회가 있다는 뜻</p>
+  <p>이론가격은 위험 없는 차익거래가 없다는 가정으로 계산해요. 실제 가격이 이와 크게 다르면, 비싼 쪽을 팔고 싼 쪽을 사서 이익을 얻을 기회가 생겨요.</p>
+  <p><a class="back" href="#d16q1">문제로 돌아가기</a></p>
+</div>
+<div class="answer" id="d16a2">
+  <p class="verdict">2번. 정답: 둘 다 비싸진다. 옵션을 산 사람은 손해가 막혀 있고 이익은 열려 있어서, 크게 출렁일수록 유리하기 때문</p>
+  <p>값이 불리하게 크게 움직여도 손해는 옵션 가격까지이고, 유리하게 크게 움직이면 이익이 그만큼 커져요. 콜과 풋 모두 같은 원리예요.</p>
+  <p><a class="back" href="#d16q2">문제로 돌아가기</a></p>
+</div>
+<div class="answer" id="d16a3">
+  <p class="verdict">3번. 정답: 얌전한 운동화 2,500원, 출렁이는 운동화 1만 5천 원</p>
+  <p>풋은 값이 내릴 때 쓸모 있어요. 얌전한 운동화는 9만 5천 원이 되면 5천 원 이득(반반이니 평균 2,500원), 출렁이는 운동화는 7만 원이 되면 3만 원 이득(평균 1만 5천 원)이에요. 오를 때는 둘 다 버려서 0원이에요.</p>
+  <p><a class="back" href="#d16q3">문제로 돌아가기</a></p>
+</div>
+</section>
+
+</section>
+</body>
+</html>
