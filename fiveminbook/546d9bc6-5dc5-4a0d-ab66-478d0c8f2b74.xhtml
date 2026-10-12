@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="ko" xml:lang="ko">
+<head>
+<meta charset="UTF-8"/>
+<title>Day 6. 뽑기에 용돈을 다 쓰지 않듯이, 위험관리</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body epub:type="bodymatter">
+<section epub:type="chapter" id="day06">
+
+<p class="day">Day 6</p>
+<h1>뽑기에 용돈을 다 쓰지 않듯이, 위험관리</h1>
+<p class="oneline">선물과 옵션은 가진 돈의 일부만, 목표를 정해 두고 거래해요.</p>
+
+<h2>이런 적 있나요?</h2>
+<p>문구점 앞 뽑기 기계에 용돈을 한꺼번에 다 넣어 버린 적 있나요? 원하는 게 안 나오면 그달 용돈이 모두 사라져요. 하지만 만 원 중 3천 원만 쓰기로 정해 두면, 꽝이 나와도 나머지 7천 원으로 한 달을 지낼 수 있어요. 선물거래의 위험을 다루는 방법도 이와 같아요.</p>
+
+<h2>쉽게 이해하기</h2>
+<p>선물은 위험하다고들 해요. 앞으로 배울 옵션은 더 위험하다고 하지요. 그래서 선물과 옵션을 거래하려면 위험을 다루는 법을 꼭 알아야 해요. 위험을 다루려면 먼저 위험이 어디서 오는지 알아야 해요.</p>
+<p>Day 2에서 배운 것을 떠올려 볼까요? 코스피200 선물 1계약은 2억 5천만 원어치인데, 증거금은 그중 5,000만 원 정도만 내요. 적은 돈으로 큰 거래를 하는 거예요. 그래서 값이 조금만 움직여도 낸 돈에 비해 이익과 손해가 크게 생겨요. 적은 돈으로 큰돈을 벌 기회이기도 하지만, 그만큼 빨리 잃을 수도 있어요. 이것이 선물이 위험한 까닭이에요.</p>
+<p>위험을 다루는 기본은 가진 돈의 일부만 선물에 쓰는 거예요. 값이 생각과 반대로 움직여도 버틸 여유가 있어야 해요. 여유가 없으면 계좌의 돈이 유지증거금보다 줄어드는 순간 증권회사가 내 선물을 강제로 정리해 버려요(Day 2). 그러면 값이 다시 돌아오기를 기다릴 기회조차 사라져요.</p>
+<p>그럼 얼마나 쓰는 게 좋을까요? 흔히 선물은 투자할 수 있는 돈의 30% 미만, 옵션은 10% 미만으로 하라고 해요. 투자할 돈이 5,000만 원이라면 선물에는 1,500만 원 미만이에요. 코스피200 선물 1계약의 증거금(약 5,000만 원)에는 모자라지만, 크기가 5분의 1인 미니코스피200 선물이라면 1계약을 거래할 수 있어요. 미니 선물은 1포인트에 5만 원이라, 지수가 1,000일 때 1계약이 5,000만 원어치이고 증거금은 1,000만 원 정도예요.</p>
+
+<h2>그림으로 보기</h2>
+<figure id="fig6-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 320" role="img" aria-label="얼마나 넣느냐가 운명을 가른다">
+<rect x="0" y="0" width="760" height="320" fill="#FFFFFF"/>
+<text x="24" y="30" font-family="sans-serif" font-size="17" font-weight="bold" fill="#1C2126">같은 5,000만 원, 같은 하락(지수 7%)이라도 결과가 전혀 달라요</text>
+<text x="24" y="54" font-family="sans-serif" font-size="13" fill="#626A72">미니코스피200 선물 · 지수 1,000 · 1계약 증거금 1,000만 원으로 가정</text>
+<text x="24" y="126" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1C2126">A: 5계약을 산 경우</text>
+<text x="24" y="144" font-family="sans-serif" font-size="11" fill="#626A72">증거금에 5,000만 원 모두 사용</text>
+<rect x="200" y="110" width="273" height="34" fill="#C8322F" fill-opacity="0.75"/>
+<rect x="473" y="110" width="147" height="34" fill="#C8322F" fill-opacity="0.18" stroke="#C8322F" stroke-dasharray="4 3"/>
+<text x="336.5" y="132" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF">남은 돈 3,250만 원</text>
+<text x="546.5" y="132" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#C8322F">−1,750만</text>
+<line x1="494" y1="100" x2="494" y2="154" stroke="#1C2126" stroke-width="2"/>
+<text x="494" y="96" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1C2126">꼭 남겨야 할 돈 3,500만</text>
+<text x="24" y="236" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1C2126">B: 1계약만 산 경우</text>
+<text x="24" y="254" font-family="sans-serif" font-size="11" fill="#626A72">증거금 1,000만 원 + 여유 4,000만 원</text>
+<rect x="200" y="220" width="390.6" height="34" fill="#2F5FD0" fill-opacity="0.75"/>
+<rect x="590.6" y="220" width="29.4" height="34" fill="#2F5FD0" fill-opacity="0.18" stroke="#2F5FD0" stroke-dasharray="4 3"/>
+<text x="395.3" y="242" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF">남은 돈 4,650만 원</text>
+<text x="626" y="242" font-family="sans-serif" font-size="11" font-weight="bold" fill="#2F5FD0">−350만</text>
+<line x1="258.8" y1="210" x2="258.8" y2="264" stroke="#1C2126" stroke-width="2"/>
+<text x="258.8" y="206" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1C2126">꼭 남겨야 할 돈 700만</text>
+<text x="200" y="220" font-family="sans-serif" font-size="1" fill="#626A72"></text>
+<text x="380" y="300" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#C8322F">A는 꼭 남겨야 할 돈(유지증거금)보다 적어져 강제로 정리돼요. B는 끄떡없어요</text>
+</svg>
+<figcaption>그림 6-1. 같은 돈, 같은 하락, 다른 결과</figcaption>
+</figure>
+<p>그림 6-1은 5,000만 원을 가진 두 사람이 미니코스피200 선물을 산 뒤, 지수가 7%(70포인트) 내린 경우예요. 1계약당 손해는 70 × 5만 원 = 350만 원이에요.</p>
+<p>A는 가진 돈을 모두 증거금으로 써서 5계약을 샀어요. 손해는 350만 원 × 5 = 1,750만 원이고, 남은 돈은 3,250만 원이에요. 그런데 5계약을 유지하려면 꼭 남겨야 할 돈(유지증거금)이 3,500만 원 정도예요. 모자라니 돈을 더 넣거나, 아니면 강제로 정리돼요. B는 1계약만 샀어요. 손해는 350만 원이고 남은 돈은 4,650만 원이라, 꼭 남겨야 할 돈 700만 원보다 훨씬 많아요. 끄떡없이 다음 기회를 기다릴 수 있어요.</p>
+
+<h2>이럴 땐 조심</h2>
+<p>모든 거래에는 이익도 있고 손해도 있어요. 그런데 이익 목표와 손해 목표를 정하지 않고 거래하면, 가진 돈에는 한계가 있기 때문에 언젠가 그 바닥에 닿아 모두 잃게 돼요. 아무도 모두 잃으려고 거래하지는 않지만, 많은 사람이 그렇게 끝나요. 목표 없이 거래하기 때문이에요.</p>
+<p>그래서 거래 하나하나에는 Day 4에서 배운 목표 가격과 손절 가격을 정하고, 계좌 전체에도 목표를 세워요. 예를 들어 "이번 달에 10%를 벌면 이익을 챙기고 쉰다", "처음 돈에서 10%를 잃으면 그달은 거래를 멈춘다"처럼요. 목표를 이루면 욕심내지 말고 이익을 챙기세요. 목표 없는 거래는 결국 모두 잃는 것을 목표로 하는 것과 같아요.</p>
+
+<h2>오늘의 체크</h2>
+<ol class="check">
+  <li id="d6q1">선물과 옵션이 위험하다고 하는 까닭은 무엇일까요? <a class="to-answer" href="#d6a1">정답 보기</a></li>
+  <li id="d6q2">투자할 수 있는 돈이 5,000만 원이에요. 흔히 말하는 기준으로 선물과 옵션에는 각각 얼마 미만을 쓰는 것이 좋을까요? <a class="to-answer" href="#d6a2">정답 보기</a></li>
+  <li id="d6q3">그림 6-1에서 A가 강제로 정리될 위기에 놓인 까닭은 무엇일까요? <a class="to-answer" href="#d6a3">정답 보기</a></li>
+</ol>
+
+<h2>한 줄 정리</h2>
+<p>선물은 적은 돈으로 큰 거래를 하기 때문에 위험해요. 가진 돈의 일부만 쓰고, 목표를 정해 두는 것이 위험을 다루는 기본이에요.</p>
+
+<section class="answers" id="day06-answers">
+<h2>Day 6 정답과 해설</h2>
+<div class="answer" id="d6a1">
+  <p class="verdict">1번. 정답: 적은 돈(증거금)으로 큰 금액을 거래하기 때문</p>
+  <p>낸 돈은 전체 금액의 일부지만 이익과 손해는 전체 금액 기준으로 생겨요. 값이 조금만 움직여도 낸 돈에 비해 크게 벌거나 크게 잃어요.</p>
+  <p><a class="back" href="#d6q1">문제로 돌아가기</a></p>
+</div>
+<div class="answer" id="d6a2">
+  <p class="verdict">2번. 정답: 선물은 1,500만 원 미만, 옵션은 500만 원 미만</p>
+  <p>선물은 투자할 수 있는 돈의 30% 미만, 옵션은 10% 미만이 흔히 말하는 기준이에요. 5,000만 원의 30%는 1,500만 원, 10%는 500만 원이에요.</p>
+  <p><a class="back" href="#d6q2">문제로 돌아가기</a></p>
+</div>
+<div class="answer" id="d6a3">
+  <p class="verdict">3번. 정답: 가진 돈을 모두 증거금으로 써서, 손해를 버틸 여유가 없었기 때문</p>
+  <p>5계약을 사서 손해가 다섯 배(1,750만 원)로 커졌고, 남은 돈 3,250만 원이 꼭 남겨야 할 돈 3,500만 원보다 적어졌어요. 여유를 남겨 둔 B는 같은 하락에도 버틸 수 있었어요.</p>
+  <p><a class="back" href="#d6q3">문제로 돌아가기</a></p>
+</div>
+</section>
+
+</section>
+</body>
+</html>
