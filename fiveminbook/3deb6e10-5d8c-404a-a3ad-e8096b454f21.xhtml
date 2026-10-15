@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="ko" xml:lang="ko">
+<head>
+<meta charset="UTF-8"/>
+<title>Day 55. 들어가지 말아야 할 차트</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body epub:type="bodymatter">
+<section epub:type="chapter" id="day55">
+
+<p class="day">Day 55</p>
+<h1>들어가지 말아야 할 차트</h1>
+<p class="oneline">손절 위치를 정할 수 없는 차트는 좋아 보여도 건너뜁니다.</p>
+
+<h2>이런 적 있나요?</h2>
+<p>차트가 정말 좋아 보여서 샀는데, 막상 손절 기준을 정하려니 마땅한 자리가 없어 "10% 빠지면 판다"처럼 대충 정한 적 있으시죠? 그리고 정확히 그 근처에서 손절하고 나면 가격이 다시 올라간 적도 있을 겁니다. 그 차트는 좋은 차트가 아니라, 들어가면 안 되는 차트였습니다.</p>
+
+<h2>쉽게 이해하기</h2>
+<p>Day 3에서 고수는 사면 안 되는 이유부터 찾는다고 했습니다. 그 이유 중 가장 흔한 것이 "손절 자리를 정할 수 없다"입니다. 손절 자리란 Day 57에서 자세히 다룰 "내가 틀렸다는 것이 확인되는 가격"입니다. 직전 저점, 박스 하단, 두 번째 바닥처럼 가격이 받쳐 주던 자리가 그것입니다.</p>
+<p>이런 자리가 지금 가격 바로 아래에 없다면, 손절을 어디에 두든 "그냥 정한 숫자"가 됩니다. 아무 의미 없는 자리에서 손절하면 자주 털리고, 손절을 너무 멀리 두면 한 번 틀릴 때 크게 잃습니다. 어느 쪽이든 손익 균형이 나쁩니다.</p>
+<p>등산을 떠올려 보세요. 아무리 경치가 좋은 길이라도, 미끄러졌을 때 잡을 곳이 없는 절벽 길은 가지 않는 게 맞습니다. 좋아 보이는 것과 안전한 것은 다릅니다.</p>
+<p>손절 자리를 정하기 어려운 차트는 대개 이런 모습입니다.</p>
+<ul>
+  <li>갭 급등 뒤 허공: 뉴스로 크게 뛰어 시작해 아래에 받쳐 줄 자리가 없습니다(Day 39).</li>
+  <li>떨어지는 칼날: 하락 중이라 어디서 멈출지 아무도 모릅니다(Day 36).</li>
+  <li>너무 큰 변동: 하루에 10%씩 오르내려 손절 폭이 커집니다. 손절 폭이 크면 살 수 있는 양이 줄어듭니다(Day 58).</li>
+  <li>너무 적은 거래량: 팔고 싶을 때 팔 수 없어, 손절 기준이 있어도 실행이 안 됩니다.</li>
+</ul>
+
+<h2>차트로 보기</h2>
+<figure id="fig55-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 352" role="img" aria-label="손절 자리의 유무">
+<rect x="0" y="0" width="760" height="352" fill="#FFFFFF"/>
+<text x="24" y="30" font-family="sans-serif" font-size="17" font-weight="bold" fill="#1C2126">같은 상승이라도 손절 자리까지의 거리가 다르면 다른 차트입니다</text>
+<text x="24" y="54" font-family="sans-serif" font-size="13" fill="#626A72">파란 점선 = 가장 가까운 손절 자리, 숫자 = 지금 가격에서 손절까지의 거리</text>
+<line x1="380" y1="76" x2="380" y2="346" stroke="#D6DADD" stroke-width="1"/>
+<polyline points="70,276.5 101,258.8 132,264.7 163,241.2 194,247.1 225,223.5 256,229.4 287,205.9 318,217.6 349,194.1" fill="none" stroke="#1C2126" stroke-width="2" stroke-linejoin="round"/>
+<g fill="#1C2126"><circle cx="70" cy="276.5" r="3"/><circle cx="101" cy="258.8" r="3"/><circle cx="132" cy="264.7" r="3"/><circle cx="163" cy="241.2" r="3"/><circle cx="194" cy="247.1" r="3"/><circle cx="225" cy="223.5" r="3"/><circle cx="256" cy="229.4" r="3"/><circle cx="287" cy="205.9" r="3"/><circle cx="318" cy="217.6" r="3"/><circle cx="349" cy="194.1" r="3"/></g>
+<circle cx="349" cy="194.1" r="7" fill="#C8322F"/>
+<text x="349" y="180.118" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#C8322F">지금</text>
+<line x1="70" y1="217.647" x2="359" y2="217.647" stroke="#2F5FD0" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="70" y="211.647" font-family="sans-serif" font-size="11" font-weight="bold" fill="#2F5FD0">가장 가까운 손절 자리 110원</text>
+<line x1="367" y1="194.118" x2="367" y2="217.647" stroke="#626A72" stroke-width="1"/>
+<text x="361" y="209.882" text-anchor="end" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1C2126">4%</text>
+<text x="210" y="86" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#1C2126">손절 자리가 있는 차트</text>
+<text x="210" y="340" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#626A72">직전 저점 110원이 지금 가격 바로 아래</text>
+<polyline points="440,276.5 471,270.6 502,276.5 533,264.7 564,270.6 595,258.8 626,170.6 657,135.3 688,152.9 719,117.6" fill="none" stroke="#1C2126" stroke-width="2" stroke-linejoin="round"/>
+<g fill="#1C2126"><circle cx="440" cy="276.5" r="3"/><circle cx="471" cy="270.6" r="3"/><circle cx="502" cy="276.5" r="3"/><circle cx="533" cy="264.7" r="3"/><circle cx="564" cy="270.6" r="3"/><circle cx="595" cy="258.8" r="3"/><circle cx="626" cy="170.6" r="3"/><circle cx="657" cy="135.3" r="3"/><circle cx="688" cy="152.9" r="3"/><circle cx="719" cy="117.6" r="3"/></g>
+<circle cx="719" cy="117.6" r="7" fill="#C8322F"/>
+<text x="719" y="103.647" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#C8322F">지금</text>
+<line x1="440" y1="258.824" x2="729" y2="258.824" stroke="#2F5FD0" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="729" y="252.824" text-anchor="end" font-family="sans-serif" font-size="11" font-weight="bold" fill="#2F5FD0">가장 가까운 손절 자리 103원</text>
+<line x1="737" y1="117.647" x2="737" y2="258.824" stroke="#626A72" stroke-width="1"/>
+<text x="731" y="192.235" text-anchor="end" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1C2126">23%</text>
+<text x="580" y="86" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#1C2126">손절 자리를 정할 수 없는 차트</text>
+<text x="580" y="340" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#626A72">갭 급등으로 아래가 허공, 가까운 기준이 없음</text>
+</svg>
+<figcaption>그림 55-1. 손절 자리가 있는 차트와 없는 차트</figcaption>
+</figure>
+<p>그림 55-1의 두 차트는 모두 오르는 중이고, 지금 가격도 비슷합니다. 왼쪽은 고점과 저점을 차근차근 높여 왔습니다. 직전 저점 110원이 지금 가격 바로 아래에 있어, 손절까지 거리는 4% 정도입니다.</p>
+<p>오른쪽은 조용히 움직이다 하루 만에 15% 넘게 뛰었습니다. 그 아래는 허공이라, 가장 가까운 받침 자리는 급등 전의 103원입니다. 손절까지 거리가 23%나 됩니다. 같은 폭을 벌려면 오른쪽은 왼쪽보다 여섯 배 가까이 위험을 안아야 합니다. 오른쪽은 좋아 보여도 건너뜁니다.</p>
+
+<h2>이럴 땐 조심</h2>
+<p>들어가지 말아야 할 차트가 영원히 그런 건 아닙니다. 갭 급등 종목도 며칠 쉬면서 급등 당일의 저가를 지키는 눌림을 만들면, 그 저가가 손절 자리가 됩니다(Day 39). 떨어지던 종목도 바닥을 만들고 목선을 넘으면 두 번째 바닥이 손절 자리가 됩니다(Day 49). 지금 건너뛰는 것은 그 종목을 포기하는 게 아니라, 손절 자리가 생길 때까지 기다리는 것입니다.</p>
+
+<h2>오늘의 체크</h2>
+<ol class="check">
+  <li id="d55q1">손절 자리를 정할 수 없는 차트의 흔한 모습 네 가지는 무엇인가요? <a class="to-answer" href="#d55a1">정답 보기</a></li>
+  <li id="d55q2">손절 자리가 없어서 "10% 빠지면 판다"고 정했습니다. 무엇이 문제일까요? <a class="to-answer" href="#d55a2">정답 보기</a></li>
+  <li id="d55q3">갭 급등한 종목을 지금은 건너뛰기로 했습니다. 다시 볼 수 있는 때는 언제일까요? <a class="to-answer" href="#d55a3">정답 보기</a></li>
+</ol>
+
+<h2>한 줄 정리 + 내일 예고</h2>
+<p>손절 위치를 정할 수 없는 차트는 좋아 보여도 건너뜁니다. 그런데 손절 자리를 정해 두고도 막상 그 자리에서 팔지 못하는 사람이 많습니다. 내일은 손절이 왜 실패가 아니라 기술인지 알아봅니다.</p>
+
+<section class="answers" id="day55-answers">
+<h2>Day 55 정답과 해설</h2>
+<div class="answer" id="d55a1">
+  <p class="verdict">1번. 정답: 갭 급등 뒤 허공, 떨어지는 칼날, 너무 큰 변동, 너무 적은 거래량</p>
+  <p>아래에 받쳐 줄 자리가 없거나, 어디서 멈출지 모르거나, 손절 폭이 너무 커지거나, 팔고 싶을 때 팔 수 없는 경우입니다.</p>
+  <p><a class="back" href="#d55q1">문제로 돌아가기</a></p>
+</div>
+<div class="answer" id="d55a2">
+  <p class="verdict">2번. 정답: 10%라는 숫자에 아무 의미가 없다</p>
+  <p>그 자리는 가격이 받쳐 주던 자리가 아니라 그냥 정한 숫자입니다. 의미 없는 자리에서는 자주 털리고, 털린 뒤 가격이 다시 오르기도 합니다. 손절은 틀렸다는 것이 확인되는 가격에 두어야 합니다.</p>
+  <p><a class="back" href="#d55q2">문제로 돌아가기</a></p>
+</div>
+<div class="answer" id="d55a3">
+  <p class="verdict">3번. 정답: 며칠 쉬면서 급등 당일의 저가를 지키는 눌림이 만들어졌을 때</p>
+  <p>그 저가가 받쳐 주는 자리로 확인되면 손절 기준이 생깁니다. 건너뛰는 것은 포기가 아니라, 손절 자리가 생길 때까지 기다리는 것입니다.</p>
+  <p><a class="back" href="#d55q3">문제로 돌아가기</a></p>
+</div>
+</section>
+
+</section>
+</body>
+</html>
