@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="ko" xml:lang="ko">
+<head>
+<meta charset="UTF-8"/>
+<title>Day 56. 손절은 실패가 아니라 기술이다</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body epub:type="bodymatter">
+<section epub:type="chapter" id="day56">
+
+<p class="day">Day 56</p>
+<h1>손절은 실패가 아니라 기술이다</h1>
+<p class="oneline">손절은 틀린 판단의 비용을 작게 고정하는 일입니다.</p>
+
+<h2>이런 적 있나요?</h2>
+<p>손절 기준에 닿았는데 "조금만 더 보자" 하고 버티다가, 손실이 두 배, 세 배로 불어난 적 있으시죠? 손절을 실패로 여기면 손절이 어려워집니다. 그런데 손절은 실패가 아니라, 틀렸을 때 내는 비용을 미리 작게 정해 두는 기술입니다.</p>
+
+<h2>쉽게 이해하기</h2>
+<p>Day 2에서 기대값은 이길 때 얼마나 벌고 질 때 얼마나 잃느냐로 정해진다고 했습니다. 손절은 이 중 "질 때 얼마나 잃느냐"를 내가 정하는 유일한 방법입니다. 얼마나 벌지는 시장이 정하지만, 얼마나 잃을지는 내가 정할 수 있습니다.</p>
+<p>보험을 떠올려 보세요. 보험료는 매달 나가는 작은 비용입니다. 아깝지만, 그 덕분에 큰 사고가 나도 살림이 무너지지 않습니다. 손절도 같습니다. 작은 손실을 미리 내고, 큰 손실을 막습니다.</p>
+<p>손절이 중요한 이유가 하나 더 있습니다. 손실은 커질수록 되돌리기가 훨씬 어려워집니다. 10%를 잃으면 11%만 벌면 본전이지만, 50%를 잃으면 100%를 벌어야 본전입니다. 잃은 만큼만 벌면 되는 게 아니라, 잃은 것보다 훨씬 더 벌어야 합니다. 그래서 손실은 작을 때 끊어야 합니다.</p>
+
+<h2>차트로 보기</h2>
+<figure id="fig56-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 340" role="img" aria-label="손실과 회복">
+<rect x="0" y="0" width="760" height="340" fill="#FFFFFF"/>
+<text x="24" y="30" font-family="sans-serif" font-size="17" font-weight="bold" fill="#1C2126">손실이 커질수록 본전으로 돌아오기가 훨씬 어려워집니다</text>
+<text x="24" y="54" font-family="sans-serif" font-size="13" fill="#626A72">잃은 비율과 회복에 필요한 수익률</text>
+<line x1="70" y1="300" x2="720" y2="300" stroke="#D6DADD" stroke-width="1"/>
+<rect x="110" y="280" width="50" height="20" fill="#2F5FD0"/>
+<rect x="170" y="278" width="50" height="22" fill="#C8322F"/>
+<text x="135" y="274" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#2F5FD0">-10%</text>
+<text x="195" y="272" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#C8322F">+11%</text>
+<text x="165" y="320" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1C2126">10% 잃으면</text>
+<rect x="270" y="260" width="50" height="40" fill="#2F5FD0"/>
+<rect x="330" y="250" width="50" height="50" fill="#C8322F"/>
+<text x="295" y="254" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#2F5FD0">-20%</text>
+<text x="355" y="244" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#C8322F">+25%</text>
+<text x="325" y="320" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1C2126">20% 잃으면</text>
+<rect x="430" y="240" width="50" height="60" fill="#2F5FD0"/>
+<rect x="490" y="214" width="50" height="86" fill="#C8322F"/>
+<text x="455" y="234" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#2F5FD0">-30%</text>
+<text x="515" y="208" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#C8322F">+43%</text>
+<text x="485" y="320" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1C2126">30% 잃으면</text>
+<rect x="590" y="200" width="50" height="100" fill="#2F5FD0"/>
+<rect x="650" y="100" width="50" height="200" fill="#C8322F"/>
+<text x="615" y="194" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#2F5FD0">-50%</text>
+<text x="675" y="94" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#C8322F">+100%</text>
+<text x="645" y="320" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1C2126">50% 잃으면</text>
+<rect x="80" y="82" width="12" height="12" fill="#2F5FD0"/>
+<text x="98" y="93" font-family="sans-serif" font-size="12" fill="#626A72">잃은 비율</text>
+<rect x="180" y="82" width="12" height="12" fill="#C8322F"/>
+<text x="198" y="93" font-family="sans-serif" font-size="12" fill="#626A72">본전까지 돌아오는 데 필요한 수익률</text>
+</svg>
+<figcaption>그림 56-1. 잃은 비율과 본전 회복에 필요한 수익률</figcaption>
+</figure>
+<p>그림 56-1의 파란 막대는 잃은 비율, 빨간 막대는 본전으로 돌아오는 데 필요한 수익률입니다. 10% 잃으면 11%, 20% 잃으면 25%가 필요합니다. 여기까지는 그런대로 따라잡을 만합니다.</p>
+<p>그런데 30%를 잃으면 43%, 50%를 잃으면 100%를 벌어야 합니다. 손실이 커질수록 빨간 막대가 파란 막대보다 훨씬 빠르게 자랍니다. 손절을 미루다 손실이 커지면, 되돌리는 데 필요한 수익이 감당하기 어려운 크기가 됩니다.</p>
+
+<h2>이럴 땐 조심</h2>
+<p>손절하고 나서 가격이 다시 오르는 일은 자주 있습니다. 그렇다고 손절이 틀린 건 아닙니다. 손절은 "이 가격 아래로 가면 내 판단의 근거가 사라진다"는 약속을 지킨 것입니다. 열 번 중 몇 번은 손절 뒤에 가격이 다시 오르지만, 나머지 몇 번은 손절 덕분에 큰 손실을 피합니다. 한 번의 결과가 아니라 여러 번의 합으로 봅니다(Day 2). 근거가 다시 생기면 그때 다시 사면 됩니다. 손절한 종목을 다시 사는 것은 부끄러운 일이 아닙니다.</p>
+
+<h2>오늘의 체크</h2>
+<ol class="check">
+  <li id="d56q1">30%를 잃었다면 본전으로 돌아오려면 몇 %를 벌어야 할까요? <a class="to-answer" href="#d56a1">정답 보기</a></li>
+  <li id="d56q2">손절이 실패가 아니라 기술인 이유는 무엇인가요? <a class="to-answer" href="#d56a2">정답 보기</a></li>
+  <li id="d56q3">손절하고 나서 가격이 다시 올랐습니다. 손절이 틀린 것일까요? <a class="to-answer" href="#d56a3">정답 보기</a></li>
+</ol>
+
+<h2>한 줄 정리 + 내일 예고</h2>
+<p>손절은 틀린 판단의 비용을 작게 고정하는 일입니다. 그렇다면 손절 자리는 정확히 어디에 두어야 할까요? 내일은 손절 라인 잡는 법을 알아봅니다.</p>
+
+<section class="answers" id="day56-answers">
+<h2>Day 56 정답과 해설</h2>
+<div class="answer" id="d56a1">
+  <p class="verdict">1번. 정답: 약 43%</p>
+  <p>30%를 잃으면 100원이 70원이 됩니다. 70원에서 다시 100원이 되려면 30원, 즉 70원의 약 43%를 벌어야 합니다. 잃은 비율보다 훨씬 더 벌어야 본전입니다.</p>
+  <p><a class="back" href="#d56q1">문제로 돌아가기</a></p>
+</div>
+<div class="answer" id="d56a2">
+  <p class="verdict">2번. 정답: 질 때 얼마나 잃을지를 내가 미리 정하는 유일한 방법이기 때문</p>
+  <p>얼마나 벌지는 시장이 정하지만, 얼마나 잃을지는 손절로 내가 정할 수 있습니다. 작은 손실을 미리 내고 큰 손실을 막는 것이라, 실패가 아니라 비용을 관리하는 기술입니다.</p>
+  <p><a class="back" href="#d56q2">문제로 돌아가기</a></p>
+</div>
+<div class="answer" id="d56a3">
+  <p class="verdict">3번. 정답: 아니오</p>
+  <p>손절은 그 가격 아래로 가면 판단의 근거가 사라진다는 약속을 지킨 것입니다. 한 번의 결과가 아니라 여러 번의 합으로 봅니다. 근거가 다시 생기면 다시 사면 됩니다.</p>
+  <p><a class="back" href="#d56q3">문제로 돌아가기</a></p>
+</div>
+</section>
+
+</section>
+</body>
+</html>
