@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="ko" xml:lang="ko">
+<head>
+<meta charset="UTF-8"/>
+<title>Day 48. 패턴이 성공하는 조건</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body epub:type="bodymatter">
+<section epub:type="chapter" id="day48">
+
+<p class="day">Day 48</p>
+<h1>패턴이 성공하는 조건</h1>
+<p class="oneline">패턴, 추세, 거래량. 세 가지가 같은 방향일 때 확률이 올라갑니다.</p>
+
+<h2>이런 적 있나요?</h2>
+<p>교과서처럼 생긴 패턴이 나와서 샀는데 실패하고, 어설퍼 보이던 패턴은 오히려 크게 오른 적 있으시죠? 모양의 완성도가 결과를 정하는 게 아니기 때문입니다. 어제 배운 것처럼 위치와 거래량이 더 중요합니다. 오늘은 그 조건을 세 가지로 정리합니다.</p>
+
+<h2>쉽게 이해하기</h2>
+<p>패턴이 성공할 확률을 높이는 조건은 세 가지가 같은 방향을 가리키는 것입니다.</p>
+<table>
+<thead><tr><th>조건</th><th>확인할 것</th><th>배운 곳</th></tr></thead>
+<tbody>
+<tr><td>① 추세</td><td>큰 흐름이 패턴이 가리키는 방향과 같은가</td><td>Day 11, 17</td></tr>
+<tr><td>② 패턴</td><td>박스·삼각형처럼 쉬어 가는 모양이 분명한가</td><td>Day 17, 25</td></tr>
+<tr><td>③ 거래량</td><td>패턴 안에서 줄었다가, 벗어날 때 늘어나는가</td><td>Day 24, 38</td></tr>
+</tbody>
+</table>
+<p>배를 띄우는 장면을 떠올려 보세요. 물길(추세)이 바다 쪽으로 흐르고, 배(패턴)가 튼튼하고, 바람(거래량)도 바다 쪽으로 불면 배는 쉽게 나아갑니다. 하나라도 반대라면 나아가긴 해도 힘이 듭니다. 셋 다 반대라면 배는 떠나지 못합니다.</p>
+<p>예를 들어 하락 추세 한가운데서 나온 상승형 패턴은 추세가 반대를 가리킵니다. 모양이 예뻐도 확률은 낮아집니다. 반대로 상승 추세 중 쉬어 가는 박스에서, 박스 안 거래량이 줄었다가 돌파할 때 크게 늘었다면 세 조건이 모두 맞습니다.</p>
+
+<h2>차트로 보기</h2>
+<figure id="fig48-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 340" role="img" aria-label="세 가지가 같은 방향">
+<rect x="0" y="0" width="760" height="340" fill="#FFFFFF"/>
+<text x="24" y="30" font-family="sans-serif" font-size="17" font-weight="bold" fill="#1C2126">추세, 패턴, 거래량이 모두 위를 가리킬 때 돌파가 이어지기 쉽습니다</text>
+<text x="24" y="54" font-family="sans-serif" font-size="13" fill="#626A72">위 = 종가 (회색 상자 = 박스), 아래 = 거래량 (파랑 = 박스 안, 빨강 = 돌파한 날)</text>
+<rect x="352" y="120.25" width="252" height="21" fill="#EEF0EE"/>
+<polyline points="72,209.5 101,199 130,188.5 159,192 188,178 217,167.5 246,157 275,160.5 304,146.5 333,136 362,125.5 391,132.5 420,139.5 449,129 478,136 507,125.5 536,132.5 565,122 594,129 623,111.5 652,101 681,90.5" fill="none" stroke="#1C2126" stroke-width="2" stroke-linejoin="round"/>
+<g fill="#1C2126"><circle cx="72" cy="209.5" r="3"/><circle cx="101" cy="199" r="3"/><circle cx="130" cy="188.5" r="3"/><circle cx="159" cy="192" r="3"/><circle cx="188" cy="178" r="3"/><circle cx="217" cy="167.5" r="3"/><circle cx="246" cy="157" r="3"/><circle cx="275" cy="160.5" r="3"/><circle cx="304" cy="146.5" r="3"/><circle cx="333" cy="136" r="3"/><circle cx="362" cy="125.5" r="3"/><circle cx="391" cy="132.5" r="3"/><circle cx="420" cy="139.5" r="3"/><circle cx="449" cy="129" r="3"/><circle cx="478" cy="136" r="3"/><circle cx="507" cy="125.5" r="3"/><circle cx="536" cy="132.5" r="3"/><circle cx="565" cy="122" r="3"/><circle cx="594" cy="129" r="3"/><circle cx="623" cy="111.5" r="3"/><circle cx="652" cy="101" r="3"/><circle cx="681" cy="90.5" r="3"/></g>
+<line x1="56" y1="320" x2="701" y2="320" stroke="#D6DADD" stroke-width="1"/>
+<text x="24" y="262" font-family="sans-serif" font-size="11" fill="#626A72">거래량</text>
+<rect x="64" y="284" width="16" height="36" fill="#AEB5BB"/>
+<rect x="93" y="282.8" width="16" height="37.2" fill="#AEB5BB"/>
+<rect x="122" y="281" width="16" height="39" fill="#AEB5BB"/>
+<rect x="151" y="287" width="16" height="33" fill="#AEB5BB"/>
+<rect x="180" y="280.4" width="16" height="39.6" fill="#AEB5BB"/>
+<rect x="209" y="278" width="16" height="42" fill="#AEB5BB"/>
+<rect x="238" y="276.8" width="16" height="43.2" fill="#AEB5BB"/>
+<rect x="267" y="285.2" width="16" height="34.8" fill="#AEB5BB"/>
+<rect x="296" y="275" width="16" height="45" fill="#AEB5BB"/>
+<rect x="325" y="273.2" width="16" height="46.8" fill="#AEB5BB"/>
+<rect x="354" y="272" width="16" height="48" fill="#8FA9E8"/>
+<rect x="383" y="290" width="16" height="30" fill="#8FA9E8"/>
+<rect x="412" y="293" width="16" height="27" fill="#8FA9E8"/>
+<rect x="441" y="291.2" width="16" height="28.8" fill="#8FA9E8"/>
+<rect x="470" y="296" width="16" height="24" fill="#8FA9E8"/>
+<rect x="499" y="294.8" width="16" height="25.2" fill="#8FA9E8"/>
+<rect x="528" y="298.4" width="16" height="21.6" fill="#8FA9E8"/>
+<rect x="557" y="297.2" width="16" height="22.8" fill="#8FA9E8"/>
+<rect x="586" y="299.6" width="16" height="20.4" fill="#8FA9E8"/>
+<rect x="615" y="266" width="16" height="54" fill="#C8322F"/>
+<rect x="644" y="269" width="16" height="51" fill="#AEB5BB"/>
+<rect x="673" y="272" width="16" height="48" fill="#AEB5BB"/>
+<line x1="72" y1="217.5" x2="333" y2="144" stroke="#2F5FD0" stroke-width="1.5" stroke-dasharray="5 4"/>
+<circle cx="217" cy="195.5" r="11" fill="#2F5FD0"/><text x="217" y="200.5" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF">①</text>
+<text x="233" y="199.5" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1C2126">① 추세: 오르던 중</text>
+<circle cx="478" cy="148.25" r="11" fill="#1C2126"/><text x="478" y="153.25" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF">②</text>
+<text x="478" y="176.25" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1C2126">② 패턴: 쉬어 가는 박스</text>
+<circle cx="623" cy="83.5" r="11" fill="#C8322F"/><text x="623" y="88.5" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF">③</text>
+<text x="607" y="87.5" text-anchor="end" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1C2126">③ 거래량: 줄었다가 돌파에 급증</text>
+</svg>
+<figcaption>그림 48-1. 추세, 패턴, 거래량이 같은 방향을 가리킨 돌파</figcaption>
+</figure>
+<p>그림 48-1에서 먼저 ①을 보세요. 가격은 100원에서 124원까지 고점과 저점을 높이며 올라왔습니다. 큰 흐름은 위쪽입니다.</p>
+<p>다음으로 ②를 보세요. 가격이 120~125원 박스에서 쉬었습니다. 오르던 중 쉬어 가는 박스라 원래 방향으로 이어질 가능성이 상대적으로 높은 모양입니다(Day 17). 마지막으로 ③을 보세요. 박스 안에서 파란 거래량 막대는 점점 줄었고, 박스를 벗어난 날 빨간 막대가 크게 솟았습니다. 세 가지가 모두 위를 가리킨 돌파는 이어서 올랐습니다.</p>
+
+<h2>이럴 땐 조심</h2>
+<p>세 조건이 모두 맞아도 실패할 수 있습니다. 조건은 확률을 높일 뿐, 결과를 보장하지 않습니다. 그래서 들어가기 전에 "패턴이 실패했다"고 인정할 자리를 먼저 정합니다. 박스 돌파라면 종가가 다시 박스 안으로 들어오는 가격입니다. 반대로 조건이 하나라도 어긋난다면 비중을 줄이거나, 나머지 조건이 채워질 때까지 기다립니다.</p>
+
+<h2>오늘의 체크</h2>
+<ol class="check">
+  <li id="d48q1">패턴이 성공할 확률을 높이는 세 가지 조건은 무엇인가요? <a class="to-answer" href="#d48a1">정답 보기</a></li>
+  <li id="d48q2">고점과 저점이 계속 낮아지는 하락 추세 한가운데서 예쁜 상승형 패턴이 나왔습니다. 확률은 어떨까요? <a class="to-answer" href="#d48a2">정답 보기</a></li>
+  <li id="d48q3">세 조건이 모두 맞는 패턴을 보고 샀습니다. 그래도 미리 해 둘 일은 무엇일까요? <a class="to-answer" href="#d48a3">정답 보기</a></li>
+</ol>
+
+<h2>한 줄 정리 + 내일 예고</h2>
+<p>추세, 패턴, 거래량. 세 가지가 같은 방향일 때 확률이 올라갑니다. 내일부터는 실전 패턴을 하나씩 봅니다. 첫 번째는 가장 자주 보이는 이중 바닥입니다.</p>
+
+<section class="answers" id="day48-answers">
+<h2>Day 48 정답과 해설</h2>
+<div class="answer" id="d48a1">
+  <p class="verdict">1번. 정답: 추세, 패턴, 거래량이 같은 방향을 가리키는 것</p>
+  <p>큰 흐름이 패턴의 방향과 같고, 쉬어 가는 모양이 분명하며, 패턴 안에서 거래량이 줄었다가 벗어날 때 늘어나는 경우입니다.</p>
+  <p><a class="back" href="#d48q1">문제로 돌아가기</a></p>
+</div>
+<div class="answer" id="d48a2">
+  <p class="verdict">2번. 정답: 낮다</p>
+  <p>패턴은 위를 가리키지만 큰 흐름은 아래를 가리킵니다. 방향이 엇갈리면 확률이 낮아집니다. 사고 싶다면 먼저 Day 12의 순서로 하락 추세가 멈췄는지 확인합니다.</p>
+  <p><a class="back" href="#d48q2">문제로 돌아가기</a></p>
+</div>
+<div class="answer" id="d48a3">
+  <p class="verdict">3번. 정답: 패턴이 실패했다고 인정할 자리를 정해 둔다</p>
+  <p>조건은 확률을 높일 뿐입니다. 박스 돌파라면 종가가 다시 박스 안으로 들어오는 가격을 손절 기준으로 미리 정합니다.</p>
+  <p><a class="back" href="#d48q3">문제로 돌아가기</a></p>
+</div>
+</section>
+
+</section>
+</body>
+</html>
