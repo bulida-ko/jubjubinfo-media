@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="ko" xml:lang="ko">
+<head>
+<meta charset="UTF-8"/>
+<title>Day 58. 한 번에 얼마나 살까 (포지션 크기)</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body epub:type="bodymatter">
+<section epub:type="chapter" id="day58">
+
+<p class="day">Day 58</p>
+<h1>한 번에 얼마나 살까 (포지션 크기)</h1>
+<p class="oneline">손절에 걸렸을 때 잃을 금액을 먼저 정하고, 거꾸로 살 양을 계산합니다.</p>
+
+<h2>이런 적 있나요?</h2>
+<p>"이번엔 확실하다"며 평소보다 크게 샀다가, 한 번의 손절로 몇 달 치 수익을 날린 적 있으시죠? 반대로 좋은 자리에서 너무 조금 사서, 맞았는데도 남는 게 없던 적도 있을 겁니다. 얼마나 살지를 느낌으로 정하면 이런 일이 반복됩니다.</p>
+
+<h2>쉽게 이해하기</h2>
+<p>얼마나 살지는 확신의 크기가 아니라 손절 폭으로 정합니다. 순서가 중요합니다. 먼저 "한 번 틀렸을 때 잃어도 되는 금액"을 정하고, 그 금액을 손절 폭으로 나누면 살 수량이 나옵니다.</p>
+<div class="formula">살 수량 = 한 번에 잃어도 되는 금액 ÷ (매수가 − 손절가)</div>
+<p>한 번에 잃어도 되는 금액은 보통 전체 자산의 1~2%로 정합니다. 1,000만 원이라면 10만~20만 원입니다. 작아 보이지만 이유가 있습니다. 1%씩 잃으면 열 번 연속 틀려도 10%만 잃습니다. 아직 충분히 회복할 수 있는 크기입니다(Day 56). 한 번에 10%씩 걸면 세 번만 연속 틀려도 30%가 사라집니다.</p>
+<p>이 방식의 좋은 점은, 어떤 종목을 사든 손절에 걸렸을 때 잃는 돈이 늘 같다는 것입니다. 손절 폭이 넓은 종목은 자동으로 적게 사게 되고, 좁은 종목은 많이 사게 됩니다. 확신이 크다고 더 사는 일이 사라집니다.</p>
+
+<h2>차트로 보기</h2>
+<figure id="fig58-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 364" role="img" aria-label="포지션 크기 계산">
+<rect x="0" y="0" width="760" height="364" fill="#FFFFFF"/>
+<text x="24" y="30" font-family="sans-serif" font-size="17" font-weight="bold" fill="#1C2126">잃어도 되는 금액을 먼저 정하면, 살 수량이 거꾸로 계산됩니다</text>
+<text x="24" y="54" font-family="sans-serif" font-size="13" fill="#626A72">자산 1,000만 원, 한 번에 잃어도 되는 금액 1% = 10만 원</text>
+<rect x="130" y="80" width="500" height="64" rx="6" fill="#F1F3F1" stroke="#D6DADD"/><text x="380" y="102" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1C2126">살 수량 = 한 번에 잃어도 되는 금액 ÷ (매수가 − 손절가)</text><text x="380" y="120" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#626A72">예: 100,000원 ÷ (112원 − 106.5원) = 약 18,000주</text>
+<text x="240" y="170" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1C2126">손절폭 5.5원</text>
+<text x="240" y="188" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#626A72">112원 − 106.5원</text>
+<rect x="190" y="244" width="100" height="76" fill="#2F5FD0"/>
+<text x="240" y="236" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1C2126">약 18,000주</text>
+<text x="240" y="336" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#626A72">약 202만 원</text>
+<text x="500" y="170" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1C2126">손절폭 12원</text>
+<text x="500" y="188" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#626A72">112원 − 100원</text>
+<rect x="450" y="284.956" width="100" height="35.0444" fill="#8FA9E8"/>
+<text x="500" y="276.956" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1C2126">약 8,300주</text>
+<text x="500" y="336" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#626A72">약 93만 원</text>
+<text x="380" y="350" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#C8322F">둘 다 손절에 걸리면 잃는 돈은 똑같이 10만 원</text>
+</svg>
+<figcaption>그림 58-1. 손절 폭에 따라 달라지는 수량</figcaption>
+</figure>
+<p>그림 58-1은 자산 1,000만 원에서 한 번에 잃어도 되는 금액을 1%, 즉 10만 원으로 정한 경우입니다. 어제 차트처럼 112원에 사고 손절을 106.5원에 둔다면 손절 폭은 5.5원이고, 10만 원을 5.5원으로 나누면 약 18,000주입니다. 금액으로는 약 202만 원어치입니다.</p>
+<p>같은 종목이라도 손절을 100원에 두어야 하는 자리라면 손절 폭은 12원이 되고, 살 수 있는 양은 약 8,300주, 93만 원어치로 줄어듭니다. 두 경우 모두 손절에 걸리면 잃는 돈은 똑같이 10만 원입니다. 손절 폭이 넓으면 그만큼 적게 사는 것이 이 계산의 핵심입니다.</p>
+
+<h2>이럴 땐 조심</h2>
+<p>계산 결과가 자산의 대부분을 한 종목에 넣으라고 나올 때가 있습니다. 손절 폭이 아주 좁을 때입니다. 이때는 한 종목 비중의 상한을 따로 둡니다. 보통 전체 자산의 20~30%를 넘기지 않습니다. 손절이 예상보다 나쁜 가격에 체결되거나(갭 하락), 종목에 문제가 생기는 위험까지 계산식이 막아 주지는 않기 때문입니다. 또 이 계산은 손절 라인이 먼저 정해져야 가능합니다. 손절 자리를 정할 수 없는 차트(Day 55)는 수량도 정할 수 없으니, 사지 않습니다.</p>
+
+<h2>오늘의 체크</h2>
+<ol class="check">
+  <li id="d58q1">자산이 2,000만 원이고 한 번에 잃어도 되는 금액을 1%로 정했습니다. 50,000원에 사고 손절을 47,000원에 둔다면 몇 주를 살 수 있을까요? <a class="to-answer" href="#d58a1">정답 보기</a></li>
+  <li id="d58q2">같은 금액을 잃기로 했을 때, 손절 폭이 넓어지면 살 수 있는 수량은 어떻게 될까요? <a class="to-answer" href="#d58a2">정답 보기</a></li>
+  <li id="d58q3">한 번에 잃어도 되는 금액을 자산의 1~2%로 작게 정하는 이유는 무엇인가요? <a class="to-answer" href="#d58a3">정답 보기</a></li>
+</ol>
+
+<h2>한 줄 정리 + 내일 예고</h2>
+<p>손절에 걸렸을 때 잃을 금액을 먼저 정하고, 거꾸로 살 양을 계산합니다. 이제 사는 것까지 정해졌습니다. 그런데 산 뒤에 가격이 올라 수익이 나면, 지켜야 할까요 키워야 할까요? 내일은 그 두 마음을 다루는 법을 알아봅니다.</p>
+
+<section class="answers" id="day58-answers">
+<h2>Day 58 정답과 해설</h2>
+<div class="answer" id="d58a1">
+  <p class="verdict">1번. 정답: 약 66주</p>
+  <p>잃어도 되는 금액은 2,000만 원의 1%인 20만 원입니다. 손절 폭은 50,000원 − 47,000원 = 3,000원이고, 20만 원 ÷ 3,000원 = 약 66주입니다. 금액으로는 약 330만 원어치입니다.</p>
+  <p><a class="back" href="#d58q1">문제로 돌아가기</a></p>
+</div>
+<div class="answer" id="d58a2">
+  <p class="verdict">2번. 정답: 줄어든다</p>
+  <p>잃을 금액이 같다면 손절 폭이 넓을수록 수량은 줄어듭니다. 손절 폭이 두 배가 되면 수량은 절반이 됩니다. 그래서 손절 폭이 넓은 자리에서는 자동으로 적게 사게 됩니다.</p>
+  <p><a class="back" href="#d58q2">문제로 돌아가기</a></p>
+</div>
+<div class="answer" id="d58a3">
+  <p class="verdict">3번. 정답: 여러 번 연속으로 틀려도 회복할 수 있는 크기로 손실을 묶어 두기 위해</p>
+  <p>1%씩 잃으면 열 번 연속 틀려도 10%만 잃어 회복이 가능합니다. 한 번에 10%씩 걸면 세 번만 연속 틀려도 30%가 사라지고, 되돌리려면 43%를 벌어야 합니다(Day 56).</p>
+  <p><a class="back" href="#d58q3">문제로 돌아가기</a></p>
+</div>
+</section>
+
+</section>
+</body>
+</html>
